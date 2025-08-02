@@ -1,0 +1,14 @@
+:root{
+--int-semi:inter_semibold;
+--int-regu:inter_regular;
+}
+
+
+@font-face {
+    font-family: inter_semibold;
+    src: url('./font/Inter-SemiBold.woff2');
+}
+@font-face {
+    font-family: inter_regular;
+    src: url('./font/Inter-Regular.woff2');
+}
