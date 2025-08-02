@@ -9,7 +9,7 @@ function Home() {
         <Header></Header>
         <Carousel data={slides}></Carousel>
     </div>
-  )
-}
+  ) 
+} 
 
 export default Home
