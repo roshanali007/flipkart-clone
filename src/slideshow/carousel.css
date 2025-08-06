@@ -1,38 +1,50 @@
 .carousel-sbhead{
     width: 100%;
-    height: 100%;
+    height: 100%; 
     display: flex;
     justify-content: center;
      position: relative;
-     
+        
 }
 .carousel{
      /* position: relative; */
     display: flex;
     align-items: center;
-    width: 380px;
+    width: 100%;
+    
     height: auto;
     justify-content: center;
-    padding-top:10px ; 
-    
+    padding-top:14px ; 
+    margin: 0 15px;
     overflow-x: hidden; 
+   
+    
     
 } 
 .carousel-track{
     display: flex;
-    transition: 3s ease-in-out;
+    transition: 0.3s ease-in-out;
+     
 } 
-.slide{  
+.slide{
+
     border-radius: 15px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
+    flex-shrink: 0;
+    
+   
+     /* padding: 0 2%; */
+     
           
 }       
 .indicators{
    display: flex;
    /* position: absolute; */
    padding-top: 8px; 
+   padding-bottom: 12px;
    justify-content: center;
 }
 .indicator{
@@ -42,17 +54,14 @@
     border-radius:2px; 
     border: none;
     outline: none;
-    margin: 0 0.2rem;
+    margin: 0 4px;
     cursor:pointer ;
    
    
     
 }
-.slide_hidden{
-    /* display: none; */
-    
-}
+
 .indicator_notactive{
-    background-color: #666;
+    background-color: #e1dcdc;
     width: 12px;
 }  
