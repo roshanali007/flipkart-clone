@@ -9,6 +9,7 @@ import searchIcon from '../assets/search-icon.svg'
 function Header() {
   const [openMenu,setOpenMenu]=useState(false)
   return (
+  <header>
     <div className='header'>
       <div className='header-child'>
         <div className='flipkart-nav'>
@@ -61,6 +62,7 @@ function Header() {
         </div>
       </div>
     </div>
+    </header>
   )
 }
 

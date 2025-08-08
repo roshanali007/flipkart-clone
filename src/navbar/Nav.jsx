@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
- import '../navbar/nav.css'
+import '../navbar/nav.css'
+import supercoin from '../assets/superCoin.webp'
+import flixcart from '../assets/flixcart.png'
 
 function Nav({onclose}) {
     const [visible,setVisible]= useState(false)
@@ -17,15 +19,56 @@ function Nav({onclose}) {
   return (
     <div className='drawer-overlay' onClick={handleClose}>
       <div className={`drawer ${visible? 'open': ''}`} onClick={e=>e.stopPropagation()}>
-        <ul className='drawer-list'>
-          <li>home</li>  
-          <li>home</li>
-          <li>home</li>
-          <li>home</li> 
-          <li>home</li>
-        </ul>
+        <div className='drawer-container' style={{height:'690px'}}>
+          <div className='login-table'>
+                <table width={'100%'}>
+                  <tbody>
+                    <tr className='table-row'>
+                      <td className='table-img'>
+                          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCI+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNyAwYTMuNSAzLjUgMCAxIDEgMCA3IDMuNSAzLjUgMCAwIDEgMC03em0wIDguNzVjMy44NjcgMCA3IDEuNTY2IDcgMy41VjE0SDB2LTEuNzVjMC0xLjkzNCAzLjEzMi0zLjUgNy0zLjV6Ii8+Cjwvc3ZnPgo=" alt="" />
+                          <div className='nav-login'>Login &amp; Signup</div>
+                      </td>
+                      <td className='filp-simple-logo' width={'40px'}>
+                          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" width={'20px'} alt="" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div'>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img'>
+                            <img src={supercoin} alt="" width={'14px'} height={'14px'} />
+                          </div>
+                          <span>SuperCoin Zone</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div'>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img'>
+                            <img src={flixcart} alt="" width={'13px'} height={'14px'} />
+                          </div>
+                          <span>Flipkart Plus Zone</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+        </div>
       </div>
-        
     </div>
   )
 }

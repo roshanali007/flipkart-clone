@@ -7,10 +7,13 @@ import loginLogo from '../assets/Login.svg'
 import cartLogo from '../assets/Cart.svg'
 import sellerLogo  from '../assets/Become a Seller.svg'
 import moreLogo from '../assets/Dropdown with more help links.svg'
+import ThreeDotMore from './ThreeDotMore'
 
 function HeaderDesk() {
     const [search,setSearch]=useState('')
+    const [openmore,setOpenMore]=useState(false)
   return (
+    <header>
     <div className='header-desk'>
         <div className='desk-flip-logo'>
             <a href='/'><img src={flipkart} alt="" /></a>
@@ -25,9 +28,9 @@ function HeaderDesk() {
                     </button>
                     <div className='search-field'>
                         
-                            <input type='text' value='' onChange={(e)=>{
+                            <input type='text' value={search} onChange={(e)=>{
                                 setSearch(e.target.value)
-                            }} placeholder='Search for Products, Brands and More' autoComplete='off'/>
+                            }} placeholder='Search for Products, Brands and More'/>
                         
                     </div>
                 </div>
@@ -44,17 +47,28 @@ function HeaderDesk() {
                 </div>
             </div>
             <div className='desk-kart'>
-                <a href="/"><img src={cartLogo} alt="" /></a>
+                <a href="/" className='cart-img'><img src={cartLogo} alt="" /></a>
+                <a href="" className='cart'>Cart</a>
             </div>
             <div className='desk-seller'>
-                <a href="/"><img src={sellerLogo} alt="" /></a>
+                <a href="/" className='seller-img'><img src={sellerLogo} alt="" /></a>
+                <a href="" className='become-a-seller'>Become a Seller</a>
             </div>
             <div className='desk-more'>
-                <a href="/"><img src={moreLogo} alt="" /></a>
+                <a >
+                    <div className={`border-div ${openmore? 'active':'' }`}>
+                        <img src={moreLogo} alt="" onClick={()=>{setOpenMore(true)}}/>
+                    </div>
+                </a>
             </div> 
+            {
+            openmore && <ThreeDotMore onClose={()=>setOpenMore(false)}/>
+             }
         </div>
         
+        
     </div>
+    </header>
   )
 }
 

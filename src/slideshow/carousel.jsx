@@ -20,24 +20,28 @@ import './carousel.css'
     },[slide])
    
   return (
-    <div className='carousel-head'>
-        <div className='carousel-sbhead'>
-            <div className='carousel' > 
-                <div className='carousel-track' style={{transform:`translateX(-${slide*100}%)`}}>
-                    
-                {   
-                    data.map((item, idx)=>{
-                        return <img src={item.src} alt={item.alt} key={idx} className="slide"></img>
-                    }
-                    )
-                }
-                
+  <div className='carousel-container'>
+        <div className='carousel-subcontainer'>
+            <div className='carousel-head'>
+                <div className='carousel-sbhead'>
+                    <div className='carousel' > 
+                        <div className='carousel-track' style={{transform:`translateX(-${slide*100}%)`}}>
+                            
+                        {   
+                            data.map((item, idx)=>{
+                                return <img src={item.src} alt={item.alt} key={idx} className="slide"></img>
+                            }
+                            )
+                        }
+                        
+                        </div>
+                    </div>
                 </div>
+                <span className='indicators'>{data.map((_,idx)=>{
+                            return <button key={idx} onClick={()=>setSlide(idx)} className={slide===idx? "indicator":"indicator indicator_notactive"} ></button>
+                        })}</span>
             </div>
         </div>
-        <span className='indicators'>{data.map((_,idx)=>{
-                    return <button key={idx} onClick={()=>setSlide(idx)} className={slide===idx? "indicator":"indicator indicator_notactive"} ></button>
-                })}</span>
     </div>
   )
 }    

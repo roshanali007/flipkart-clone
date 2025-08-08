@@ -7,6 +7,7 @@
     z-index: 9999;
     height: 100vh;
     width: 100vw;
+    font-family: var(--int-regu);
     
 }
 .drawer{
@@ -21,3 +22,84 @@
 .drawer.open{
     transform:translateX(0) ;
 }
+.drawer-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.table-row{
+    display: flex;
+    justify-content: space-between;
+}
+.login-table{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(30deg, #2874f0, #0065c5);
+    padding: 2px 0;
+    height: 56px;
+    font-size: 12px;
+}
+.login-table td{
+    display: flex;
+    align-items: center;
+}
+.login-table .table-img  img{
+    margin-left: 12px;
+    width: 15px;
+    height: 15px;
+}
+.login-table .table-img .nav-login{
+        width: 75%;
+        margin-left: 20px;
+        font-size: 16px;
+        align-self: flex-end;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 1px;
+}
+.flip-simple-logo{
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.nav-body ul{
+    margin: 0;
+}
+.nav-body .nav-list{
+    height: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: #212121;
+}
+.nav-body .nav-list a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+}
+.nav-body .list-data{
+    display: flex;
+    align-items: center;
+    color: #353535;
+}
+.nav-body .super-img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.nav-body .super-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.nav-body .list-data span{
+    margin-left: 12px;
+    color: #353535; 
+    font-size: 14px;
+}
+

@@ -1,3 +1,8 @@
+button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
 .header-child{
     display: flex;
     justify-content: space-between;
@@ -107,7 +112,17 @@ img.man-logo {
     color: rgba(0, 0, 0, .87843);
      font-family: var(--int-regu);
 }
+.header-desk .desk-more .border-div{
+        border: 1px solid transparent;
+        box-sizing: border-box;
+   }
 @media screen and (min-width:770px){
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 10000000;
+        background-color: #ffffff;
+    }
     .header{
         display: none;
     }
@@ -117,20 +132,34 @@ img.man-logo {
         align-items: center;
         padding: 12px;
         font-family: var(--int-regu);
+        position: relative;
     }
     .header-desk .desk-search{
-        display: inline-block;
+        /* display: inline-block;
         width: 100%;
         position: relative;
         border-radius: 8px;
+        background-color: #f0f5ff; */
+        display: inline-block;
+        width: 99%;
+        position: relative;
+        border-radius: 8px;
         background-color: #f0f5ff;
-        
-
+    }
+    .desk-more:hover  .active{
+        background: #fafafa;
+        border: 1px solid black;
+        border-radius: 8px
     }
     .header-desk .desk-login-profile{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 1px;
+        margin-top: 1px;
+    }
+    .header-desk .profile-logo span{
+            margin-bottom: 1px;
     }
     .header-desk .desk-login{
         display: flex;
@@ -145,24 +174,31 @@ img.man-logo {
         align-items: center;
     }
     .header-desk .desk-search input{
-        padding-top: 1px;
-        border: none;
-        outline: none;
+        /* padding-top: 1px; */
+        padding-bottom: 1px;
+        border:0;
+        outline:0 none;
         font-size: 17px;
         height: 40px;
         width: 100%;
         background-color: transparent;
         text-overflow: ellipsis;
-        font-family: var(--int-regu);
+        font-family:var(--int-regu);
+
     }
     .header-desk .desk-search .search-icon{
         /* height: 40px; */
-        border-radius: 2px;
+        /* border-radius: 2px;
         cursor: pointer;
         padding: 9px 8px 6px 13px;
-        
+        border-radius: 8px;
         border: none;
-        background-color: #f0f5ff;
+        background-color: #f0f5ff; */
+        height: 40px;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 8px 8px 8px 12px;
+        background-color: transparent;
     }
     .header-desk .desk-flip-logo{
         margin-right: 36px;
@@ -173,10 +209,14 @@ img.man-logo {
     
    .header-desk  .desk-login{
         padding: 8px 9px 10px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
             
    }
    .header-desk .profile-logo img{
         margin-right: 8px;
+         padding-bottom: 1px;
    }
    .header-desk .drop img{
         margin-left: 8px;
@@ -185,32 +225,117 @@ img.man-logo {
    }
     .header-desk .desk-kart {
         padding: 0 6px;
+        margin-top: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
    }
    .header-desk .desk-kart img{
         margin-right: 8px;
    }
    .header-desk .desk-seller {
         padding: 0 6px;
+        margin-top: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
    }
    .header-desk .desk-seller img{
         margin-right: 8px;
    }
    .header-desk .desk-more {
         padding: 0 6px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
    }
+   
    .header-desk .desk-more img{
         padding: 8px;
    }
    .header-desk .search-head{
-    min-width: 200px;
-    width: 100%;
+        min-width: 200px;
+        width: 100%;
+        margin: 0;
    }
    .header-desk .search-field{
-    width: 100%;
-    background-color: #f0f5ff;
+        /* width: 100%;
+        background-color: #f0f5ff;
+        border-radius: 8px; */
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background-color: transparent;
    }
    .header-desk .div-search{
-    display: flex;
+        /* display: flex; */
+        display: flex;
+        justify-content: space-between;
+        flex: auto;
+        background: 0 0;
+   }
+   .cart{
+    display: none;
+   }
+   .become-a-seller{
+    display: none;
    }
 
+}
+@media screen and (min-width:1192px) {
+    .cart{
+        display: block;
+    }
+    .cart{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        width: max-content;
+    }
+    .become-a-seller{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        width: max-content;
+    }
+    .header-desk{
+        padding: 12px 28px;
+    }
+    .cart-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seller-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-desk .desk-login-profile .desk-login-sbhead{
+        padding: 0 20px;
+    }
+    .header-desk .desk-kart{
+        padding: 0 20px 2px;
+    } 
+    .header-desk .desk-seller{
+        padding: 0 20px 2px;
+    } 
+    .header-desk .desk-more{
+        padding: 0 20px;
+    }
+    /* updated version */
+    .header-desk .profile-logo img {
+        padding-bottom: 0;
+    }
+    .header-desk .profile-logo span {
+        margin-bottom: 0px;
+    }
+    
 }

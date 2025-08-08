@@ -14,16 +14,30 @@
     
     height: auto;
     justify-content: center;
-    padding-top:14px ; 
+    /* padding-top:14px ;  */
     margin: 0 15px;
     overflow-x: hidden; 
    
     
     
-} 
+}
+.carousel-head{
+    background-color: #ffffff;
+}
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carousel-subcontainer{
+    display: flex;
+    justify-content: center;
+}
 .carousel-track{
     display: flex;
     transition: 0.3s ease-in-out;
+    padding-top: 8px;
      
 } 
 .slide{
@@ -43,7 +57,7 @@
 .indicators{
    display: flex;
    /* position: absolute; */
-   padding-top: 8px; 
+   /* padding-top: 8px;  */
    padding-bottom: 12px;
    justify-content: center;
 }
@@ -61,7 +75,16 @@
     
 }
 
+
 .indicator_notactive{
     background-color: #e1dcdc;
     width: 12px;
-}  
+} 
+@media screen and (min-width:1192px) {
+    .carousel-container{
+        margin: 0 16px;
+    }
+    .carousel-subcontainer{
+        margin-top: 8px;
+    }
+}
