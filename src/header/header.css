@@ -98,8 +98,8 @@ img.man-logo {
     display: flex;
     align-items: center;
     border: 2px solid #EBEBEB;
-     border-radius: 15px;
-     height: 48px;
+     border-radius: 13px;
+     height: 51.5px;
       padding-left: 12px;
       padding-right: 4px;
 }
@@ -162,6 +162,10 @@ img.man-logo {
     .header-class .flipkart-div{
         margin-right: 36px;
         
+    }
+    .header-class .flipkart-div img{
+        width: 120px;
+        height: 40px;
     }
     .header-class .filpkart-div a{
         text-decoration: none;
