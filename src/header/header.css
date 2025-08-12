@@ -3,13 +3,20 @@ button {
     outline: 0;
     background-color: transparent;
 }
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    background-color: #ffffff;
+}
 .header-child{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2px 16px 5px;
 }
-.header-desk{
+.header-div-desk{
     display: none;
 }
 .flipkart-nav{
@@ -112,169 +119,195 @@ img.man-logo {
     color: rgba(0, 0, 0, .87843);
      font-family: var(--int-regu);
 }
-.header-desk .desk-more .border-div{
+.threedot-hd .threedot-div{
         border: 1px solid transparent;
         box-sizing: border-box;
    }
-@media screen and (min-width:770px){
-    header{
-        position: sticky;
-        top: 0;
-        z-index: 10000000;
-        background-color: #ffffff;
-    }
+@media screen and (min-width:768px){
     .header{
         display: none;
     }
-    .header-desk{
+    .header-div-desk{
+        background-color: #fff;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px;
-        font-family: var(--int-regu);
-        position: relative;
+        justify-content: center;
+        flex-direction: column;
     }
-    .header-desk .desk-search{
-        /* display: inline-block;
+    .header-sbdiv-desk{
+        display: flex;
+        justify-content: center;
+    }
+    .header-child-div{
+        display: flex;
+        justify-content: center;
         width: 100%;
-        position: relative;
-        border-radius: 8px;
-        background-color: #f0f5ff; */
+    }
+    .header-class{
+        padding: 12px;
+        max-width: 996px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        justify-content: space-between;
+        z-index: 99999;
+
+    }
+    .header-class .header-right{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    .header-class .flipkart-div{
+        margin-right: 36px;
+        
+    }
+    .header-class .filpkart-div a{
+        text-decoration: none;
+        color: #333;
+    }
+    .header-class .search-div{
+        min-width: 200px;
+        margin: 0;
+        width: 100%;
+    }
+    .header-class .search-div form{
         display: inline-block;
-        width: 99%;
+        width: 100%;
         position: relative;
         border-radius: 8px;
         background-color: #f0f5ff;
     }
-    .desk-more:hover  .active{
-        background: #fafafa;
-        border: 1px solid black;
-        border-radius: 8px
-    }
-    .header-desk .desk-login-profile{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 1px;
-        margin-top: 1px;
-    }
-    .header-desk .profile-logo span{
-            margin-bottom: 1px;
-    }
-    .header-desk .desk-login{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-desk .desk-login a{
-        display: flex;
-        height: 100%;
+    .header-class .search-sub-div{
         width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-desk .desk-search input{
-        /* padding-top: 1px; */
-        padding-bottom: 1px;
-        border:0;
-        outline:0 none;
-        font-size: 17px;
-        height: 40px;
-        width: 100%;
+        display: flex;
+        justify-content: space-between;
         background-color: transparent;
-        text-overflow: ellipsis;
-        font-family:var(--int-regu);
-
     }
-    .header-desk .desk-search .search-icon{
-        /* height: 40px; */
-        /* border-radius: 2px;
-        cursor: pointer;
-        padding: 9px 8px 6px 13px;
-        border-radius: 8px;
-        border: none;
-        background-color: #f0f5ff; */
+    .header-class .search-sub-div button{
         height: 40px;
         border-radius: 2px;
         cursor: pointer;
         padding: 8px 8px 8px 12px;
         background-color: transparent;
     }
-    .header-desk .desk-flip-logo{
-        margin-right: 36px;
-    }
-    .header-desk .desk-login-profile .desk-login-sbhead{
-        padding: 0 6px;
-    }
-    
-   .header-desk  .desk-login{
-        padding: 8px 9px 10px 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-            
-   }
-   .header-desk .profile-logo img{
-        margin-right: 8px;
-         padding-bottom: 1px;
-   }
-   .header-desk .drop img{
-        margin-left: 8px;
-        width: 12px;
-        height: 12px;
-   }
-    .header-desk .desk-kart {
-        padding: 0 6px;
-        margin-top: 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-   }
-   .header-desk .desk-kart img{
-        margin-right: 8px;
-   }
-   .header-desk .desk-seller {
-        padding: 0 6px;
-        margin-top: 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-   }
-   .header-desk .desk-seller img{
-        margin-right: 8px;
-   }
-   .header-desk .desk-more {
-        padding: 0 6px ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-   }
-   
-   .header-desk .desk-more img{
-        padding: 8px;
-   }
-   .header-desk .search-head{
-        min-width: 200px;
-        width: 100%;
-        margin: 0;
-   }
-   .header-desk .search-field{
-        /* width: 100%;
-        background-color: #f0f5ff;
-        border-radius: 8px; */
+    .header-class .search-input{
         position: relative;
         display: inline-block;
         width: 100%;
         background-color: transparent;
-   }
-   .header-desk .div-search{
-        /* display: flex; */
+    }
+    .header-class .search-input input{
+        text-overflow: ellipsis;
+        border: 0;
+        outline: 0;
+        font-size: 17px;
+        height: 40px;
+        width: 100%;
+        background-color: transparent;
+        font-family: var(--int-regu);
+    }
+    .header-class .header-left{
         display: flex;
-        justify-content: space-between;
-        flex: auto;
-        background: 0 0;
-   }
+        align-items: center;
+    }
+    .header-class .login-hddiv{
+        padding: 0 6px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .header-class .login-div{
+        display: flex;
+        align-items: center;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        padding: 8px;
+    }
+    .header-class .login-div .login-link{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        font-family: var(--int-regu);
+    }
+    .login-div .login-link img{
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+    }
+    .login-div .arrow-down {
+        width: 12px;
+        height: 12px;
+        margin-left: 8px;
+    }
+    .cart-hddiv .cart-div{
+        padding: 0 6px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .cart-hddiv .cart-div .cart-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+    }
+    .cart-hddiv .cart-div img{
+        margin-right: 8px;
+    }
+    .seller-hddiv .seller-div{
+        padding: 0 6px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .seller-hddiv .seller-div .seller-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+    }
+    .seller-hddiv .seller-div img{
+        margin-right: 8px;
+    }
+    .threedot-hd .threedot-hddiv{
+        padding: 0 6px;
+        display: flex;
+        align-items: center;
+    }
+    .threedot-hd .threedot-div{
+        display: flex;
+        align-items: center;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        padding: 8px;
+    }
+    .threedot-hd .threedot-div a{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+    .threedot-hd .threedot-div img{
+        width: 24px;
+        height: 24px;
+    }
+    .threedot-div:hover{
+        background: #fafafa;
+        border: 1px solid black;
+        border-radius: 8px
+    }
    .cart{
     display: none;
    }
@@ -305,37 +338,20 @@ img.man-logo {
         text-align: center;
         width: max-content;
     }
-    .header-desk{
+    .header-class{
         padding: 12px 28px;
     }
-    .cart-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .seller-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-desk .desk-login-profile .desk-login-sbhead{
+    .header-class .login-hddiv{
         padding: 0 20px;
     }
-    .header-desk .desk-kart{
-        padding: 0 20px 2px;
-    } 
-    .header-desk .desk-seller{
-        padding: 0 20px 2px;
-    } 
-    .header-desk .desk-more{
+    .cart-hddiv .cart-div{
         padding: 0 20px;
-    }
-    /* updated version */
-    .header-desk .profile-logo img {
-        padding-bottom: 0;
-    }
-    .header-desk .profile-logo span {
-        margin-bottom: 0px;
+    } 
+    .seller-hddiv .seller-div{
+        padding: 0 20px;
+    } 
+    .threedot-hd .threedot-hddiv {
+        padding: 0 20px;
     }
     
 }

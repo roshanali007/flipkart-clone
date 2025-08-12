@@ -15,7 +15,7 @@ import './carousel.css'
         setSlide(slide===0?data.length-1:slide-1)
     }
     useEffect(()=>{
-    const timer = setInterval(nextstate, 4000)
+    const timer = setInterval(nextstate, 3000)
      return ()=> clearInterval(timer)
     },[slide])
    
@@ -38,7 +38,7 @@ import './carousel.css'
                     </div>
                 </div>
                 <span className='indicators'>{data.map((_,idx)=>{
-                            return <button key={idx} onClick={()=>setSlide(idx)} className={slide===idx? "indicator":"indicator indicator_notactive"} ></button>
+                            return <button key={idx} onClick={()=>setSlide(idx)} className={`indicator ${slide===idx ? 'active':'indicator_notactive'}`} ></button>
                         })}</span>
             </div>
         </div>

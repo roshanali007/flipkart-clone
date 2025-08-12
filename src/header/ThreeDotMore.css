@@ -33,6 +33,7 @@
     font-size: 14px;
     line-height: 20px;
     cursor: pointer;
+    font-family: var(--int-regu);
 }
 .more-drawer.open{
     

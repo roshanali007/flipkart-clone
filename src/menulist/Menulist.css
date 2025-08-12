@@ -1,0 +1,61 @@
+.menulist_maindiv{
+    background: linear-gradient(#ffffff,#ffffff);
+    padding: 12px 0 4px 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    scrollbar-width: none;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid black;
+
+}
+.menulist_maindiv .menulist_hddiv{
+    display: flex;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid black;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin-right: 16px;
+    flex-direction: column;
+}
+.menulist_maindiv .menulist_sbdiv{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+.menulist_maindiv .flipkart_minute{
+    width: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menulist_maindiv .text_style{
+    font-family: var(--int-semi);
+    font-size: 10px;
+    margin-top: 6px;
+}
+.menulist_maindiv .flipkart_minute img{
+    background: transparent;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 136px;
+    height: 58.2857px;
+}
+.menulist_maindiv .moblie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+}
+.menulist_maindiv .moblie img{
+    background: transparent;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+}

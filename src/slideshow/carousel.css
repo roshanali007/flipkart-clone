@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 12px;
     
 }
 .carousel-subcontainer{
@@ -60,26 +61,42 @@
    /* padding-top: 8px;  */
    padding-bottom: 12px;
    justify-content: center;
+   background-color: #ffffff;
 }
 .indicator{
-    background-color: black;
+    position: relative;
+    background-color: #e1dcdc;
     height: 4px;
     width: 48px;
-    border-radius:2px; 
+    border-radius: 2px;
     border: none;
-    outline: none;
     margin: 0 4px;
-    cursor:pointer ;
-   
-   
+    cursor: pointer;
+    overflow: hidden;
     
 }
+.indicator::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: black;
+    
+}
+.indicator.active::before{
+    width: 100%;
+    transition:3s linear;
+}
+
 
 
 .indicator_notactive{
     background-color: #e1dcdc;
     width: 12px;
-} 
+}
+
 @media screen and (min-width:1192px) {
     .carousel-container{
         margin: 0 16px;

@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from '../header/Header'
-import { Carousel } from '../slideshow/carousel'
-import {slides} from '../data/carouselData.json'
 import HeaderDesk from '../header/HeaderDesk'
 import './Home.css'
+import Body from './body'
+
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
         <Header></Header>
         <HeaderDesk></HeaderDesk>
         <div className='body'>
-            <Carousel data={slides}></Carousel>
+            <Body></Body>
         </div>
     </div>
   ) 

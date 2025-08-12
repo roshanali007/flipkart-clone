@@ -2,6 +2,19 @@ import React, { useEffect, useState } from 'react'
 import '../navbar/nav.css'
 import supercoin from '../assets/superCoin.webp'
 import flixcart from '../assets/flixcart.png'
+import category from '../assets/category.png'
+import more_on from '../assets/more-on.jpg'
+import choose_language from '../assets/choose_langauge.png'
+import offer_zone from '../assets/offer_zone.png'
+import sell_on_flipkart from '../assets/sell_on_flipkart.png'
+import my_order from '../assets/my_order.png'
+import coupons from '../assets/coupons.png'
+import my_cart from '../assets/my_cart.png'
+import my_wishlist from '../assets/my_wishlist.png'
+import my_account from '../assets/my_account.png'
+import my_notification from '../assets/my_notification.png'
+
+
 
 function Nav({onclose}) {
     const [visible,setVisible]= useState(false)
@@ -57,11 +70,220 @@ function Nav({onclose}) {
                     <li className='nav-list'>
                       <a href="">
                         <div className='list-data'>
-                          <div className='super-img'>
-                            <img src={flixcart} alt="" width={'13px'} height={'14px'} />
+                          <div className='super-img flixcart'>
+                            <img src={flixcart} alt="" width={'12px'} height={'14px'} />
                           </div>
                           <span>Flipkart Plus Zone</span>
                         </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div category'>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={category} alt="" width={'13px'} height={'14px'} />
+                          </div>
+                          <span>All Categories</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div more_on'>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={more_on} alt="" width={'14px'} height={'13.5px'} />
+                          </div>
+                          <span>More on Flipkart</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body '>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div language more_on'>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={choose_language} alt="" width={'14px'} height={'13.5px'} />
+                          </div>
+                          <span>Choose Language</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div '>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={offer_zone} alt="" width={'14px'} height={'9px'} />
+                          </div>
+                          <span>Offer Zone</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div '>
+                    <li className='nav-list more_on'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={sell_on_flipkart} alt="" width={'14px'} height={'14px'} />
+                          </div>
+                          <span>Sell on Flipkart</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div '>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={my_order} alt="" width={'14px'} height={'11px'} />
+                          </div>
+                          <span>My Orders</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div '>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={coupons} alt="" width={'14px'} height={'14px'} />
+                          </div>
+                          <span>Coupons</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div '>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={my_cart} alt="" width={'14px'} height={'14px'} />
+                          </div>
+                          <span>My Cart</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div '>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={my_wishlist} alt="" width={'14px'} height={'14px'} />
+                          </div>
+                          <span>My Wishlist</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div '>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={my_account} alt="" width={'14px'} height={'14px'} />
+                          </div>
+                          <span>My Account</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div more_on'>
+                    <li className='nav-list'>
+                      <a href="">
+                        <div className='list-data'>
+                          <div className='super-img flixcart'>
+                            <img src={my_notification} alt="" width={'12px'} height={'14px'} />
+                          </div>
+                          <span>My Notifications</span>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div'>
+                    <li className='nav-list'>
+                      <a href="">
+                          Notification Preferences
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div'>
+                    <li className='nav-list'>
+                      <a href="">
+                          Help Centre
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+            </div>
+            <div className='nav-body'>
+                <ul className='nav-unlist'>
+                  <div className='nav-list-div'>
+                    <li className='nav-list'>
+                      <a href="">
+                          Legal
                       </a>
                     </li>
                   </div>
