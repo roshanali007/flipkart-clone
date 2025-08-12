@@ -55,7 +55,7 @@ function ThreeDotMore({onClose}) {
                             <img src={download} alt="" />
                         </div>
                         Download App
-                    </li>
+                    </li>  
                 </a>
             </ul>
 
