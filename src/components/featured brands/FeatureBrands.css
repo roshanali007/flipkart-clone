@@ -4,6 +4,9 @@
     flex-direction: column;
     background-color: #ffffff;
 }
+.featurelap-element{
+        display: none;
+}
 .feature-main .feature-sbdiv{
     width: 100%;
     height: 100%;
@@ -43,7 +46,7 @@
     scroll-padding-inline-start: 16px;
     overflow-x: auto;
     /* overflow-y: hidden; */
-    padding: 0 4px 0 16px;
+    /* padding: 0 4px 0 16px; */
 }
 .feature-main .feature-element a{
     display: flex;
@@ -52,5 +55,44 @@
     overflow: hidden;
     margin: 0 16px;
 }
+@media screen and (min-width:768px){
+   .feature-main{
+      margin: 10px;
+   }
+   .featurelap-element{
+        display: none;
+    }
+}
+@media screen and (min-width:1024px){
+    .feature-element{
+        display: none;
+    }
+    .feature-main .feature-div{
+        grid-auto-columns: 460px;
+    }
+    .featurelap-element{
+        display: flex;
+    }
+    .feature-main .featurelap-element a{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-left: 18px;
+        /* object-fit: contain; */
+       
+    }
+    .feature-main .featurelap-element img{
+        width: 100%;
+        height: 100%;
+    }
+    .feature-main .heading-margin{
+        margin: 0;
+        padding: 16px;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.1px;
+    }
+
+}   
 
 

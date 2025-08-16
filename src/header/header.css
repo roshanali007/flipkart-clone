@@ -320,11 +320,11 @@ img.man-logo {
    }
 
 }
-@media screen and (min-width:1192px) {
-    .cart{
+@media screen and (min-width:1024px) {
+    /* .cart{
         display: block;
-    }
-    .cart{
+    } */
+    /* .cart{
         display: block;
         color: #000;
         text-decoration: none;
@@ -343,19 +343,23 @@ img.man-logo {
         width: max-content;
     }
     .header-class{
-        padding: 12px 28px;
+        padding: 12px;
     }
     .header-class .login-hddiv{
-        padding: 0 20px;
+        padding: 0 6px;
     }
     .cart-hddiv .cart-div{
-        padding: 0 20px;
+        padding: 0 6px;
     } 
     .seller-hddiv .seller-div{
-        padding: 0 20px;
+        padding: 0 6px;
     } 
     .threedot-hd .threedot-hddiv {
-        padding: 0 20px;
+        padding: 0 6px;
+    } */
+    .header-class .flipkart-div img{
+        width: 160px;
+        height: 40px;
     }
     
 }

@@ -1,9 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './carousel.css'
-
-
-
-
  export const Carousel = ({data}) => {
      const [slide,setSlide]=useState(0)
      const slideRef=useRef(null)
@@ -25,12 +21,12 @@ import './carousel.css'
             <div className='carousel-head'>
                 <div className='carousel-sbhead'>
                     <div className='carousel' > 
-                        <div className='carousel-track' style={{transform:`translateX(-${slide*100}%)`}}>
+                        <div className='carousel-track'>
                             
                         {   
                             data.map((item, idx)=>{
-                                return <img src={item.src} alt={item.alt} key={idx} className="slide"></img>
-                            }
+                                return <img src={item.src} alt={item.alt} key={idx} className="slide" style={{transform:`translateX(-${slide*100}%)`,transition:'transform 0.3s ease-in-out'}}></img>
+                            } 
                             )
                         }
                         

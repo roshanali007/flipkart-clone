@@ -1,3 +1,24 @@
+.carouselTab-container{
+    display: none;
+}
+.carouselLap-container{
+    display: none;
+}
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+    
+}
+.carousel-subcontainer{
+    display: flex;
+    justify-content: center;
+}
+.carousel-head{
+    background-color: #ffffff;
+}
+
 .carousel-sbhead{
     width: 100%;
     height: 100%; 
@@ -21,24 +42,17 @@
     
     
 }
-.carousel-head{
-    background-color: #ffffff;
-}
-.carousel-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 12px;
-    
-}
-.carousel-subcontainer{
-    display: flex;
-    justify-content: center;
-}
+
+
 .carousel-track{
     display: flex;
     transition: 0.3s ease-in-out;
     padding-top: 0px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
      
 } 
 .slide{
@@ -47,7 +61,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+    scroll-snap-align: start;
     flex-shrink: 0;
     
    
@@ -96,12 +110,184 @@
     background-color: #e1dcdc;
     width: 12px;
 }
-
-@media screen and (min-width:1192px) {
+@media screen and (min-width:768px){
     .carousel-container{
+        display: none;
+    }
+    .carouselLap-container{
+    display: none;
+    }
+    .carouselTab-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 12px;
+        
+    }
+    .carouselTab-subcontainer{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .carouselTab-container .carouselTab-head{
+        background-color: #ffffff;
+    }
+    .carouselTab-container .carouselTab-sbhead{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .carouselTab-container .carouselTab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 15px;
+        overflow-x: hidden;
+        height: auto;
+    }
+    .carouselTab-container .carouselTab-track{
+        display: flex;
+        transition: 0.3s ease-in-out;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+    .carouselTab-container .slides{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+    .carouselTab-container .indicators{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 12px;
+        background: #ffffff;
+    }
+    .carouselTab-container .indicator{
+        position: relative;
+        background-color: #e1dcdc;
+        height: 4px;
+        width: 48px;
+        border: none;
+        overflow: hidden;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .carouselTab-container .indicator::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 100%;
+        top: 0;
+        background-color: black;
+    }
+    .carouselTab-container .indicator.active::before{
+        width: 100%;
+        transition: 3s linear;
+    }
+    .carouselTab-container .indicator_notactive{
+        background-color: #e1dcdc;
+        width: 12px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    /* .carousel-container{
         margin: 0 16px;
     }
     .carousel-subcontainer{
         margin-top: 8px;
+    } */
+    .carouselTab-container{
+        display: none;
+    }
+    .carouselLap-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 12px;
+        
+    }
+    .carouselLap-subcontainer{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .carouselLap-container .carouselLap-head{
+        background-color: #ffffff;
+    }
+    .carouselLap-container .carouselLap-sbhead{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .carouselLap-container .carouselLap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 15px;
+        overflow-x: hidden;
+        height: auto;
+    }
+    .carouselLap-container .carouselLap-track{
+        display: flex;
+        transition: 0.3s ease-in-out;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+    .carouselLap-container .slides{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+    .carouselLap-container .indicators{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 12px;
+        background: #ffffff;
+    }
+    .carouselLap-container .indicator{
+        position: relative;
+        background-color: #e1dcdc;
+        height: 4px;
+        width: 48px;
+        border: none;
+        overflow: hidden;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .carouselLap-container .indicator::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 100%;
+        top: 0;
+        background-color: black;
+    }
+    .carouselLap-container .indicator.active::before{
+        width: 100%;
+        transition: 3s linear;
+    }
+    .carouselLap-container .indicator_notactive{
+        background-color: #e1dcdc;
+        width: 12px;
     }
 }

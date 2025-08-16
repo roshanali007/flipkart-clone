@@ -1,0 +1,60 @@
+{
+    "homeEquipment":[
+        {
+            "id":1,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/ceiling.jpeg",
+            "alt":"ceiling",
+            "name":"Ceiling lamp",
+            "price":"Min. 50% Off"
+        },
+        {
+            "id":2,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/light.jpeg",
+            "alt":"light",
+            "name":"Lighting Essentials",
+            "price":"From ₹79*"
+        },
+        {
+            "id":3,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/sofa.jpeg",
+            "alt":"sofa",
+            "name":"Sofa Covers",
+            "price":"From ₹399*"
+        },
+        {
+            "id":4,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/Pillows.jpeg",
+            "alt":"Pillows",
+            "name":"Pillows",
+            "price":"From ₹199*"
+        },
+        {
+            "id":5,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/Plant.jpeg",
+            "alt":"plant",
+            "name":"Indoor Plants",
+            "price":"Up to 85% Off"
+        },
+        {
+            "id":6,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/mosquito.jpeg",
+            "alt":"moquito",
+            "name":"Mosquito Nets",
+            "price":"From₹249*"
+        },
+        {
+            "id":7,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/HomeDecoration.jpeg",
+            "alt":"home_decoration",
+            "name":"Home Decoratives",
+            "price":"From₹49*"
+        },
+        {
+            "id":8,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/emergency_lamp.jpeg",
+            "alt":"emergency",
+            "name":"Home Emergency Lights",
+            "price":"Min.40% Off"
+        }
+    ]
+}
