@@ -78,9 +78,10 @@
     }
     .menulistLap_maindiv{
         display: flex;
-        margin: 0px 13px ;
+        /* margin: 0px 13px ; */
+        padding: 0 13px;
         align-items: stretch;
-        position: relative;
+        position: relative;  
     }
     .menulistLap_maindiv .menulistLap_hddiv{
         width: 100%;

@@ -40,5 +40,76 @@
             "src":"https://rukminim1.flixcart.com/fk-p-flap/480/230/image/8262bc6e0800667e.jpeg?q=90",
             "alt":"miko"
         } 
+    ],"slidesTab":[
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/960/460/image/cb42d88467c822dc.jpeg?q=60",
+            "alt":"multitask"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/1360/664/image/6912f4e5a607135d.jpg?q=60",
+            "alt":"saleEnd"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/480/230/image/70c4d165dec0916b.jpg?q=80",
+            "alt":"oppo"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/960/460/image/5773a805ee0c2b48.jpeg?q=60",
+            "alt":"galaxy"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/960/460/image/cc0687459566e5f2.jpeg?q=60",
+            "alt":"vivo"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/480/230/image/0e535f308f401bed.jpeg?q=80",
+            "alt":"cmf"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/960/460/image/1fa5be5f40bf2978.jpg?q=60",
+            "alt":"freedom-sale"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/480/230/image/2419d20d0d59848f.jpg?q=80",
+            "alt":"genz"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/960/460/image/a9ad99adcdd195bf.jpeg?q=60",
+            "alt":"samsung"
+        },
+        {
+            "src":"https://rukminim2.flixcart.com/fk-p-flap/960/460/image/58b0c98bea234353.jpg?q=60",
+            "alt":"protein"
+        }
+    ],
+        "slidesLap":[
+        {
+        "src":"https://rukminim2.flixcart.com/fk-p-flap/960/160/image/4476a7293432984c.jpeg?q=60",
+        "alt":"boat" 
+        },
+        {
+        "src":"https://rukminim2.flixcart.com/fk-p-flap/960/160/image/3fb9bdd045351fcb.jpg?q=60",
+        "alt":"live-now" 
+        },
+        {
+        "src":"https://rukminim2.flixcart.com/fk-p-flap/960/160/image/aaf445f792c0f0ca.jpg?q=60",
+        "alt":"vivo" 
+        },
+        {
+        "src":"https://rukminim2.flixcart.com/fk-p-flap/960/160/image/5f645f9af303ef46.jpeg?q=60",
+        "alt":"infinix" 
+        },
+        {
+        "src":"https://rukminim2.flixcart.com/fk-p-flap/480/80/image/7e0730ebd78a392e.jpg?q=80",
+        "alt":"airAsia" 
+        },
+        {
+        "src":"https://rukminim2.flixcart.com/fk-p-flap/480/80/image/a30e3dd83a45e7d0.jpeg?q=80",
+        "alt":"image 9" 
+        },
+        {
+        "src":"https://rukminim2.flixcart.com/fk-p-flap/480/80/image/ce5ed504f4d498ce.jpeg?q=80",
+        "alt":"image 10" 
+        }
     ]
 }

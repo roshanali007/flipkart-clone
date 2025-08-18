@@ -130,8 +130,13 @@ img.man-logo {
     .header-div-desk{
         background-color: #fff;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         flex-direction: column;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 99999;
+
     }
     .header-sbdiv-desk{
         display: flex;

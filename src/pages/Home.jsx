@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../header/Header'
 import HeaderDesk from '../header/HeaderDesk'
 import './Home.css'
+import Footer from '../footer/Footer'
 import Body from './body'
 
 
@@ -13,6 +14,7 @@ function Home() {
         <div className='body'>
             <Body></Body>
         </div>
+        <Footer/>
     </div>
   ) 
 } 
