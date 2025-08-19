@@ -4,7 +4,6 @@ import '../menulist/Menulist.css'
 
 
 function Menulist({dataOne,dataTwo}) {
-    console.log(dataOne)
   return (
     <div className='menulist_maindiv'>
         <div className='menulist_hddiv'>

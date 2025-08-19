@@ -132,11 +132,7 @@
     border-radius: 0 0 16px 16px;
     background: linear-gradient(rgb(230, 255, 230), rgb(230, 255, 230));
  }
- @media screen and (min-width:768px){
-   .jackpot-main{
-      margin: 10px;
-   }
-}
+ 
 @media screen and (min-width:1024px){
    .jackpot-main{
       display: none;

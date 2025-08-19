@@ -8,7 +8,7 @@ import Body from './body'
 
 function Home() {
   return (
-    <div>
+    <div className='home_div'>
         <Header></Header>
         <HeaderDesk></HeaderDesk>
         <div className='body'>

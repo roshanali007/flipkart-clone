@@ -3,8 +3,8 @@ import poco from '../compAssets/poco.jpeg'
 import '../advertisement/advertisement.css'
 import SmartPhone from './SmartPhone'
 import HomeEquipment from './HomeEquipments'
-import {smartphone} from  '../adData/smartphone.json'
-import {homeEquipment} from '../adData/homeEquipment.json'
+import {smartphone,electronics} from  '../adData/smartphone.json'
+import {homeEquipment,items} from '../adData/homeEquipment.json'
 
 function Advertisement() {
   return ( <div>
@@ -16,8 +16,8 @@ function Advertisement() {
             </a>
         </div>
     </div>
-    <SmartPhone data={smartphone} />
-    <HomeEquipment data={homeEquipment} />
+    <SmartPhone data={smartphone} datatwo={electronics} />
+    <HomeEquipment data={homeEquipment} datatwo={items} />
     </div>
   )
 }

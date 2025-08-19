@@ -29,13 +29,14 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    margin-bottom: 16px;
 }
 .offerone_main .offerone_hddiv{
      display: flex;
      flex-direction: row;
-     margin-left: 15px;
-     margin-right: 11px;
+     /* margin-left: 15px; */
+     /* margin-right: 11px; */
 }
 .offerone_main .offerone_div{
     max-width: 25%;
@@ -54,21 +55,23 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    margin-bottom: 16px;
     width: 100%;
 }
 .offertwo_main .offertwo_hddiv{
     display: flex;
     flex-direction: row;
     align-items:stretch;
-    margin-left: 15px;
-    margin-right: 5px;
+    /* margin-left: 15px;
+    margin-right: 5px; */
     background-color: #ffffff;
     
 }
 .offertwo_main .offertwo_div{
     max-width: 33.33333%;
-    margin-right: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
     width: 100%;
    
 }
@@ -86,7 +89,8 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    margin-bottom: 16px;
     width: 100%;
     
 }
@@ -94,13 +98,14 @@
     display: flex;
     align-items: stretch;
     height: auto;
-    margin-left: 15px;
-    margin-right: 5px;
+    /* margin-left: 15px;
+    margin-right: 5px; */
     background-color: #ffffff;
 }
 .offerthree_main .offerthree_div{
     max-width: 33.333%;
-    margin-right: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
     width: 100%;
     
 }

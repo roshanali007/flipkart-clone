@@ -118,5 +118,128 @@
             "name":"More"
         }
     ]
+    ,
+    "menulistLap":[
+        {
+            "id":1,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/3dbe4c89fbf0003d.png?q=100",
+            "alt":"Minutes",
+            "name":"Minutes"
+        },
+        {
+            "id":2,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/75ac28a1e9192898.png?q=100",
+            "alt":"Top Offers",
+            "name":"Top Offers"
+        },
+        {
+            "id":3,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/cd6aca4f61e8ea95.png?q=100",
+            "alt":"Mobiles & Tablets",
+            "name":"Mobiles & Tablets"
+        },
+        {
+            "id":4,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/9c64dfa667885ca9.png?q=100",
+            "alt":"TVs & Appliances",
+            "name":"TVs & Appliances"
+        },
+        {
+            "id":5,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/4d6b13d5a0e0724a.png?q=100",
+            "alt":"Electronics",
+            "name":"Electronics"
+        },
+        {
+            "id":6,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/ec2982e5564fe07c.png?q=100",
+            "alt":"Fashion",
+            "name":"Fashion"
+        },
+        {
+            "id":7,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/febcb9896245caf4.png?q=100",
+            "alt":"Home & Kitchen",
+            "name":"Home & Kitchen"
+        },
+        {
+            "id":8,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/cddd92e134ba3ea9.png?q=100",
+            "alt":"Furniture",
+            "name":"Furniture"
+        },
+        {
+            "id":9,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d9eea6cd0e7b68bb.png?q=100",
+            "alt":"Flight Bookings",
+            "name":"Flight Bookings"
+        },
+        {
+            "id":10,
+            "src":"https://rukminim1.flixcart.com/fk-p-flap/128/128/image/2ebb95ec20eae8f1.png?q=100",
+            "alt":"Grocery",
+            "name":"Grocery"
+        }
+    ],
+    "menulistLarge":[
+        {
+            "id":1,
+            "src":"flipkart-clone/src/assets/minuteLarge.png",
+            "alt":"Minutes",
+            "name":"Minutes"
+        },
+        {
+            "id":2,
+            "src":"flipkart-clone/src/assets/moblie_tablet.png",
+            "alt":"Moblies & Tablets",
+            "name":"Moblies & Tablets"
+        },
+        {
+            "id":3,
+            "src":"flipkart-clone/src/assets/fashionLarge.png",
+            "alt":"Fashion",
+            "name":"Fashion",
+            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+        },
+        {
+            "id":4,
+            "src":"flipkart-clone/src/assets/electronicsLarge.png",
+            "alt":"Electronics",
+            "name":"Electronics",
+            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+        },
+        {
+            "id":5,
+            "src":"flipkart-clone/src/assets/furnitureLarge.png",
+            "alt":"Home & Furniture",
+            "name":"Home & Furniture",
+            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+        },
+        {
+            "id":6,
+            "src":"flipkart-clone/src/assets/TVs & Appliances.jpg",
+            "alt":"TVs & Appliances",
+            "name":"TVs & Appliances"
+        },
+        {
+            "id":7,
+            "src":"flipkart-clone/src/assets/flight_booking.png",
+            "alt":"Flight Bookings",
+            "name":"Flight Bookings"
+        },
+        {
+            "id":8,
+            "src":"flipkart-clone/src/assets/teddy.png",
+            "alt":"Beauty, Food..",
+            "name":"Beauty, Food..",
+            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+        },
+        {
+            "id":9,
+            "src":"flipkart-clone/src/assets/groceryLarge.png",
+            "alt":"Grocery",
+            "name":"Grocery"
+        }
+    ]
 
 }

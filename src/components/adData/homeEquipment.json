@@ -56,5 +56,56 @@
             "name":"Home Emergency Lights",
             "price":"Min.40% Off"
         }
+    ],
+    "items":[
+        {
+            "id":1,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/coffeepowder.jpeg",
+            "alt":"coffeepowder",
+            "name":"Coffee Powder",
+            "price":"Upto 80% Off"
+        },
+        {
+            "id":2,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/gearcycle.jpeg",
+            "alt":"geared cycles",
+            "name":"Geared Cycles",
+            "price":"Up to 70% Off"
+        },
+        {
+            "id":3,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/stationery.jpeg",
+            "alt":"Top Selling Stationery",
+            "name":"Top Selling Stationery",
+            "price":"From ₹49"
+        },
+        {
+            "id":4,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/batman.jpeg",
+            "alt":"Best of Action Toys",
+            "name":"Best of Action Toys",
+            "price":"Up to 70% Off"
+        },
+        {
+            "id":5,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/softToys.jpeg",
+            "alt":"Soft Toys",
+            "name":"Soft Toys",
+            "price":"Upto 70% Off"
+        },
+        {
+            "id":6,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/puzzles.jpeg",
+            "alt":"Puzzles & Cubes",
+            "name":"Puzzles & Cubes",
+            "price":"From ₹ 79"
+        },
+        {
+            "id":7,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/dryfruits.jpeg",
+            "alt":"Dry Fruits",
+            "name":"Dry Fruits",
+            "price":"Upto 75% Off"
+        }
     ]
 }

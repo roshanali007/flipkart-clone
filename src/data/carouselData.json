@@ -111,5 +111,21 @@
         "src":"https://rukminim2.flixcart.com/fk-p-flap/480/80/image/ce5ed504f4d498ce.jpeg?q=80",
         "alt":"image 10" 
         }
+    ],
+    "slideLarge":[
+        {
+            "src":"flipkart-clone/src/assets/sleephead.jpg",
+            "alt":"sleepyhead"
+        }
+        ,
+        {
+            "src":"flipkart-clone/src/assets/roundtrip.jpg",
+            "alt":"roundtrip"
+        }
+        ,
+        {
+            "src":"flipkart-clone/src/assets/international.jpg",
+            "alt":"international"
+        }
     ]
 }

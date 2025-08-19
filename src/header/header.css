@@ -368,3 +368,48 @@ img.man-logo {
     }
     
 }
+@media screen and (min-width:1440px){
+    .header-class .search-div{
+        min-width: none;
+    }
+    .header-child-div{
+        display: block;
+        width: 100%;
+    }
+    .header-class{
+        padding: 12px 28px;
+        max-width: none;
+    }
+    .cart{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        width: max-content;
+        font-family: var(--int-regu);
+    }
+    .become-a-seller{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        width: max-content;
+        font-family:var(--int-regu) ;
+    }
+    .header-class .login-hddiv{
+        padding: 0 20px;
+    }
+    .cart-hddiv .cart-div{
+        padding: 0 20px;
+    }
+    .seller-hddiv .seller-div{
+        padding: 0 20px;
+    }
+    .threedot-hd .threedot-hddiv{
+        padding: 0 20px;
+    }
+}

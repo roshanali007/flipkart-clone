@@ -64,12 +64,11 @@
 }
 @media screen and (min-width:768px){
     .menulist_maindiv{
-        margin: 7px;
+        /* margin: 7px; */
     }
     .menulist_maindiv .moblie img{
         width: 58px;
         height: 58px;
-        
     }
 }
 @media screen and (min-width:1024px){
@@ -78,10 +77,14 @@
     }
     .menulistLap_maindiv{
         display: flex;
-        /* margin: 0px 13px ; */
-        padding: 0 13px;
-        align-items: stretch;
-        position: relative;  
+        /* margin: 0px 13px ; */                 
+        /* padding: 0 13px; */
+        align-items: stretch;                                                                                                                                                                                         
+        position: relative; 
+        margin-bottom: 16px;
+    }
+    .menulistLarge{
+        display: none;
     }
     .menulistLap_maindiv .menulistLap_hddiv{
         width: 100%;
@@ -91,13 +94,13 @@
         overflow-x: scroll;
         scrollbar-width: none;
         width: 100%;
-        margin-top: 10px;
+        /* margin-top: 8px; */
         background-color: #ffffff;
         min-height: 126px;
         position:relative;
 
     }
-    .menulistLap_sbdiv a{
+    .menulistLap_sbdiv .menulistLap{
         padding: 16px;
         padding-left: 24px;
         text-decoration: none;
@@ -142,4 +145,37 @@
         color: #111112;
     }
     
+}
+@media screen and (min-width:1440px){
+    .menulistLap_sbdiv .menulistLap{
+        display: none;
+    }
+    .menulistLarge{
+        display: block;
+        padding: 16px;
+        padding-left: 24px;
+        text-decoration: none;
+        min-width: 124px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .menulist_sbdiv .droplogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .flipkart_minute{
+        margin: 0;
+    }
+    .menulistLarge{
+        
+        min-width: 90px;
+    }
+    .menulistLap_maindiv .menulistLap_sbdiv{
+        justify-content: center;
+
+    }
+    .menulistLap_maindiv .img-container{
+        margin-bottom: 16px;
+    }
 }

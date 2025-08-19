@@ -56,5 +56,63 @@
             "name":"Nothing Phone 3a",
             "price":"From₹21,499*"
         }
+    ],
+    "electronics":[
+        {
+            "id":1,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/nord_buds.jpeg",
+            "alt":"nord_buds",
+            "name":"Best Truewireless Headphones",
+            "price":"Grab Now"
+        },
+        {
+            "id":2,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/sony.jpeg",
+            "alt":"Best Selling Mobile Speakers",
+            "name":"Best Selling Mobile Speakers",
+            "price":"From ₹499*"
+        },
+        {
+            "id":3,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/fasttrack.jpeg",
+            "alt":"Fastrack Smartwatches",
+            "name":"Fastrack Smartwatches",
+            "price":"From ₹1,399"
+        },
+        {
+            "id":4,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/veet.webp",
+            "alt":"Best of Women Trimmers",
+            "name":"Best of Women Trimmers",
+            "price":"From ₹599"
+        },
+        {
+            "id":5,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/camera.webp",
+            "alt":"Top Mirrorless Cameras",
+            "name":"Top Mirrorless Cameras",
+            "price":"Shop Now!"
+        },
+        {
+            "id":6,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/printer.webp",
+            "alt":"Printers",
+            "name":"Printers",
+            "price":"From ₹10190"
+        },
+        {
+            "id":7,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/project.jpeg",
+            "alt":"Projector",
+            "name":"Projector",
+            "price":"From ₹6990"
+        },
+        {
+            "id":8,
+            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/printers.jpeg",
+            "alt":"Printers",
+            "name":"Printers",
+            "price":"From ₹2336"
+        }
     ]
 }
