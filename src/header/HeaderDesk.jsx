@@ -8,10 +8,13 @@ import cartLogo from '../assets/Cart.svg'
 import sellerLogo  from '../assets/Become a Seller.svg'
 import moreLogo from '../assets/Dropdown with more help links.svg'
 import ThreeDotMore from './ThreeDotMore'
+import Login from './Login' 
+import {loginData} from '../data/login.json'
 
 function HeaderDesk() {
     const [search,setSearch]=useState('')
     const [openmore,setOpenMore]=useState(false)
+    const [openlogin,setOpenLogin]=useState(false)
   return (
     <div className='header-div-desk'>
         <div className='header-sbdiv-desk'>
@@ -38,12 +41,15 @@ function HeaderDesk() {
                     </div>
                     <div className='header-left'>
                         <div className='login-hddiv'>
-                            <div className='login-div'>
+                            <div className='login-div' onMouseEnter={()=>setOpenLogin(true)} onMouseLeave={()=>setOpenLogin(false)} >
                                 <a href="" className='login-link'>
                                     <img src={loginLogo} alt="" />
-                                    <span>Login</span>
+                                    <span className='login_txt' >Login</span>
                                 </a>
                                 <img src={arrowDown} alt="" className='arrow-down' />
+                                {
+                                    openlogin && <Login data={loginData} />
+                                }
                             </div>
                         </div>
                         <div className='cart-hddiv'>
@@ -61,21 +67,17 @@ function HeaderDesk() {
                                 </a>
                                 <a href="" className='become-a-seller'>Become a Seller</a>
                             </div>
-                        </div>
-                        <div className='threedot-hd'>
+                        </div> 
+                        <div className='threedot-hd' >
                             <div className='threedot-hddiv'>
-                                <div>
-                                    <div>
-                                        <div className='threedot-div'>
-                                            <a  className='border-div'><img src={moreLogo} alt="" onClick={()=>{setOpenMore(true)}} /></a>
-                                        </div>
-                                    </div>
+                                <div className='threedot-div'onClick={()=>setOpenMore(true)} onMouseEnter={()=>setOpenMore(true)} onMouseLeave={()=>setOpenMore(false)} >
+                                    <a  className='border-div'  ><img src={moreLogo} alt=""  /></a>
+                                    {
+                                        openmore && <ThreeDotMore/>
+                                    }
                                 </div>
                             </div>
                         </div>
-                        {
-                             openmore && <ThreeDotMore onClose={()=>setOpenMore(false)}/>
-                        }
                     </div>
                 </header>
             </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './ThreeDotMore.css'
 import notification from '../assets/Notification Preferences.svg'
 import customerCare from '../assets/24x7 Customer Care.svg'
@@ -6,24 +6,10 @@ import advertisement from '../assets/Advertise.svg'
 import download from '../assets/Download App.svg'
 
 
-function ThreeDotMore({onClose}) {
-    const [visible,setVisible]=useState(false)
-    const [close,setClose]=useState(false)
-    useEffect(()=>{
-        setTimeout(() => {
-            setVisible(true)
-        },10);
-    },[])
-    const handleclose=()=>{
-        setVisible(false)
-        setClose(true)
-        setTimeout(() => {
-            onClose()
-        }, 300);
-    }
+function ThreeDotMore() {
   return (
-    <div className='more-drawer-overlay' onClick={handleclose}>
-        <div className={`more-drawer ${visible? 'open':''} `} onClick={(e)=>{e.stopPropagation()}}>
+    <div className='more-drawer-overlay'  >
+        <div className='more-drawer' >
             <ul>
                 <a>
                     <li>

@@ -5,7 +5,6 @@ import './Home.css'
 import Footer from '../footer/Footer'
 import Body from './body'
 
-
 function Home() {
   return (
     <div className='home_div'>
@@ -13,9 +12,9 @@ function Home() {
         <HeaderDesk></HeaderDesk>
         <div className='body'>
             <Body></Body>
-        </div>
+        </div>                                       
         <Footer/>
-    </div>
+    </div>  
   ) 
 } 
 

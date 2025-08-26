@@ -1,7 +1,8 @@
 :root{
 --int-semi:inter_semibold;
 --int-regu:inter_regular;
---int-bold:inter_bold
+--int-bold:inter_bold;
+--int-roboto:inter_roboto;
 }
 
 
@@ -16,4 +17,8 @@
 @font-face {
     font-family: inter_bold;
     src: url('./font/Inter-Bold.woff2');
+}
+@font-face {
+    font-family: inter_roboto;
+    src: url('./font/roboto-regular.woff2');
 }

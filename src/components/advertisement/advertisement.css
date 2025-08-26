@@ -48,7 +48,7 @@
         align-items: center;
         width: 100%;
         /* margin-top: 25px; */
-        margin-bottom: 16px;
+        margin-bottom: 16px;    
     }
     .smartphoneLarge{
         display: none;
@@ -205,7 +205,12 @@
         outline: none;
         color: #1f1f1f
     }
-    
+   .homeequipment_hd_lg{
+        display: none;
+   } 
+   .homeLarge{
+    display: none;
+   }
 
 }
 @media screen and (min-width:1440px){
@@ -219,6 +224,9 @@
         outline: none;
         color: #1f1f1f
 
+    }
+    .homeequipment_hd_lg{
+        display: block;
     }
     .smartphone_hd_lg{
         display: block;
@@ -246,5 +254,4 @@
         display: none;
     }
     
-} 
-                     
+}                  

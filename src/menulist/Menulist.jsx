@@ -1,9 +1,16 @@
 import React from 'react'
 import flipkart_minute from '../assets/flipkart_minute.jpg'
 import '../menulist/Menulist.css'
+import { useNavigate } from 'react-router-dom'
 
 
 function Menulist({dataOne,dataTwo}) {
+    const navigate= useNavigate()
+    const handleClick=(item)=>{
+        if(item.name==="Food, Health "){
+            navigate("/flipkart-clone/food_health")
+        }
+    }
   return (
     <div className='menulist_maindiv'>
         <div className='menulist_hddiv'>
@@ -14,7 +21,7 @@ function Menulist({dataOne,dataTwo}) {
                 </div>
                 {
                     dataOne.map((item)=>{
-                        return <div className='moblie' key={item.id}>
+                        return <div className='moblie' key={item.id} onClick={()=>handleClick(item)}>
                                     <img src={item.src} alt={item.alt}  />
                                     <div className='text_style'>{item.name}</div>
                                 </div>

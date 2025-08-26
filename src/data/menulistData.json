@@ -211,7 +211,7 @@
         {
             "id":5,
             "src":"flipkart-clone/src/assets/furnitureLarge.png",
-            "alt":"Home & Furniture",
+            "alt":"Furniture",
             "name":"Home & Furniture",
             "droplogo":"flipkart-clone/src/assets/Chevron.svg"
         },
@@ -230,7 +230,7 @@
         {
             "id":8,
             "src":"flipkart-clone/src/assets/teddy.png",
-            "alt":"Beauty, Food..",
+            "alt":"Beauty",
             "name":"Beauty, Food..",
             "droplogo":"flipkart-clone/src/assets/Chevron.svg"
         },

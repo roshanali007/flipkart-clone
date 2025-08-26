@@ -5,9 +5,11 @@ import locationlogo from '../assets/location-logo.svg'
 import arrowRightLogo from '../assets/arrowRight-logo.svg'
 import Nav from '../navbar/Nav'
 import searchIcon from '../assets/search-icon.svg'
-
+import { useNavigate } from "react-router-dom";
+       
 function Header() {
   const [openMenu,setOpenMenu]=useState(false)
+  const navigate=useNavigate()
   return (
   <header>
     <div className='header'>
@@ -49,7 +51,9 @@ function Header() {
          
       </div>
       <div className='search_engine_head'>
-        <div className='search_engine'>
+
+        <div className='search_engine' onClick={()=>navigate("/flipkart-clone/search")}>
+
             <div className='search_icon'>
               <img src={searchIcon}></img>
             </div>
@@ -58,12 +62,11 @@ function Header() {
                 <div className='form-control'>Search for Products</div>
               </a>
             </div>
-            
         </div>
       </div>
     </div>
     </header>
-  )
+  )   
 }
 
 export default Header

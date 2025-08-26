@@ -326,6 +326,25 @@ img.man-logo {
 
 }
 @media screen and (min-width:1024px) {
+    .header-class .login-div:hover{
+        background: #2a55e5;
+        border-color: #2a55e5;
+        border-radius: 8px;
+    }
+    .header-class .login-div:hover .login_txt{
+        color: #fff;
+    }
+    .login-div:hover .login-link img {
+        filter: brightness(0) invert(1);
+    }
+    .login-div .arrow-down{
+        transform: rotate(0);
+        transition: transform 0.3s ease-in-out; 
+    }
+    .login-div:hover .arrow-down{
+        filter: brightness(0) invert(1);
+        transform: rotate(180deg); 
+    }
     /* .cart{
         display: block;
     } */
@@ -412,4 +431,9 @@ img.man-logo {
     .threedot-hd .threedot-hddiv{
         padding: 0 20px;
     }
+    .header-class .flipkart-div img{
+        width: 120px;
+        height: 40px;
+    }
+    
 }
