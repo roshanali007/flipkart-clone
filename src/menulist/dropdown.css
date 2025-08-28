@@ -38,6 +38,9 @@
     padding: 12px 16px;
     justify-content: space-between;
 }
+.subitem:hover{
+    font-family: var(--int-semi);
+}
 .fashion_links{
     background-color: #fff;
     font-family: var(--int-regu);
@@ -56,5 +59,15 @@
     font-family: var(--int-semi);
     padding: 8px 16px;
     color: #333;
+}
+.fashion_none{
+    display: none;
+}
+.slotActive:hover{
+      background-color: #f0f5ff;
+      font-family: var(--int-semi); 
+}
+.semi_bold{
+    font-family: var(--int-semi);
 }
  

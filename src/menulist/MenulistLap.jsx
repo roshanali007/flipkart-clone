@@ -4,11 +4,12 @@ import Fashion from './Fashion'
 import Electronics from './Electronics'
 import Beauty from './Beauty'
 import Furniture from './Furniture'
+import {fashion} from './dropdown.json'
 
 function MenulistLap({data,datatwo}) {
     const [openMenu,setOpenMenu]=useState(null)
     const dropdownItems={
-        Fashion:<Fashion/>,
+        Fashion:<Fashion data={fashion}/>,
         Electronics:<Electronics/>,
         Beauty:<Beauty/>,
         Furniture:<Furniture/>
@@ -51,7 +52,7 @@ function MenulistLap({data,datatwo}) {
                                             <span className='drop_logo'>
                                                 <img src={item.droplogo} alt="" className='drop_down' />
                                                
-                                            </span>
+                                            </span>          
                                         </span>
                                     </div>
                                 </a>

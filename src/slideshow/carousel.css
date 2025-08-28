@@ -10,6 +10,18 @@
 .carouselLarge-img{
         display: none;
 }
+.carousel-headimg{
+    display: block;
+}
+.carouselTabhead-img{
+    display: none;
+}
+.carouselLabhead-img{
+    display: none;
+}
+.carouselLargehead-img{
+    display: none;
+}
 .carousel-container{
     display: flex;
     justify-content: center;
@@ -112,6 +124,12 @@
     .carouselTab-img{
         display: flex;
     }
+    .carousel-headimg{
+        display: none;
+    }
+    .carouselTabhead-img{
+        display: block;
+    }
     
 }
 
@@ -122,7 +140,12 @@
     .carouselLab-img{
         display: flex;
     }
-    
+    .carouselTabhead-img{
+        display: none;
+    }
+    .carouselLabhead-img{
+        display: block;
+    }
     .carousel{
         margin: 0;
         height: 100%;
@@ -144,6 +167,12 @@
     }
     .carousel-head{
         position: relative;
+    }
+    .carouselLabhead-img{
+        display: none;
+    }
+    .carouselLargehead-img{
+        display: block;
     }
     .left_btn{
         display: flex;

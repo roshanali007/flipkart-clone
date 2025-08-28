@@ -15,7 +15,7 @@ function Offer_first({data}) {
                               </a>
                             </div>
                 })
-            }
+            }          
           </div>
     </div>
   )
