@@ -31,7 +31,7 @@ function Menulist({dataOne,dataTwo}) {
             <div className='menulist_sbdiv'>
                 {
                     dataTwo.map((item)=>{
-                        return <div className='moblie'>
+                        return <div className='moblie' key={item.id}>
                                     <img src={item.src} alt={item.alt} key={item.id} />
                                     <div className='text_style'>{item.name}</div>
                                 </div>

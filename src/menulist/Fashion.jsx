@@ -9,7 +9,7 @@ function Fashion({ data }) {
   useEffect(() => {
     if (data[0]?.suboptions) {
       setActiveIndex(0)
-    }
+    }      
   }, [data])
 
   return (

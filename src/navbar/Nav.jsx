@@ -18,13 +18,11 @@ import my_notification from '../assets/my_notification.png'
 
 function Nav({onclose}) {
     const [visible,setVisible]= useState(false)
-    const [close,setClose]= useState(false)
     useEffect(()=>{
       setTimeout(()=>setVisible(true),10)
     },[])
     const handleClose=()=>{
       setVisible(false)
-      setClose(true)
       setTimeout(()=>{
         onclose()
       },300)
@@ -34,7 +32,7 @@ function Nav({onclose}) {
       <div className={`drawer ${visible? 'open': ''}`} onClick={e=>e.stopPropagation()}>
         <div className='drawer-container' style={{height:'690px'}}>
           <div className='login-table'>
-                <table width={'100%'}>
+                <table width={'100%'}>  
                   <tbody>
                     <tr className='table-row'>
                       <td className='table-img'>

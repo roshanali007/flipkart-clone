@@ -3,6 +3,7 @@
 --int-regu:inter_regular;
 --int-bold:inter_bold;
 --int-roboto:inter_roboto;
+--int-roboto-med:inter_roboto_medium;
 }
 
 
@@ -21,4 +22,8 @@
 @font-face {
     font-family: inter_roboto;
     src: url('./font/roboto-regular.woff2');
+}
+@font-face {
+    font-family: inter_roboto_medium;
+    src: url('./font/roboto-medium.woff2');
 }

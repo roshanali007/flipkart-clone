@@ -16,7 +16,7 @@ function Stars({totalStars=5,rating}) {
         ctx.closePath()
         ctx.fillStyle=fill
         ctx.fill()
-    }
+    } 
     useEffect(()=>{
         const canvas=ref.current
         const ctx=canvas.getContext('2d')

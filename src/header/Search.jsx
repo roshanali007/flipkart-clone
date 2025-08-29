@@ -8,7 +8,7 @@ function Search() {
     <div className='search_main'>
         <div className='search_div'>
             <form action="" className='search_form'>
-                <Link to={'/flipkart-clone'} className='search_img'>
+                <Link to={-1} className='search_img'>
                 <img src={go_back_arrow} alt="" />
                 </Link>
                 <input type="search" placeholder='Search for Products, Brands and More' className='search_input'/>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import go_back_arrow from '../assets/goback_arrow_black.svg'
 import flipfoodlogo from '../assets/flipfoodlogo.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import searchIcon from '../assets/search-icon.svg'
 import cart from '../assets/Cart.svg'
 import './header_food.css'
@@ -9,11 +9,20 @@ import sort from '../assets/sort.svg'
 import filter from '../assets/filter.svg'
 import new_arrval from '../assets/new_arrival.webp'
 import popular from '../assets/propular_brands.webp'
+import Sort from './Sort'
 
 function Header_food() {
     const [readMore,setReadMore]=useState(false)
+    const [sortOpen,setSortOpen] =useState(false)
+    const navigate=useNavigate()
+    const handleRoute=()=>{
+        navigate('/flipkart-clone/search')
+    }
   return (
     <>
+            {
+                sortOpen && <Sort onclose={()=>setSortOpen(false)}/>
+            }
         <div className='food_main'>
             
             <Link to={'/flipkart-clone'} className='food_go_back same_style_food'>
@@ -26,20 +35,20 @@ function Header_food() {
             <div className='health_div'>
                 <h1>Health Care</h1>
             </div>
-            <a href="" className='food_search same_style_food' >
+            <a href="" className='food_search same_style_food' onClick={()=>handleRoute()} >
                 <img src={searchIcon} alt="" className='search_logos' />
             </a>
             <a href="" className='food_cart same_style_food' ><img src={cart} alt="" className='search_logos'/></a>
             <a href="" className='food_login same_style_food' ><span>Login</span></a>
         </div>
         <div className='sort_filter'>
-            <div className='sort'>
+            <div className='sort' onClick={()=>setSortOpen(true)}>
                 <img src={sort} alt="" />
                 <div className='sort_text'>Sort</div>
             </div>
             <div className='border_sort_filter'></div>
             <div className='filter'>
-                <img src={filter} alt="" />
+                <img src={filter} alt="" onClick={()=>navigate('/flipkart-clone/food_health/filter')}/>
                 <div className='filter_text'>Filter</div>
             </div>
         </div>

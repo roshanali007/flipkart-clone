@@ -1,7 +1,14 @@
 import React from 'react'
 import '../advertisement/Advertisement.css'
+import { useNavigate } from 'react-router-dom'
 
 function HomeEquipment({data,datatwo}) {
+    const navigate=useNavigate()
+    const handleRoute=(item)=>{
+        if(item==='Dry Fruits'){
+            navigate('/flipkart-clone/food_health')
+        }
+    }
   return (
     <div className='homeEquipment-maindiv'>
         <div className='homeEquipment-hddiv'>
@@ -27,7 +34,7 @@ function HomeEquipment({data,datatwo}) {
                     {
                         datatwo.map((item)=>{
                             return <a href="" className='homeLarge'>
-                                        <div className='homeEquipment'key={item.id}>
+                                        <div className='homeEquipment'key={item.id} onClick={()=>handleRoute(item.name)}>
                                             <div className='homeEquipment-img'>
                                                 <img src={item.src} alt={item.alt} /> 
                                             </div>
