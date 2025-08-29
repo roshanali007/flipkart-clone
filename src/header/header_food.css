@@ -98,6 +98,7 @@ h1 , span{
     width: 100%;
     height: 56px;
     display: flex;
+    overflow: hidden;
 }
 .shortcut_div{
     height: 100%;
