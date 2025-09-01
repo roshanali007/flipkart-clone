@@ -47,8 +47,8 @@ function Header_food() {
                 <div className='sort_text'>Sort</div>
             </div>
             <div className='border_sort_filter'></div>
-            <div className='filter'>
-                <img src={filter} alt="" onClick={()=>navigate('/flipkart-clone/food_health/filter')}/>
+            <div className='filter'  onClick={()=>navigate('/flipkart-clone/food_health/filter')}>
+                <img src={filter} alt="" />
                 <div className='filter_text'>Filter</div>
             </div>
         </div>

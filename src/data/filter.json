@@ -4,9 +4,29 @@
             "id":1,
             "name":"Price",
             "suboptions":[
-                {
+                 {
                     "id":1,
-                    "name":"wqedf"
+                    "name":"Rs. 200 and Below"
+                },
+                 {
+                    "id":2,
+                    "name":"Rs. 201 - Rs. 500"
+                },
+                 {
+                    "id":3,
+                    "name":"Rs. 501 - Rs. 2000"
+                },
+                 {
+                    "id":4,
+                    "name":"Rs. 2001 and 5000"
+                },
+                 {
+                    "id":5,
+                    "name":"Rs. 5000 and 10000"
+                },
+                 {
+                    "id":6,
+                    "name":"Rs. 10001 and Above"
                 }
             ]
         },
@@ -15,8 +35,8 @@
             "name":"F-Assured",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"adf"
+                    "id":7,
+                    "name":"F-Assured"
                 }
             ]
         },
@@ -25,8 +45,68 @@
             "name":"Brand",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"qwd"
+                    "id":8,
+                    "name":"Happilo"
+                },
+                {
+                    "id":9,
+                    "name":"WONDERLAND"
+                },
+                {
+                    "id":10,
+                    "name":"Farmley"
+                },
+                {
+                    "id":11,
+                    "name":"Tata Sampann"
+                },
+                {
+                    "id":12,
+                    "name":"OPEN SECRET"
+                },
+                {
+                    "id":13,
+                    "name":"True Elements"
+                },
+                {
+                    "id":14,
+                    "name":"41 foods"
+                },
+                {
+                    "id":15,
+                    "name":"Nutraj"
+                },
+                {
+                    "id":16,
+                    "name":"DAILYHERBS"
+                },
+                {
+                    "id":17,
+                    "name":"Kitchen Jungle"
+                },
+                {
+                    "id":18,
+                    "name":"PRODUCER"
+                },
+                {
+                    "id":19,
+                    "name":"FreshoCartz"
+                },
+                {
+                    "id":20,
+                    "name":"lila dry fruits"
+                },
+                {
+                    "id":21,
+                    "name":"BalSo"
+                },
+                {
+                    "id":22,
+                    "name":"Temperado"
+                },
+                {
+                    "id":23,
+                    "name":"Avlokan"
                 }
             ]
         },
@@ -35,8 +115,20 @@
             "name":"Customer Ratings",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"jweg"
+                    "id":24,
+                    "name":"4★ & above"
+                },
+                {
+                    "id":25,
+                    "name":"3★ & above"
+                },
+                {
+                    "id":26,
+                    "name":"2★ & above"
+                },
+                {
+                    "id":27,
+                    "name":"1★ & above"
                 }
             ]
         },
@@ -45,8 +137,12 @@
             "name":"Offers",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"ekli"
+                    "id":28,
+                    "name":"Special Price"
+                },
+                {
+                    "id":29,
+                    "name":"Buy More, Save more"
                 }
             ]
         },
@@ -55,8 +151,24 @@
             "name":"Discount",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"reioj"
+                    "id":30,
+                    "name":"50% or more"
+                },
+                {
+                    "id":31,
+                    "name":"40% or more"
+                },
+                {
+                    "id":32,
+                    "name":"30% or more"
+                },
+                {
+                    "id":33,
+                    "name":"20% or more"
+                },
+                {
+                    "id":34,
+                    "name":"10% or more"
                 }
             ]
         },
@@ -65,8 +177,8 @@
             "name":"Gst Invoice Available",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"ejr"
+                    "id":35,
+                    "name":"Gst Invoice Available"
                 }
             ]
         },
@@ -75,8 +187,8 @@
             "name":"Availability",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"djk"
+                    "id":36,
+                    "name":"Include Out of Stock"
                 }
             ]
         },
@@ -85,8 +197,68 @@
             "name":"container type",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"3rc"
+                    "id":37,
+                    "name":"Box"
+                },
+                {
+                    "id":38,
+                    "name":"Vacuum Pack"
+                },
+                {
+                    "id":39,
+                    "name":"Festive Gift Box"
+                },
+                {
+                    "id":40,
+                    "name":"Mason Jar"
+                },
+                {
+                    "id":41,
+                    "name":"Bag"
+                },
+                {
+                    "id":42,
+                    "name":"Bulk Pack"
+                },
+                {
+                    "id":43,
+                    "name":"Can"
+                },
+                {
+                    "id":44,
+                    "name":"Carton"
+                },
+                {
+                    "id":45,
+                    "name":"Glass Bottle"
+                },
+                {
+                    "id":46,
+                    "name":"Jar"
+                },
+                {
+                    "id":47,
+                    "name":"Plastic Bottle"
+                },
+                {
+                    "id":48,
+                    "name":"Pouch"
+                },
+                {
+                    "id":49,
+                    "name":"Refill"
+                },
+                {
+                    "id":50,
+                    "name":"Sachet"
+                },
+                {
+                    "id":51,
+                    "name":"Tetrapack"
+                },
+                {
+                    "id":52,
+                    "name":"Tin"
                 }
             ]
         },
@@ -95,8 +267,8 @@
             "name":"New Arrivals",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"r3f"
+                    "id":53,
+                    "name":"New Arrivals"
                 }
             ]
         },
@@ -105,8 +277,8 @@
             "name":"Value Packs",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"r3f"
+                    "id":54,
+                    "name":"Value Packs"
                 }
             ]
         },
@@ -115,8 +287,12 @@
             "name":"Organic",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"24r"
+                    "id":55,
+                    "name":"Yes"
+                },
+                {
+                    "id":56,
+                    "name":"No"
                 }
             ]
         },
@@ -125,8 +301,68 @@
             "name":"Type",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"24fwef"
+                    "id":57,
+                    "name":"Chia Seeds"
+                },
+                {
+                    "id":58,
+                    "name":"Other dry fruits"
+                },
+                {
+                    "id":59,
+                    "name":"Almonds"
+                },
+                {
+                    "id":60,
+                    "name":"Raisins"
+                },
+                {
+                    "id":61,
+                    "name":"Dates"
+                },
+                {
+                    "id":62,
+                    "name":"Cashews"
+                },
+                {
+                    "id":63,
+                    "name":"Walnuts"
+                },
+                {
+                    "id":64,
+                    "name":"Pumpkin Seeds"
+                },
+                {
+                    "id":65,
+                    "name":"Brown Flax Seeds"
+                },
+                {
+                    "id":66,
+                    "name":"Figs"
+                },
+                {
+                    "id":67,
+                    "name":"Sunflower Seeds"
+                },
+                {
+                    "id":68,
+                    "name":"Pistachios"
+                },
+                {
+                    "id":69,
+                    "name":"Basil Seeds"
+                },
+                {
+                    "id":70,
+                    "name":"Other nuts"
+                },
+                {
+                    "id":71,
+                    "name":"Mixed Seeds"
+                },
+                {
+                    "id":72,
+                    "name":"Garden Cress Seeds"
                 }
             ]
         },
@@ -135,8 +371,12 @@
             "name":"festival_marker",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"f4c"
+                    "id":73,
+                    "name":"2"
+                },
+                {
+                    "id":74,
+                    "name":"4"
                 }
             ]
         },
@@ -145,8 +385,28 @@
             "name":"Pack of",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"3c"
+                    "id":75,
+                    "name":"1"
+                },
+                {
+                    "id":76,
+                    "name":"2"
+                },
+                {
+                    "id":77,
+                    "name":"3"
+                },
+                {
+                    "id":78,
+                    "name":"4"
+                },
+                {
+                    "id":79,
+                    "name":"10 & Above"
+                },
+                {
+                    "id":80,
+                    "name":"5-10"
                 }
             ]
         },
@@ -155,8 +415,24 @@
             "name":"Category",
             "suboptions":[
                 {
-                    "id":1,
-                    "name":"4c"
+                    "id":81,
+                    "name":"Dry Fruit,Nut & Seed"
+                },
+                {
+                    "id":82,
+                    "name":"Dry Fruits"
+                },
+                {
+                    "id":83,
+                    "name":"Dry Fruits Gift Pack"
+                },
+                {
+                    "id":84,
+                    "name":"Edible Seed"
+                },
+                {
+                    "id":85,
+                    "name":"Mixed Dry Fruits"
                 }
             ]
         }

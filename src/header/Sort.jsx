@@ -36,7 +36,7 @@ function Sort({onclose}) {
             <div className='sort_content'>
                  {
                     options.map((item)=>{
-                        return <div className='sort_list' key={item.key} onClick={()=>setActive(item.key)}>
+                        return <div className='sort_list' key={item.key} onClick={()=>setActive(item.key)}>   
                                     <span className='sort_content'>{item.label}</span>
                                     <div className='sort_img_div'>
                                         <img src={`${active===item.key? active_radio : inactive_radio}`} alt=""  className='sort_img'/>
