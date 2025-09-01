@@ -17,7 +17,7 @@ function FeatureBrands({data,datatwo}) {
                 <div className='feature-div'>
                     {
                         data.map((item)=>{
-                            return <div className='feature-element'>
+                            return <div className='feature-element' key={item.id}>
                                         <a href="">
                                             <img src={item.src} alt={item.alt} />
                                         </a> 
@@ -26,7 +26,7 @@ function FeatureBrands({data,datatwo}) {
                     }
                     {
                         datatwo.map((item)=>{
-                            return <div className='featurelap-element'>
+                            return <div className='featurelap-element' key={item.id}>
                                         <a href="">
                                             <img src={item.src} alt={item.alt} />
                                         </a> 

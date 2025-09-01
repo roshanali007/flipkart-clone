@@ -6,9 +6,9 @@ function Offer_third({data}) {
         <div className='offerthree_hddiv'>
               {
                 data.map((item)=>{
-                  return <div className='offerthree_div'>
+                  return <div className='offerthree_div' key={item.id}>
                             <a href="">
-                              <div className='offerthree_img' key={item.id}>
+                              <div className='offerthree_img' >
                                 <img src={item.src} alt={item.alt} />
                               </div>
                             </a>

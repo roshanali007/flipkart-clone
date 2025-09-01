@@ -14,8 +14,8 @@ function SmartPhone({data,datatwo}) {
                 <div className='smartphone-collection'>
                     {
                         data.map((item)=>{
-                            return <a href="" className='smarphoneLap' >
-                                        <div className='smartphone'key={item.id}>
+                            return <a href="" className='smarphoneLap' key={item.id}>
+                                        <div className='smartphone'>
                                             <div className='smartphone-img'>
                                                 <img src={item.src} alt={item.alt} /> 
                                             </div>
@@ -27,8 +27,8 @@ function SmartPhone({data,datatwo}) {
                     }
                     {
                         datatwo.map((item)=>{
-                            return <a href="" className='smartphoneLarge'>
-                                        <div className='smartphone'key={item.id}>
+                            return <a href="" className='smartphoneLarge'key={item.id}>
+                                        <div className='smartphone'>
                                             <div className='smartphone-img'>
                                                 <img src={item.src} alt={item.alt} /> 
                                             </div>

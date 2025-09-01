@@ -28,8 +28,8 @@ function MenulistLap({data,datatwo}) {
                 
                     {
                         data.map((item)=>{
-                        return  <a href="" className='menulistLap'> 
-                                    <div className='flipkart_minute' key={item.id} onClick={()=>handleRoute(item)}>
+                        return  <a href="" className='menulistLap' key={item.id}> 
+                                    <div className='flipkart_minute'  onClick={()=>handleRoute(item)}>
                                         <div className='img-container'>
                                             <div className='img-margin'>
                                             <img src={item.src} alt={item.alt} />
@@ -42,8 +42,8 @@ function MenulistLap({data,datatwo}) {
                     }
                     {
                         datatwo.map((item)=>{
-                        return  <a  className='menulistLarge' onMouseEnter={()=>dropdownItems[item.alt] && setOpenMenu(item.name)} onMouseLeave={()=>setOpenMenu(null)}> 
-                                    <div className='flipkart_minute' key={item.id}>
+                        return  <a  className='menulistLarge' onMouseEnter={()=>dropdownItems[item.alt] && setOpenMenu(item.name)} onMouseLeave={()=>setOpenMenu(null)} key={item.id}> 
+                                    <div className='flipkart_minute' >
                                         <div className='img-container'>
                                             <div className='img-margin'>
                                             <img src={item.src} alt={item.alt} />

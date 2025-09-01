@@ -20,8 +20,8 @@ function HomeEquipment({data,datatwo}) {
                 <div className='homeEquipment-collection'>
                     {
                         data.map((item)=>{
-                            return <a href="" className='homeLap'>
-                                        <div className='homeEquipment'key={item.id}>
+                            return <a href="" className='homeLap'key={item.id}>
+                                        <div className='homeEquipment'>
                                             <div className='homeEquipment-img'>
                                                 <img src={item.src} alt={item.alt} /> 
                                             </div>
@@ -33,8 +33,8 @@ function HomeEquipment({data,datatwo}) {
                     }
                     {
                         datatwo.map((item)=>{
-                            return <a href="" className='homeLarge'>
-                                        <div className='homeEquipment'key={item.id} onClick={()=>handleRoute(item.name)}>
+                            return <a href="" className='homeLarge'key={item.id}>
+                                        <div className='homeEquipment' onClick={()=>handleRoute(item.name)}>
                                             <div className='homeEquipment-img'>
                                                 <img src={item.src} alt={item.alt} /> 
                                             </div>

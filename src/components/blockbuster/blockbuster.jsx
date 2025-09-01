@@ -25,7 +25,7 @@ function Blockbuster({data}) {
                             <div className='blockbuster-content'>
                                 {
                                     data.map((item)=>{
-                                        return <div className='pressure headphones'>
+                                        return <div className='pressure headphones' key={item.id}>
                                                     <a href=""><img src={item.src} alt={item.alt} /></a>
                                                 </div>
                                     })
