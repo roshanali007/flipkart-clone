@@ -9,9 +9,9 @@ import { useNavigate } from "react-router-dom";
        
 function Header() {
   const [openMenu,setOpenMenu]=useState(false)
-  const navigate=useNavigate()
-  return (
-  <header>
+  const navigate=useNavigate()   
+  return (           
+  <header>      
     <div className='header'>
       <div className='header-child'>
         <div className='flipkart-nav'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../advertisement/Advertisement.css'
+import '../advertisement/advertisement.css'
 
 
 function SmartPhone({data,datatwo}) {
