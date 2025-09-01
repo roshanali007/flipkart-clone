@@ -1,4 +1,49 @@
 .filter_main{
     width: 100vw;
     height: 100vh;
+    position: relative;
+}
+.filter_header{
+    height: 52px;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.filter_header .arrow_back{
+    width: 19px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter_goback{
+    padding-left: 12px;
+}
+.filter_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--int-roboto);
+}
+.filter_content{
+    height: 750px;
+    width: auto;
+    background-color: rgb(241, 243, 246);
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 141.667px;
+}
+.filter_content::-webkit-scrollbar{
+    display: none;                                                            
+}
+.filter_each{
+    height: 56px;
+    padding: 12px ;
+
 }
