@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './sort.css'
+import './Sort.css'
 import active_radio from './LoginAssests/active_radio.webp'
 import inactive_radio from './LoginAssests/inactive_radio.webp'
 
