@@ -5,6 +5,7 @@ import {products} from '../components/adData/product.json'
 import './food_health.css'
 import Header_food_large from '../header/Header_food_large'
 import Food_menubar from '../header/Food_menubar'
+import Health_body from '../components/body/health_body'
 
 function Food_health() {
   return (
@@ -16,6 +17,7 @@ function Food_health() {
         <div className='food_health_large'>
                 <Header_food_large/>
                 <Food_menubar/>
+                <Health_body/>
         </div>
     </div>
     

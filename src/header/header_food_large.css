@@ -22,16 +22,16 @@
 }
 .health_logo_text{
     font-size:11px ;
-    font-family:Inter, -apple-system, Helvetica, Arial, sans-serif ;
+    font-family:var(--int-semi);
     color: #f0f0f0;
     margin-top: -1px;
     font-style: italic;
 }
 .health_plus{
     font-size:11px;
-    font-family: Inter, -apple-system, Helvetica, Arial, sans-serif ;
+    font-family:var(--int-semi) ;
     color: #ffe500;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.4;
     margin-right: 2px;
 }
@@ -107,7 +107,7 @@
     cursor: pointer;
     padding: 5px 40px;
     border: 1px solid #dbdbdb;
-    font-family:  Inter, -apple-system, Helvetica, Arial, sans-serif;
+    font-family:  var(--int-semi);
 }
 .health_become_seller{
     margin: 0 20px;
@@ -121,7 +121,7 @@
     letter-spacing: 0.1px;
     font-weight: 600;
     color: #fff;
-    font-family:  Inter, -apple-system, Helvetica, Arial, sans-serif;
+    font-family:  var(--int-semi);
     white-space: nowrap;
 }
 .health_more{
@@ -138,7 +138,7 @@
     letter-spacing: 0.1px;
     font-weight: 600;
     color: #fff;
-    font-family:  Inter, -apple-system, Helvetica, Arial, sans-serif;
+    font-family:  var(--int-semi);
 }
 .health_more_img{
     display: flex;
@@ -165,4 +165,5 @@
     letter-spacing: 0.1px;
     font-weight: 600;
     color: #fff;
+    font-family:var(--int-semi);
 }

@@ -6,7 +6,7 @@ function HomeEquipment({data,datatwo}) {
     const navigate=useNavigate()
     const handleRoute=(item)=>{
         if(item==='Dry Fruits'){
-            navigate('/flipkart-clone/food_health')
+            navigate('/food_health')
         }
     }
   return (
