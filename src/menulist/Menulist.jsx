@@ -1,5 +1,5 @@
 import React from 'react'
-import flipkart_minute from '../assets/flipkart_minute.jpg'
+import flipkart_minute from '/images/flipkart_minute.jpg'
 import '../menulist/Menulist.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ function Menulist({dataOne,dataTwo}) {
     const navigate= useNavigate()
     const handleClick=(item)=>{
         if(item.name==="Food, Health "){
-            navigate("/flipkart-clone/food_health")
+            navigate("/food_health")
         }
     }
   return (

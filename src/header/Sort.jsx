@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Sort.css'
-import active_radio from './LoginAssests/active_radio.webp'
-import inactive_radio from './LoginAssests/inactive_radio.webp'
+import active_radio from '/images/active_radio.webp'
+import inactive_radio from '/images/inactive_radio.webp'
 
 function Sort({onclose}) {
     const [visible,setVisible]=useState(false)

@@ -114,17 +114,17 @@
     ],
     "slideLarge":[
         {
-            "src":"flipkart-clone/src/assets/sleephead.jpg",
+            "src":"images/sleephead.jpg",
             "alt":"sleepyhead"
         }
         ,
         {
-            "src":"flipkart-clone/src/assets/roundtrip.jpg",
+            "src":"images/roundtrip.jpg",
             "alt":"roundtrip"
         }
         ,
         {
-            "src":"flipkart-clone/src/assets/international.jpg",
+            "src":"images/international.jpg",
             "alt":"international"
         }
     ]

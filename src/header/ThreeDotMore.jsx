@@ -1,9 +1,9 @@
 import React from 'react'
 import './ThreeDotMore.css'
-import notification from '../assets/Notification Preferences.svg'
-import customerCare from '../assets/24x7 Customer Care.svg'
-import advertisement from '../assets/Advertise.svg'
-import download from '../assets/Download App.svg'
+import notification from '/images/Notification Preferences.svg'
+import customerCare from '/images/24x7 Customer Care.svg'
+import advertisement from '/images/Advertise.svg'
+import download from '/images/Download App.svg'
 
 
 function ThreeDotMore() {

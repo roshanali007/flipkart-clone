@@ -2,107 +2,107 @@
     "featurebrands":[
         {
             "id":1,
-            "src":"flipkart-clone/src/components/compAssets/galaxy.jpeg",
+            "src":"images/galaxy.jpeg",
             "alt":"galaxy"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/components/compAssets/grwm.jpeg",
+            "src":"images/grwm.jpeg",
             "alt":"grwm"
         }
         ,
         {
             "id":3,
-            "src":"flipkart-clone/src/components/compAssets/summerSale.jpeg",
+            "src":"images/summerSale.jpeg",
             "alt":"summerSale"
         }
         ,
         {
             "id":4,
-            "src":"flipkart-clone/src/components/compAssets/premiumTws.jpeg",
+            "src":"images/premiumTws.jpeg",
             "alt":"premiumTws"
         }
         ,
         {
             "id":5,
-            "src":"flipkart-clone/src/components/compAssets/derma.jpeg",
+            "src":"images/derma.jpeg",
             "alt":"derma"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/components/compAssets/boat.jpeg",
+            "src":"images/boat.jpeg",
             "alt":"boat"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/components/compAssets/boultwatch.jpeg",
+            "src":"images/boultwatch.jpeg",
             "alt":"boult"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/components/compAssets/colgate.jpeg",
+            "src":"images/colgate.jpeg",
             "alt":"colgate"
         },
         {
             "id":9,
-            "src":"flipkart-clone/src/components/compAssets/redtape.jpeg",
+            "src":"images/redtape.jpeg",
             "alt":"redtape"
         },
         {
             "id":10,
-            "src":"flipkart-clone/src/components/compAssets/addidas.jpeg",
+            "src":"images/addidas.jpeg",
             "alt":"addidas"
         }
     ],
     "featurelap":[
         {
             "id":1,
-            "src":"flipkart-clone/src/components/compAssets/goboult.jpeg",
+            "src":"images/goboult.jpeg",
             "alt":"go boult"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/components/compAssets/rise.jpeg",
+            "src":"images/rise.jpeg",
             "alt":"rise"
         },
         {
             "id":3,
-            "src":"flipkart-clone/src/components/compAssets/ninja.jpeg",
+            "src":"images/ninja.jpeg",
             "alt":"ninja"
         },
         {
             "id":4,
-            "src":"flipkart-clone/src/components/compAssets/lg.jpeg",
+            "src":"images/lg.jpeg",
             "alt":"lg"
         },
         {
             "id":5,
-            "src":"flipkart-clone/src/components/compAssets/pureit.jpeg",
+            "src":"images/pureit.jpeg",
             "alt":"pureit"
         },
          {
             "id":6,
-            "src":"flipkart-clone/src/components/compAssets/cetaphil.jpeg",
+            "src":"images/cetaphil.jpeg",
             "alt":"cetaphil"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/components/compAssets/mivi.jpeg",
+            "src":"images/mivi.jpeg",
             "alt":"mivi"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/components/compAssets/goboult_yellow.jpeg",
+            "src":"images/goboult_yellow.jpeg",
             "alt":"go boult yellow"
         },
         {
             "id":9,
-            "src":"flipkart-clone/src/components/compAssets/samsung_s25.jpeg",
+            "src":"images/samsung_s25.jpeg",
             "alt":"samsung s25"
         },
         {
             "id":10,
-            "src":"flipkart-clone/src/components/compAssets/urbn.jpeg",
+            "src":"images/urbn.jpeg",
             "alt":"urbn"
         }
     ]

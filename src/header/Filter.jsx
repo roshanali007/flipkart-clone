@@ -1,12 +1,12 @@
 
 import React, { useEffect, useState } from 'react'
-import goback_arrow from '../assets/goback_arrow_black.svg'
+import goback_arrow from '/images/goback_arrow_black.svg'
 import './filter.css'
 import {filter} from '../data/filter.json'
 import { useNavigate } from 'react-router-dom'
-import checkbox_notActive from './LoginAssests/checkbox.png'
-import checkbox_active from './LoginAssests/checkbox_active.png'
-import search_blue from './LoginAssests/search_icon_blue.webp'
+import checkbox_notActive from '/images/checkbox.png'
+import checkbox_active from '/images/checkbox_active.png'
+import search_blue from '/images/search_icon_blue.webp'
 
 
 function Filter() {

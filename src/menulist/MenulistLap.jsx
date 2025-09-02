@@ -18,7 +18,7 @@ function MenulistLap({data,datatwo}) {
     }
     const handleRoute=(item)=>{
         if(item.name==='Home & Kitchen'){
-            navigate('/flipkart-clone/food_health')
+            navigate('/food_health')
         }
     }
   return ( 

@@ -2,55 +2,55 @@
     "menulist":[
         {
             "id":1,
-            "src":"flipkart-clone/src/assets/mobile.jpg",
+            "src":"images/mobile.jpg",
             "alt":"moblie",
             "name":"Mobiles"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/assets/food_health.png",
+            "src":"images/food_health.png",
             "alt":"food_health",
             "name":"Food, Health "
         },
         { 
             "id":3,
-            "src":"flipkart-clone/src/assets/beauty.png",
+            "src":"images/beauty.png",
             "alt":"beauty",
             "name":"Beauty"
         },
         {
             "id":4,
-            "src":"flipkart-clone/src/assets/Appliances.png",
+            "src":"images/Appliances.png",
             "alt":"Appliances",
             "name":"Appliances"
         },
         {
             "id":5,
-            "src":"flipkart-clone/src/assets/genz_trend.jpg",
+            "src":"images/genz_trend.jpg",
             "alt":"genz_trends",
             "name":"GenZ Trends"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/assets/furniture.jpg",
+            "src":"images/furniture.jpg",
             "alt":"furniture",
             "name":"Furniture"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/assets/sports.jpg",
+            "src":"images/sports.jpg",
             "alt":"sports",
             "name":"Sports"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/assets/super_coin.jpg",
+            "src":"images/super_coin.jpg",
             "alt":"super_coin",
             "name":"SuperCoin"
         },
         {
             "id":9,
-            "src":"flipkart-clone/src/assets/nextGen.jpg",
+            "src":"images/nextGen.jpg",
             "alt":"next_gen",
             "name":"NextGen"
         }
@@ -58,62 +58,62 @@
     "menulistTwo":[
          {
             "id":1,
-            "src":"flipkart-clone/src/assets/grocery.jpg",
+            "src":"images/grocery.jpg",
             "alt":"grocery",
             "name":"Grocery"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/assets/fashion.jpg",
+            "src":"images/fashion.jpg",
             "alt":"fashion",
             "name":"Fashion"
         },
         {
             "id":3,
-            "src":"flipkart-clone/src/assets/travel.jpg",
+            "src":"images/travel.jpg",
             "alt":"travel",
             "name":"Travel"
         },
         {
             "id":4,
-            "src":"flipkart-clone/src/assets/home.jpg",
+            "src":"images/home.jpg",
             "alt":"home",
             "name":"Home"
         },
         {
             "id":5,
-            "src":"flipkart-clone/src/assets/electronics.jpg",
+            "src":"images/electronics.jpg",
             "alt":"electronics",
             "name":"Electronics"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/assets/two_wheeler.jpg",
+            "src":"images/two_wheeler.jpg",
             "alt":"two_wheeler",
             "name":"2 Wheeler"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/assets/toys_baby.png",
+            "src":"images/toys_baby.png",
             "alt":"toys_baby",
             "name":"Toys, Baby.."
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/assets/auto_acc.png",
+            "src":"images/auto_acc.png",
             "alt":"auto_acc",
             "name":"Auto Acc."
         },
         {
             "id":9,
-            "src":"flipkart-clone/src/assets/sell_phone.jpg",
+            "src":"images/sell_phone.jpg",
             "alt":"sell_phone",
             "name":"Sell Phone"
         }
         ,
         {
             "id":10,
-            "src":"flipkart-clone/src/assets/more.jpg",
+            "src":"images/more.jpg",
             "alt":"more",
             "name":"More"
         }
@@ -184,59 +184,59 @@
     "menulistLarge":[
         {
             "id":1,
-            "src":"flipkart-clone/src/assets/minuteLarge.png",
+            "src":"images/minuteLarge.png",
             "alt":"Minutes",
             "name":"Minutes"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/assets/moblie_tablet.png",
+            "src":"images/moblie_tablet.png",
             "alt":"Moblies & Tablets",
             "name":"Moblies & Tablets"
         },
         {
             "id":3,
-            "src":"flipkart-clone/src/assets/fashionLarge.png",
+            "src":"images/fashionLarge.png",
             "alt":"Fashion",
             "name":"Fashion",
-            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+            "droplogo":"images/Chevron.svg"
         },
         {
             "id":4,
-            "src":"flipkart-clone/src/assets/electronicsLarge.png",
+            "src":"images/electronicsLarge.png",
             "alt":"Electronics",
             "name":"Electronics",
-            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+            "droplogo":"images/Chevron.svg"
         },
         {
             "id":5,
-            "src":"flipkart-clone/src/assets/furnitureLarge.png",
+            "src":"images/furnitureLarge.png",
             "alt":"Furniture",
             "name":"Home & Furniture",
-            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+            "droplogo":"images/Chevron.svg"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/assets/TVs & Appliances.jpg",
+            "src":"images/TVs & Appliances.jpg",
             "alt":"TVs & Appliances",
             "name":"TVs & Appliances"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/assets/flight_booking.png",
+            "src":"images/flight_booking.png",
             "alt":"Flight Bookings",
             "name":"Flight Bookings"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/assets/teddy.png",
+            "src":"images/teddy.png",
             "alt":"Beauty",
             "name":"Beauty, Food..",
-            "droplogo":"flipkart-clone/src/assets/Chevron.svg"
+            "droplogo":"images/Chevron.svg"
         },
         {
             "id":9,
-            "src":"flipkart-clone/src/assets/groceryLarge.png",
+            "src":"images/groceryLarge.png",
             "alt":"Grocery",
             "name":"Grocery"
         }

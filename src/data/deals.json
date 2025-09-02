@@ -2,140 +2,140 @@
      "topdeal":[
         {
             "id":1,
-            "src":"flipkart-clone/src/components/compAssets/headphone.jpg",
+            "src":"images/headphone.jpg",
             "alt":"headphones"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/components/compAssets/edge.jpg",
+            "src":"images/edge.jpg",
             "alt":"edge"
         }
         ,
         {
             "id":3,
-            "src":"flipkart-clone/src/components/compAssets/hp.jpg",
+            "src":"images/hp.jpg",
             "alt":"hp"
         }
         ,
         {
             "id":4,
-            "src":"flipkart-clone/src/components/compAssets/tv.jpg",
+            "src":"images/tv.jpg",
             "alt":"tv"
         }
         ,
         {
             "id":5,
-            "src":"flipkart-clone/src/components/compAssets/puma.jpg",
+            "src":"images/puma.jpg",
             "alt":"puma"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/components/compAssets/dry_fruits.jpg",
+            "src":"images/dry_fruits.jpg",
             "alt":"dry_fruits"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/components/compAssets/tresemme.jpg",
+            "src":"images/tresemme.jpg",
             "alt":"tresemme"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/components/compAssets/cookers.jpg",
+            "src":"images/cookers.jpg",
             "alt":"cookers"
         }
     ],
     "blockbuster":[
         {
             "id":1,
-            "src":"flipkart-clone/src/components/compAssets/boult.jpg",
+            "src":"images/boult.jpg",
             "alt":"boult"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/components/compAssets/qled.png",
+            "src":"images/qled.png",
             "alt":"qled"
         }
         ,
         {
             "id":3,
-            "src":"flipkart-clone/src/components/compAssets/moto.jpg",
+            "src":"images/moto.jpg",
             "alt":"moto"
         }
         ,
         {
             "id":4,
-            "src":"flipkart-clone/src/components/compAssets/realme.jpg",
+            "src":"images/realme.jpg",
             "alt":"realme"
         }
         ,
         {
             "id":5,
-            "src":"flipkart-clone/src/components/compAssets/washing.jpeg",
+            "src":"images/washing.jpeg",
             "alt":"washing"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/components/compAssets/powerbank.jpg",
+            "src":"images/powerbank.jpg",
             "alt":"powerbank"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/components/compAssets/vivo.jpg",
+            "src":"images/vivo.jpg",
             "alt":"vivo"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/components/compAssets/pendrive.jpg",
+            "src":"images/pendrive.jpg",
             "alt":"pendrive"
         }
     ],
     "jackpot":[
         {
             "id":1,
-            "src":"flipkart-clone/src/components/compAssets/wrogn.png",
+            "src":"images/wrogn.png",
             "alt":"wrogn"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/components/compAssets/redtapewhite.jpg",
+            "src":"images/redtapewhite.jpg",
             "alt":"redtapewhite"
         }
         ,
         {
             "id":3,
-            "src":"flipkart-clone/src/components/compAssets/unizone.jpg",
+            "src":"images/unizone.jpg",
             "alt":"unizone"
         }
         ,
         {
             "id":4,
-            "src":"flipkart-clone/src/components/compAssets/redtapejackpot.jpg",
+            "src":"images/redtapejackpot.jpg",
             "alt":"redtape"
         }
         ,
         {
             "id":5,
-            "src":"flipkart-clone/src/components/compAssets/gasStove.jpg",
+            "src":"images/gasStove.jpg",
             "alt":"gasStove"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/components/compAssets/biotique.jpg",
+            "src":"images/biotique.jpg",
             "alt":"biotique"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/components/compAssets/kurlon.jpg",
+            "src":"images/kurlon.jpg",
             "alt":"kurlon"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/components/compAssets/beds.png",
+            "src":"images/beds.png",
             "alt":"beds"
         },
         {
             "id":9,
-            "src":"flipkart-clone/src/components/compAssets/skincare.jpg",
+            "src":"images/skincare.jpg",
             "alt":"skincare"
         }
     ]

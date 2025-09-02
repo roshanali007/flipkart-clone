@@ -1,9 +1,8 @@
 import React from 'react'
-import open_secret from '../compAssets/open_secret_almonds.webp'
-import arrow_down from '../compAssets/green_arrow_down.svg'
+import arrow_down from '/images/green_arrow_down.svg'
 import Stars from './Stars'
 import './products.css'
-import like_logo from '../compAssets/love.svg'
+import like_logo from '/images/love.svg'
 
 function Products({data}) {
     console.log(data) 

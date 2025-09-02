@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './header.css'
-import flipkartlogo from '../assets/flipkart-logo.svg'
-import locationlogo from '../assets/location-logo.svg'
-import arrowRightLogo from '../assets/arrowRight-logo.svg'
+import flipkartlogo from '/images/flipkart-logo.svg'
+import locationlogo from '/images/location-logo.svg'
+import arrowRightLogo from '/images/arrowRight-logo.svg'
 import Nav from '../navbar/Nav'
-import searchIcon from '../assets/search-icon.svg'
+import searchIcon from '/images/search-icon.svg'
 import { useNavigate } from "react-router-dom";
        
 function Header() {
@@ -52,7 +52,7 @@ function Header() {
       </div>
       <div className='search_engine_head'>
 
-        <div className='search_engine' onClick={()=>navigate("/flipkart-clone/search")}>
+        <div className='search_engine' onClick={()=>navigate("/search")}>
 
             <div className='search_icon'>
               <img src={searchIcon}></img>

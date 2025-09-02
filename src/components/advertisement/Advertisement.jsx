@@ -1,5 +1,5 @@
 import React from 'react'
-import poco from '../compAssets/poco.jpeg'
+import poco from '/images/poco.jpeg'
 import '../advertisement/advertisement.css'
 import SmartPhone from './SmartPhone'
 import HomeEquipment from './HomeEquipments'

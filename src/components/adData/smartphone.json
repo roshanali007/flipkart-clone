@@ -2,56 +2,56 @@
     "smartphone":[
         {
             "id":1,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/vivo_sky_blue.jpeg",
+            "src":"images/vivo_sky_blue.jpeg",
             "alt":"vivo_sky_blue",
             "name":"Vivo T4x",
             "price":"From ₹13,499*"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/moto_skyblue.jpeg",
+            "src":"images/moto_skyblue.jpeg",
             "alt":"moto_skyblue",
             "name":"Motorola Edge 60 Fusion 5G ",
             "price":"From ₹20,999*"
         },
         {
             "id":3,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/vivo_silver.jpeg",
+            "src":"images/vivo_silver.jpeg",
             "alt":"vivo_silver",
             "name":"Vivo T4 5G",
             "price":"from 20499*"
         },
         {
             "id":4,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/oppo_silver.jpeg",
+            "src":"images/oppo_silver.jpeg",
             "alt":"oppo_silver",
             "name":"Oppo X13 5G",
             "price":"from ₹16499*"
         },
         {
             "id":5,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/moto_green.jpeg",
+            "src":"images/moto_green.jpeg",
             "alt":"moto_green",
             "name":"Motorola G85 5G",
             "price":""
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/samsung_fe.jpeg",
+            "src":"images/samsung_fe.jpeg",
             "alt":"samsung_fe",
             "name":"Galaxy S24 FE 5G",
             "price":"From₹34,999*"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/vivo_lite.jpeg",
+            "src":"images/vivo_lite.jpeg",
             "alt":"vivo_lite",
             "name":"Vivo T4 Lite 5G",
             "price":"From₹9,499*"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/nothing.jpeg",
+            "src":"images/nothing.jpeg",
             "alt":"nothing",
             "name":"Nothing Phone 3a",
             "price":"From₹21,499*"
@@ -60,56 +60,56 @@
     "electronics":[
         {
             "id":1,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/nord_buds.jpeg",
+            "src":"images/nord_buds.jpeg",
             "alt":"nord_buds",
             "name":"Best Truewireless Headphones",
             "price":"Grab Now"
         },
         {
             "id":2,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/sony.jpeg",
+            "src":"images/sony.jpeg",
             "alt":"Best Selling Mobile Speakers",
             "name":"Best Selling Mobile Speakers",
             "price":"From ₹499*"
         },
         {
             "id":3,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/fasttrack.jpeg",
+            "src":"images/fasttrack.jpeg",
             "alt":"Fastrack Smartwatches",
             "name":"Fastrack Smartwatches",
             "price":"From ₹1,399"
         },
         {
             "id":4,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/veet.webp",
+            "src":"images/veet.webp",
             "alt":"Best of Women Trimmers",
             "name":"Best of Women Trimmers",
             "price":"From ₹599"
         },
         {
             "id":5,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/camera.webp",
+            "src":"images/camera.webp",
             "alt":"Top Mirrorless Cameras",
             "name":"Top Mirrorless Cameras",
             "price":"Shop Now!"
         },
         {
             "id":6,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/printer.webp",
+            "src":"images/printer.webp",
             "alt":"Printers",
             "name":"Printers",
             "price":"From ₹10190"
         },
         {
             "id":7,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/project.jpeg",
+            "src":"images/project.jpeg",
             "alt":"Projector",
             "name":"Projector",
             "price":"From ₹6990"
         },
         {
             "id":8,
-            "src":"flipkart-clone/src/components/advertisement/advertisementAssets/printers.jpeg",
+            "src":"images/printers.jpeg",
             "alt":"Printers",
             "name":"Printers",
             "price":"From ₹2336"

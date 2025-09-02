@@ -1,5 +1,5 @@
 import React from 'react'
-import TopDealbg from '../compAssets/top_deal.webp'
+import TopDealbg from '/images/top_deal.webp'
 import '../Top deals/topDeal.css'
 
 function TopDeal({data}) {

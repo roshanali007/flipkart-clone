@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import go_back_arrow from '../assets/goback_arrow_black.svg'
-import flipfoodlogo from '../assets/flipfoodlogo.png'
+import go_back_arrow from '/images/goback_arrow_black.svg'
+import flipfoodlogo from '/images/flipfoodlogo.png'
 import { Link, useNavigate } from 'react-router-dom'
-import searchIcon from '../assets/search-icon.svg'
-import cart from '../assets/Cart.svg'
+import searchIcon from '/images/search-icon.svg'
+import cart from '/images/Cart.svg'
 import './header_food.css'
-import sort from '../assets/sort.svg'
-import filter from '../assets/filter.svg'
-import new_arrval from '../assets/new_arrival.webp'
-import popular from '../assets/propular_brands.webp'
+import sort from '/images/sort.svg'
+import filter from '/images/filter.svg'
+import new_arrval from '/images/new_arrival.webp'
+import popular from '/images/propular_brands.webp'
 import Sort from './Sort'
 
 function Header_food() {
@@ -16,7 +16,7 @@ function Header_food() {
     const [sortOpen,setSortOpen] =useState(false)
     const navigate=useNavigate()
     const handleRoute=()=>{
-        navigate('/flipkart-clone/search')
+        navigate('/search')
     }
   return (
     <>
@@ -25,7 +25,7 @@ function Header_food() {
             }
         <div className='food_main'>
             
-            <Link to={'/flipkart-clone'} className='food_go_back same_style_food'>
+            <Link to={'/'} className='food_go_back same_style_food'>
                 <img src={go_back_arrow} alt="" className='arrow_back' />
             </Link>
             
@@ -47,7 +47,7 @@ function Header_food() {
                 <div className='sort_text'>Sort</div>
             </div>
             <div className='border_sort_filter'></div>
-            <div className='filter'  onClick={()=>navigate('/flipkart-clone/food_health/filter')}>
+            <div className='filter'  onClick={()=>navigate('/food_health/filter')}>
                 <img src={filter} alt="" />
                 <div className='filter_text'>Filter</div>
             </div>

@@ -1,14 +1,14 @@
 import React from 'react'
 import './about.css'
-import instagram from './footerAssests/Instagram.svg'
-import facebook from './footerAssests/Facebook.svg'
-import twitter from './footerAssests/Twitter.svg'
-import youtube from './footerAssests/YouTube.svg'
-import paymentMethod from './footerAssests/Payment methods.svg'
-import becomeSeller from './footerAssests/Become a Seller-1.svg'
-import advertise from './footerAssests/Advertise-1.svg'
-import giftCard from './footerAssests/Gift Cards-1.svg'
-import helpCenter from './footerAssests/Help Center.svg'
+import instagram from '/images/Instagram.svg'
+import facebook from '/images/Facebook.svg'
+import twitter from '/images/Twitter.svg'
+import youtube from '/images/YouTube.svg'
+import paymentMethod from '/images/Payment methods.svg'
+import becomeSeller from '/images/Become a Seller-1.svg'
+import advertise from '/images/Advertise-1.svg'
+import giftCard from '/images/Gift Cards-1.svg'
+import helpCenter from '/images/Help Center.svg'
 function About() {
   return (
     <div className='about_main' >

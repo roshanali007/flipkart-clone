@@ -12,10 +12,10 @@ function App() {
 
   return (
         <Routes>
-          <Route path="/flipkart-clone" element={<Home/>}/>
-          <Route path="/flipkart-clone/search" element={<Search/>}/>
-          <Route path="/flipkart-clone/food_health" element={<Food_health/>}/>
-          <Route path="/flipkart-clone/food_health/filter" element={<Filter/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/search" element={<Search/>}/>
+          <Route path="/food_health" element={<Food_health/>}/>
+          <Route path="/food_health/filter" element={<Filter/>}/>
         </Routes>      
   )   
 }

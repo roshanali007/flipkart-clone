@@ -3,37 +3,37 @@
         {
             "id":1,
             "name":"My Profile",
-            "src":"flipkart-clone/src/header/LoginAssests/profile-52e0dc.svg",
+            "src":"images/profile-52e0dc.svg",
             "alt":"My Profile"
         },
         {
             "id":2,
             "name":"Flipkart Plus Zone",
-            "src":"flipkart-clone/src/header/LoginAssests/flipplus.svg",
+            "src":"images/flipplus.svg",
             "alt":"Flipkart Plus Zone"
         },
         {
             "id":3,
             "name":"Orders",
-            "src":"flipkart-clone/src/header/LoginAssests/orders-bfe8c4.svg",
+            "src":"images/orders-bfe8c4.svg",
             "alt":"Orders"
         },
         {
             "id":4,
             "name":"Wishlist",
-            "src":"flipkart-clone/src/header/LoginAssests/wishlist.svg",
+            "src":"images/wishlist.svg",
             "alt":"Wishlist"
         },
         {
             "id":5,
             "name":"Rewards",
-            "src":"flipkart-clone/src/header/LoginAssests/rewards-fbd212.svg",
+            "src":"images/rewards-fbd212.svg",
             "alt":"Rewards"
         },
         {
             "id":6,
             "name":"Gift Cards",
-            "src":"flipkart-clone/src/header/LoginAssests/giftCard-bd87e1.svg",
+            "src":"images/giftCard-bd87e1.svg",
             "alt":"Gift Cards"
         }
     ]

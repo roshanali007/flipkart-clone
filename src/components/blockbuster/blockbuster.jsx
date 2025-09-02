@@ -1,5 +1,5 @@
 import React from 'react'
-import blockbusterbg from '../compAssets/blockbuster.webp'
+import blockbusterbg from '/images/blockbuster.webp'
 import '../blockbuster/blockbuster.css'
 
 

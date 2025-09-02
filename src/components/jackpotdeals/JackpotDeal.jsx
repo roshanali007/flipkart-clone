@@ -1,6 +1,6 @@
 import React from 'react'
 import '../jackpotdeals/JackpotDeal.css'
-import jackpotbg from '../compAssets/jackpot.jpg'
+import jackpotbg from '/images/jackpot.jpg'
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import go_back_arrow from '../assets/go_back_arrow.svg'
+import go_back_arrow from '/images/go_back_arrow.svg'
 import './search.css'
 
 function Search() {
