@@ -24,7 +24,7 @@ function Filter() {
   }
   const toggleCheckbox =(id)=>{
     setActiveCheckbox((prev)=>
-      prev.includes(id)? prev.filter((item)=>item !== id) : [...prev,id]  
+      prev.includes(id)? prev.filter((item)=>item !== id) : [...prev,id]    
     )
   }
   return (

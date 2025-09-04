@@ -3,7 +3,7 @@ import './type.css'
 import arrow_down from '/images/filter_arrow_left.svg'
   
 
-function Customer_rating() {
+function Organic() {
     const [active,setActive]=useState(false)
     const [selectedItems,setSelectedItems] = useState([])
     const handleClick = (item)=>{
@@ -25,24 +25,16 @@ function Customer_rating() {
     const data=[
         {
             id:1,
-            name:'4★ & above'
+            name:'Yes'
         },
         {
             id:2,
-            name:'3★ & above'
-        },
-        {
-            id:3,
-            name:'2★ & above'
-        },
-        {
-            id:4,
-            name:'1★ & above'
+            name:'No'
         }
     ]
   return (
         <section className='type_main' >
-            <div className='type_head_text' onClick={()=>handleActiveClick()} ><span className='type_head_span'>CUSTOMER RATING</span><img src={arrow_down} alt="" className={`type_head_img ${active===true?'':'rotate'}`} /></div>
+            <div className='type_head_text' onClick={()=>handleActiveClick()} ><span className='type_head_span'>ORGANIC</span><img src={arrow_down} alt="" className={`type_head_img ${active===true?'':'rotate'}`} /></div>
             <div className={`${active===true?'type_content':'type_content_none'}`} >
                 {
                     data.map((item)=>(
@@ -61,4 +53,4 @@ function Customer_rating() {
   )
 }
 
-export default Customer_rating
+export default Organic

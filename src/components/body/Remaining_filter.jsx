@@ -1,69 +1,24 @@
 import React from 'react'
+import Assure from './Assure'
+import Health_offer from './Health_offer'
+import Organic from './Organic'
+import New_arrival from './New_arrival'
+import Value_pack from './Value_pack'
+import Festival_marker from './Festival_marker'
+import Gst_invoice from './Gst_invoice'
+import Available from './Available'
 
 function Remaining_filter() {
   return (
     <div>
-        <div>
-            <div>OFFERS</div>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>Special Price</div>
-            </label>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>Buy More, Save More</div>
-            </label>
-        </div>
-        <div>
-            <div>ORGANIC</div>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>Yes</div>
-            </label>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>No</div>
-            </label>
-        </div>
-        <div>
-            <div>NEW ARRIVALS</div>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>New Arrivals</div>
-            </label>
-        </div>
-        <div>
-            <div>VALUE PACKS</div>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>Value Packs</div>
-            </label>
-        </div>
-        <div>
-            <div>FESTIVAL_MARKER</div>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>2</div>
-            </label>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>4</div>
-            </label>
-        </div>
-        <div>
-            <div>GST INVOICE AVAILABLE</div>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>GST Invoice Available</div>
-            </label>
-        </div>
-        <div>
-            <div>AVAILABILITY</div>
-            <label htmlFor="">
-                <input type="checkbox" />
-                <div>Include Out of Stock</div>                        
-            </label>
-        </div>
+        <Assure/>
+        <Health_offer/>
+        <Organic/> 
+        <New_arrival/>
+        <Value_pack/>
+        <Festival_marker/>
+        <Gst_invoice/>
+        <Available/>
     </div>
   )
 }
