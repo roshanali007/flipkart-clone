@@ -4,7 +4,7 @@
     display: flex;
     flex: 0 0 280px;
     flex-direction: column;
-    width: 16.66%;
+    /* width: 16.66%; */
 }
 .health_filter_div{
     width: 100%;

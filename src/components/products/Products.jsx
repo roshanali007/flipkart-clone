@@ -41,55 +41,6 @@ function Products({data}) {
                             </div>  
                   }) 
                 }
-                
-                    {/* {
-                        datatwo.map((item)=>{
-                            return <div className='left_product' key={item.id}>
-                                        <div className='product_img_div'> 
-                                            <img src={item.src} alt="" className='product_img'/>
-                                        </div>
-                                        <div className='product_details'>
-                                            <div className='sponsor'>Sponsored</div>
-                                            <div className='product_name'>{item.name}</div>
-                                            <div className='product_price'>
-                                                <div className='discount'>
-                                                    <img src={arrow_down} alt="" />
-                                                    <span className='discount_percent'>{item.discount}</span>
-                                                </div>
-                                                <span className='underline_text'>{item.underline}</span>
-                                                <span className='product_amount'>{item.price}</span>
-                                            </div>
-                                            <div className='hot_deal'>Hot Deal</div>
-                                            <div className='product_rate'>
-                                                <Stars rating={item.rate}/>
-                                            </div>
-                                        </div>
-                                        <div className='product_like'><img src={like_logo} alt="" /></div>
-                                    </div>
-                        })
-                    } */}
-            {/* <div className='left_product'>
-                <div className='product_img_div'> 
-                    <img src={open_secret} alt="" className='product_img'/>
-                </div>
-                <div className='product_details'>
-                    <div className='sponsor'>Sponsored</div>
-                    <div className='product_name'>OPEN SECRET 100 % Natural Premium California Dry fruit Badam Raw Almonds</div>
-                    <div className='product_price'>
-                        <div className='discount'>
-                            <img src={arrow_down} alt="" />
-                            <span className='discount_percent'>50%</span>
-                        </div>
-                        <span className='underline_text'>₹1,598</span>
-                        <span className='product_amount'>₹799</span>
-                    </div>
-                    <div className='hot_deal'>Hot Deal</div>
-                    <div className='product_rate'>
-                        <Stars rating={4}/>
-                    </div>
-                </div>
-                <div className='product_like'><img src={like_logo} alt="" /></div>
-            </div> */}
         </div>
     </div>
   )

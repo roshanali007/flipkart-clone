@@ -1,0 +1,167 @@
+
+.price_main{
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.price_head{
+    display: flex;
+    align-items: center;
+}
+.price_head_text{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    font-family: var(--int-semi);
+}
+.price_background{
+    height: 25px;
+}
+.price_bg_div{
+    height: 100%;
+    position: relative;
+    bottom: -6px;
+}
+.price_bg_high{
+    height: 25px;
+    width: 39.4683px;
+    background: #e0e0e0;
+    display: inline-block;
+}
+.price_bg_low{
+    height: 6.25px;
+    width: 39.4683px;
+    background: #e0e0e0;
+    display: inline-block;
+}
+.price_drag{
+    position: relative;
+    height: 13px;
+}
+.drag_left_circle{
+    position: absolute;
+    left: -13.5px;
+    display: inline-block;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    top: -3.5px;
+}
+.drag_left_circle .price_circle{
+    position: absolute;
+    right: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    background-color: #fff;
+    top: 3.5px;
+}
+.drag_right_circle {
+    position: absolute;
+    right: -13.5px;
+    display: inline-block;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    top: -3.5px;
+}
+.drag_right_circle .price_circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    position: absolute;
+    background-color: #fff;
+    top: 3.5px;
+}
+.drag_center_line{
+    background-color: #c2c2c2;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    width: 100%;
+}
+.drag_center{
+    background-color: #2874f0;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    top: 4px;
+    height: 6px;
+    transform-origin:left center;
+}
+.price_dot{
+    margin-top: -12px;
+}
+.price_each_dot{
+    width: 39.4683px;
+    display: inline-block;
+    text-align: left;
+    color: #c2c2c2;
+    font-size: 20px;
+}
+.price_dot_end{
+    width: 0px;
+    display: inline-block;
+    text-align: left;
+    color: #c2c2c2;
+    font-size: 20px;
+}
+.price_range{
+    margin: 5px -4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+.price_min_range{
+    display: inline-block;
+    flex-grow: 2;
+}
+.min_range_select{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    background: #fff url(../../../public/images/min_range.svg) no-repeat 90% 50%;
+    height: 24px;
+    font-size: 14px;
+    color: #212121;
+    line-height: 1;
+    padding: 0 5px;
+    outline: none;
+    appearance: none;
+}
+.min_range_option{
+    padding: 0 7px;
+}
+.price_to{
+    display: inline-block;
+    margin: 0 9px;
+    font-size: 14px;
+    color: #878787;
+    line-height: 1;
+    flex: 1;
+    text-align: center;
+}
+.price_max_range{
+    display: inline-block;
+    margin-left: 1.5px;
+    flex-grow: 2;
+}
+.max_range_select{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    appearance: none;
+    background: #fff url(../../../public/images/min_range.svg) no-repeat 90% 50%;
+    height: 24px;
+    font-size: 14px;
+    color: #212121;
+    line-height: 1;
+    padding: 0 5px;
+    outline: none;
+}
+.max_range_option{
+    padding: 0 7px;
+}

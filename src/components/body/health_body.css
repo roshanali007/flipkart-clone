@@ -2,4 +2,5 @@
    min-width: 978px;
    max-width: 1680px;
    padding: 8px;
+   display: flex;
 }

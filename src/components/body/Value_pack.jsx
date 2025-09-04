@@ -34,7 +34,7 @@ function Value_pack() {
             <div className={`${active===true?'type_content':'type_content_none'}`} >
                 {
                     data.map((item)=>(
-                        <div className='type_content_list' onClick={()=>handleClick(item.id)}>
+                        <div className='type_content_list' onClick={()=>handleClick(item.id)} key={item.id} >
                             <label htmlFor="" className='type_label' >
                                 <input type="checkbox" className='checkbox_field' />
                                 <div className={` checkbox ${selectedItems.includes(item.id) ? 'checkbox_active':''}`}></div>
