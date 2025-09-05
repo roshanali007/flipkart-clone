@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import dataJson from '../adData/product.json'
 import Sort from '../../header/Sort'  
 import Products from './Products'
-
+      
 function ProductPage({sortType}) {
     const [products,setProducts]=useState(dataJson.products)
     useEffect(()=>{

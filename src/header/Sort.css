@@ -12,11 +12,11 @@
     position: fixed;
     z-index: 1;
     overflow-y: hidden;
-    transition: opacity 0.3s  ease;     
+    transition: opacity 0.3s  ease;   
     opacity: 0;
 }
 .sort_main.open{
-    transform: translateY(0);            
+    transform: translateY(0);
 }
 .sort_main.close{
     transform: translateY(100%);
