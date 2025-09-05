@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Sort.css'
 import active_radio from '/images/active_radio.webp'
 import inactive_radio from '/images/inactive_radio.webp'
-    
+   
 function Sort({onclose ,onSort,sortType}) { 
     console.log("sort props:",{onclose,onSort})   
     const [visible,setVisible]=useState(false)
