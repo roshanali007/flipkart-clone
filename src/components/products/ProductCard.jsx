@@ -1,19 +1,16 @@
 import React from 'react'
 import './productCard.css';
-import tata_sampann from '/images/tata_sampann.webp'
-import assurance from '/images/assurance.png'
 import white_star from '/images/white_star.svg'
 import like from '/images/like_button.svg'
-import sponsor from '/images/sponsored.svg'
 
-function ProductCard({id,Src,Sponsor,Name,quantity,rate,Count,assure,price,prevprice,discount}) {
+function ProductCard({Src,Sponsor,Name,quantity,rate,Count,assure,price,prevprice,discount}) {
   return (
-    <div className='card_main' >     
+    <div className='card_main' >
         <div className='card_div' >
             <div className='card_top' >
                 <div className='card_top_img' >
                     <div className='card_img_div' > 
-                        <img src={Src} alt="" className='card_img'/>   
+                        <img src={Src} alt="" className='card_img'/>
                     </div>
                 </div>
                 <div className='card_like_img' >

@@ -29,7 +29,7 @@
         {
             "id":3,
             "src":"images/Happilo_almonds.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"Happilo Premium Naturals Californian Almonds Almonds",
             "quan":"1 x 200 g",
             "rating":"4.4",
@@ -42,7 +42,7 @@
         {
             "id":4,
             "src":"images/fissai_mixed.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"MRHERB Mix Dry Fruit - Panchmeva -Almond,Cashew,Dry Dat...",
             "quan":"1 x 500 g",
             "rating":"4.3",
@@ -52,10 +52,10 @@
             "overline":"₹1,199",
             "discount":"74% off"
         },
-         {
+         {                      
             "id":5,
             "src":"images/manna_black_dates.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"Manna Black Dates - 800g (400g x 2 Packs) | Select Prem...",
             "quan":"2 x 400 g",
             "rating":"4.1",
@@ -73,7 +73,7 @@
             "quan":"1 x 1000 g",
             "rating":"3.8",
             "count":"837",
-            "assure":"",
+            "assure":null,
             "price":"₹418",
             "overline":"₹1,299",
             "discount":"67% off"
@@ -81,7 +81,7 @@
         {
             "id":7,
             "src":"images/livyor.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"LIVYOR Healthy Mix Nuts, Seeds and Berries Combo | Supe...",
             "quan":"1 x 200 g",
             "rating":"4.1",
@@ -94,7 +94,7 @@
         {
             "id":8,
             "src":"images/super_seed_mix.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"Nature Aahar 7 in 1 Roasted seeds mix 500gm Sunflower S...",
             "quan":"500 g",
             "rating":"4",
@@ -106,12 +106,12 @@
         }, {
             "id":9,
             "src":"images/black_dry.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"Organic Purify Black Dry Dates | Sukha Khajoor | Khajoo...",
             "quan":"1 x 500 g",
             "rating":"3.7",
             "count":"265",
-            "assure":"",
+            "assure":null,
             "price":"₹198",
             "overline":"₹599",
             "discount":"66% off"
@@ -119,7 +119,7 @@
         {
             "id":10,
             "src":"images/nutraj.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"Nutraj Gold Arabian Dates 1.5 Kg, Khajoor Dates",
             "quan":"3 x 500 g",
             "rating":"3.9",
@@ -170,7 +170,7 @@
         {
             "id":14,
             "src":"images/nature_mix.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"Nature Aahar Mix Dry Fruit | Panchmeva | 500gm | JAR | ...",
             "quan":"1 x 500 g",
             "rating":"3.9",
@@ -183,7 +183,7 @@
         {
             "id":15,
             "src":"images/basil_seeds.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"Granic Farms Raw Basil Seeds for weight loss| Sabja See...",
             "quan":"1 x 250 g",
             "rating":"4.3",
@@ -196,12 +196,12 @@
         {
             "id":16,
             "src":"images/hariyam.webp",
-            "sponsor":"",
+            "sponsor":null,
             "name":"HARIYAM Mix Dry Fruit | Panchmeva | 250 GM | JAR | Almo...",
             "quan":"1 x 250 g",
             "rating":"4.5",
             "count":"94",
-            "assure":"",
+            "assure":null,
             "price":"₹229",
             "overline":"₹999",
             "discount":"77% off"

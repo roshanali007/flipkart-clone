@@ -9,7 +9,7 @@ function ProductsLarge() {
         {
             card.map((item)=>(
                 <ProductCard 
-                id={item.id} 
+                key={item.id} 
                 Src={item.src}
                 Sponsor={item.sponsor} 
                 Name={item.name} 

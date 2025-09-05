@@ -10,18 +10,19 @@ import filter from '/images/filter.svg'
 import new_arrval from '/images/new_arrival.webp'
 import popular from '/images/propular_brands.webp'
 import Sort from './Sort'
-
-function Header_food() {
+     
+function Header_food({setSortType,sortType}) {
     const [readMore,setReadMore]=useState(false)
     const [sortOpen,setSortOpen] =useState(false)
     const navigate=useNavigate()
     const handleRoute=()=>{
         navigate('/search')
     }
+    console.log(sortOpen)
   return (
     <>
             {
-                sortOpen && <Sort onclose={()=>setSortOpen(false)}/>
+                sortOpen && <Sort onclose={()=>setSortOpen(false)} onSort={setSortType} sortType={sortType} />
             }
         <div className='food_main'>
             
