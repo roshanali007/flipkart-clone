@@ -10,7 +10,7 @@ function Products({data}) {
     console.log(data) 
     const {activeFilters}=useFilter()
     const filteredProducts = useMemo(() => {
-    let result = [...products];
+    let result = [...data];
     
           
     const grouped= activeFilters.reduce((acc,filters)=>{
@@ -18,7 +18,7 @@ function Products({data}) {
         if (!acc[pid]) acc[pid]=[]
         acc[pid].push(Number(sid))
         return acc
-    },{}) //doubt 
+    },{}) //doubt               
     if (grouped[1]){
         result = result.filter((p) =>{
             const price =parseInt(p.price.replace(/₹|,/g, ""))
@@ -70,7 +70,7 @@ function Products({data}) {
    }
    return result 
 
-  }, [activeFilters,products]);
+  }, [activeFilters,data]);
   return (
      <div className='product_main'>
       <div className='product_div'>
