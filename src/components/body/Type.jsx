@@ -21,7 +21,7 @@ function Type() {
         else{
             return setActive(true)
         }
-    }
+    }               
     const data=[
         {
             id:1,

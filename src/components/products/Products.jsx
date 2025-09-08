@@ -4,7 +4,7 @@ import Stars from './Stars'
 import './products.css'
 import like_logo from '/images/love.svg'
 import { useFilter } from '../../header/FilterContext'
-import {products} from '../adData/product.json'
+
                                    
 function Products({data}) {
     console.log(data) 

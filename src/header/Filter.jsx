@@ -21,7 +21,7 @@ function Filter() {
   const toggleCheckbox = (pid, sid) => {
     const uid = `${pid}-${sid}`;
     setActiveFilters((prev) =>
-      prev.includes(uid) ? prev.filter((item) => item !== uid) : [...prev, uid]
+      prev.includes(uid) ? prev.filter((item) => item !== uid) : [...prev, uid] 
     );
   };
   

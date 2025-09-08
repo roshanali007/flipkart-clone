@@ -3,11 +3,11 @@ import './productCard.css'
 import ProductCard from './ProductCard'
 import {card} from '../adData/productCard.json'
 
-function ProductsLarge() {
+function ProductsLarge({data}) {
   return (
     <div className='productLarge_main'>
         {
-            card.map((item)=>(
+            data.map((item)=>(
                 <ProductCard 
                 key={item.id} 
                 Src={item.src}
@@ -18,7 +18,7 @@ function ProductsLarge() {
                 Count={item.count} 
                 assure={item.assure}
                 price={item.price}
-                prevprice={item.price}
+                prevprice={item.overline}
                 discount={item.discount}
                 />
             ))

@@ -17,7 +17,7 @@ function Health_filter() {
             <section className='health_filter_text'><span className='health_text_span'>Filters</span></section>
             <Category/>
             <Type/>
-            <Brand/>
+            <Brand />
             <Container_type/>
             <Pack_of/>
             <Customer_rating/>

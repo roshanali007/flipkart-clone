@@ -1,15 +1,45 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './health_product.css'
 import path_img from '/images/path_img.svg'
 import ProductsLarge from '../products/ProductsLarge'
-
-function Health_product() {
-  const [activeState,setActiveState]=useState('Popularity')
+import {card} from '../adData/productCard.json'
+import { useFilter } from '../../header/FilterContext'
+        
+function Health_product({onSort,sortType}) {
+  const [activeState,setActiveState]=useState(sortType || 'popularity')
+  const [product,setProduct]=useState(card)
+  const {activeFilters} =useFilter()
+  const handleClick=(key)=>{
+    setActiveState(key)
+    onSort(key)
+  }
+    
+  useEffect(()=>{
+      let sortedProducts=[...card]
+      if(activeFilters.length>0){
+          sortedProducts = sortedProducts.filter((item)=>
+          activeFilters.includes(item.brand)
+        )
+      }
+      if(activeState==='popularity'){
+          sortedProducts.sort((a,b)=>a.id-b.id)
+      }
+      if(activeState==='lowtohigh'){
+          sortedProducts.sort((a,b)=>parseInt(a.price.replace(/₹|,/g, ''))-parseInt(b.price.replace(/₹|,/g, '')))
+      }
+      if(activeState==='hightolow'){
+          sortedProducts.sort((a,b)=>parseInt(b.price.replace(/₹|,/g, ''))-parseInt(a.price.replace(/₹|,/g, '')))
+      }
+      if(activeState==='newest'){
+          sortedProducts.sort((a,b)=>b.id-a.id)
+      }           
+      setProduct(sortedProducts)
+  },[activeState,activeFilters])
   const sort=[
-    {id:1,name:'Popularity'},
-    {id:2,name:'Price -- Low to High'},
-    {id:3,name:'Price -- High to Low'},
-    {id:4,name:'Newest First'}
+    {key:'popularity',name:'Popularity'},
+    {key:'lowtohigh',name:'Price -- Low to High'},
+    {key:'hightolow',name:'Price -- High to Low'},
+    {key:'newest',name:'Newest First'}
   ]
   return (
     <div className='health_product_main'>
@@ -54,14 +84,16 @@ function Health_product() {
               <span className='health_sort_text'>Sort By</span>
               {   
                 sort.map((item)=>{
-                  return <div className={`popularity_text ${activeState===item.name?'text_active':''}`} onClick={()=>setActiveState(item.name)}>{item.name}</div> 
+                  return <div key={item.key} className={`popularity_text ${activeState===item.key?'text_active':''}`} onClick={()=>handleClick(item.key)}>{item.name}</div> 
                 })
               }
           </div>
       </div>
-      <ProductsLarge/>
+      <ProductsLarge data={product}/>
     </div>
   )
 }
 
 export default Health_product
+
+

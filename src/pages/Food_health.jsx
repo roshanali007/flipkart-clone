@@ -19,7 +19,7 @@ function Food_health() {
         <div className='food_health_large'>
                 <Header_food_large/>
                 <Food_menubar/>
-                <Health_body/>
+                <Health_body setSortType={setSortType} sortType={sortType}/>
         </div>
     </div>
     

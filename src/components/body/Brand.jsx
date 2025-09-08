@@ -1,18 +1,21 @@
 import React, { useState } from 'react'
 import './type.css'
+import { useFilter } from '../../header/FilterContext'
 import arrow_down from '/images/filter_arrow_left.svg'
 import search from '/images/filter_search.svg'
-
+     
 function Brand() {
     const [active,setActive]=useState(false)
-    const [selectedItems,setSelectedItems] = useState([])
-    const handleClick = (item)=>{
-        if(selectedItems.includes(item)){
-            return setSelectedItems(selectedItems.filter((i)=>i !== item))
-        }
+    const {activeFilters,setActiveFilters}=useFilter()
+    const handleClick = (brand)=>{
+        let newFilters
+        if(activeFilters.includes(brand)){
+           newFilters = activeFilters.filter((i)=>i !== brand)
+        } 
         else{
-            return setSelectedItems([...selectedItems,item])
+           newFilters = [...activeFilters,brand]
         }
+        setActiveFilters(newFilters)
     }
     const handleActiveClick=()=>{
         if(active===true){
@@ -33,7 +36,7 @@ function Brand() {
         },
         {
             id:3,
-            name:'Farmley'
+            name:'MRHERB'
         },
         {
             id:4,
@@ -45,7 +48,7 @@ function Brand() {
         },
         {
             id:6,
-            name:'True Elements'
+            name:'Nature Aahar'
         }
     ]
   return (
@@ -55,13 +58,13 @@ function Brand() {
                 <div className='type_search' >
                     <img src={search} alt="" className='type_search_img' />
                     <input type="text" placeholder='Search Type' className='type_search_input' />
-                </div>
+                </div> 
                     {
                         data.map((item)=>(
-                            <div className='type_content_list' onClick={()=>handleClick(item.id)} key={item.id}>
+                            <div className='type_content_list' onClick={()=>handleClick(item.name)} key={item.id}>
                                 <label htmlFor="" className='type_label' >
                                     <input type="checkbox" className='checkbox_field' />
-                                    <div className={` checkbox ${selectedItems.includes(item.id) ? 'checkbox_active':''}`}></div>
+                                    <div className={` checkbox ${activeFilters.includes(item.name) ? 'checkbox_active':''}`}></div>
                                     <div className='type_elements' >{item.name}</div>
                                 </label>
                             </div>
