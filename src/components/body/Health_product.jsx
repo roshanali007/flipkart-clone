@@ -9,17 +9,35 @@ function Health_product({onSort,sortType}) {
   const [activeState,setActiveState]=useState(sortType || 'popularity')
   const [product,setProduct]=useState(card)
   const {activeFilters} =useFilter()
+  const filterOptions = {
+      brand: ["Happilo","WONDERLAND","Farmley","Tata Sampann","OPEN SECRET","True Elements"],
+      pack_of: ["1","2","3","4","10 & Above","5-10"],
+      cust_rate:['4★ & above','3★ & above','2★ & above','1★ & above']
+    }
+
   const handleClick=(key)=>{
     setActiveState(key)
     onSort(key)
   }
-    
   useEffect(()=>{
       let sortedProducts=[...card]
-      if(activeFilters.length>0){
+      const brandFilters = activeFilters.filter(f => filterOptions.brand.includes(f))
+      const packOfFilters = activeFilters.filter(f => filterOptions.pack_of.includes(f))
+      const rateFilters = activeFilters.filter(f=>filterOptions.cust_rate.includes(f))
+      if(brandFilters.length>0){
           sortedProducts = sortedProducts.filter((item)=>
-          activeFilters.includes(item.brand)
-        )
+          brandFilters.includes(item.brand)
+        )      
+      }
+      if(packOfFilters.length>0){
+          sortedProducts = sortedProducts.filter((item)=>
+          packOfFilters.includes(item.pack_of)
+        )      
+      }
+      if(rateFilters.length>0){
+          sortedProducts = sortedProducts.filter((item)=>
+          rateFilters.includes(item.cust_rate)
+        )      
       }
       if(activeState==='popularity'){
           sortedProducts.sort((a,b)=>a.id-b.id)

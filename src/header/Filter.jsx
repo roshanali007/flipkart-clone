@@ -14,7 +14,7 @@ function Filter() {
   const [active, setActive] = useState(null);
 
   useEffect(() => {
-    const priceFilter = filter.find((item) => item.name === 'Price');
+    const priceFilter = filter.find((item) => item.name === 'Price'); 
     if (priceFilter) setActive(priceFilter.id);
   }, []);
 

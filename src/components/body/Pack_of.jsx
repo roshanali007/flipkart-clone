@@ -1,18 +1,21 @@
 import React, { useState } from 'react'
 import './type.css'
 import arrow_down from '/images/filter_arrow_left.svg'
+import { useFilter } from '../../header/FilterContext'
   
 
 function Pack_of() {
     const [active,setActive]=useState(false)
-    const [selectedItems,setSelectedItems] = useState([])
+    const {activeFilters,setActiveFilters}=useFilter()
     const handleClick = (item)=>{
-        if(selectedItems.includes(item)){
-            return setSelectedItems(selectedItems.filter((i)=>i !== item))
+        let newFilters
+        if(activeFilters.includes(item)){
+            newFilters= activeFilters.filter((i)=>i !== item)
         }
         else{
-            return setSelectedItems([...selectedItems,item])
+            newFilters=[...activeFilters,item]
         }
+        setActiveFilters(newFilters)
     }
     const handleActiveClick=()=>{
         if(active===true){
@@ -31,7 +34,7 @@ function Pack_of() {
             id:2,
             name:'2'
         },
-        {
+        {     
             id:3,
             name:'3'
         },
@@ -54,10 +57,10 @@ function Pack_of() {
             <div className={`${active===true?'type_content':'type_content_none'}`} >
                 {
                     data.map((item)=>(
-                        <div className='type_content_list' onClick={()=>handleClick(item.id)} key={item.id}>
+                        <div className='type_content_list' onClick={()=>handleClick(item.name)} key={item.id}>   
                             <label htmlFor="" className='type_label' >
                                 <input type="checkbox" className='checkbox_field' />
-                                <div className={` checkbox ${selectedItems.includes(item.id) ? 'checkbox_active':''}`}></div>
+                                <div className={` checkbox ${activeFilters.includes(item.name) ? 'checkbox_active':''}`}></div>
                                 <div className='type_elements' >{item.name}</div>
                             </label>
                         </div>

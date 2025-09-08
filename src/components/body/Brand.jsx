@@ -32,7 +32,7 @@ function Brand() {
         },
         {
             id:2,
-            name:'WONDERLAND'
+            name:'LIVYOR'
         },
         {
             id:3,
