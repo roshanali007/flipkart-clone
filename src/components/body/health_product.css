@@ -76,3 +76,8 @@
     font-family: var(--int-regu); 
     border-bottom: 2px solid transparent;
 }
+.text_active{
+    color: #2874f0;
+    border-bottom: 2px solid #2874f0;
+    font-weight: 600;
+}

@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './health_product.css'
 import path_img from '/images/path_img.svg'
 import ProductsLarge from '../products/ProductsLarge'
 
 function Health_product() {
+  const [activeState,setActiveState]=useState('Popularity')
+  const sort=[
+    {id:1,name:'Popularity'},
+    {id:2,name:'Price -- Low to High'},
+    {id:3,name:'Price -- High to Low'},
+    {id:4,name:'Newest First'}
+  ]
   return (
     <div className='health_product_main'>
       <div className='health_product_div'>
@@ -41,14 +48,15 @@ function Health_product() {
               Dry Fruits, Nut & Seed
           </h1>
           <span className='health_product_span'>
-              (Showing 1 – 40 products of 5,965 products)
+              (Showing 1 - 40 products of 5,965 products)
           </span>
           <div className='health_product_sort'>
               <span className='health_sort_text'>Sort By</span>
-              <div className='popularity_text'>Popularity</div>
-              <div className='price_ascend popularity_text'>Price -- Low to High</div>
-              <div className='price_descend popularity_text'>Price -- High to Low</div>
-              <div className='newest_product popularity_text'>Newest First</div>
+              {   
+                sort.map((item)=>{
+                  return <div className={`popularity_text ${activeState===item.name?'text_active':''}`} onClick={()=>setActiveState(item.name)}>{item.name}</div> 
+                })
+              }
           </div>
       </div>
       <ProductsLarge/>

@@ -5,9 +5,11 @@ import './health_body.css'
 
 function Health_body() {
   return (
-    <div className='health_body_main'>
+    <div className='health_body'>
+      <div className='health_body_main'>
         <Health_filter/>
         <Health_product/>
+      </div>
     </div>
   )
 }
