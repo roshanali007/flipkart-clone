@@ -8,12 +8,13 @@ function Pack_of() {
     const [active,setActive]=useState(false)
     const {activeFilters,setActiveFilters}=useFilter()
     const handleClick = (item)=>{
+        let filterValue = `2-${item}`
         let newFilters
-        if(activeFilters.includes(item)){
-            newFilters= activeFilters.filter((i)=>i !== item)
+        if(activeFilters.includes(filterValue)){
+            newFilters= activeFilters.filter((i)=>i !== filterValue)
         }
         else{
-            newFilters=[...activeFilters,item]
+            newFilters=[...activeFilters,filterValue]
         }
         setActiveFilters(newFilters)
     }
@@ -57,10 +58,10 @@ function Pack_of() {
             <div className={`${active===true?'type_content':'type_content_none'}`} >
                 {
                     data.map((item)=>(
-                        <div className='type_content_list' onClick={()=>handleClick(item.name)} key={item.id}>   
+                        <div className='type_content_list' onClick={()=>handleClick(item.id)} key={item.id}>   
                             <label htmlFor="" className='type_label' >
                                 <input type="checkbox" className='checkbox_field' />
-                                <div className={` checkbox ${activeFilters.includes(item.name) ? 'checkbox_active':''}`}></div>
+                                <div className={` checkbox ${activeFilters.includes(`2-${item.id}`) ? 'checkbox_active':''}`}></div>
                                 <div className='type_elements' >{item.name}</div>
                             </label>
                         </div>

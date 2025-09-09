@@ -37,60 +37,37 @@
 .price_drag{
     position: relative;
     height: 13px;
+    padding-top: 6px;
 }
-.drag_left_circle{
-    position: absolute;
-    left: -13.5px;
-    display: inline-block;
-    z-index: 1;
-    width: 20px;
-    height: 20px;
-    top: -3.5px;
-}
-.drag_left_circle .price_circle{
-    position: absolute;
-    right: 0;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    border: 1px solid #bababa;
-    background-color: #fff;
-    top: 3.5px;
-}
-.drag_right_circle {
-    position: absolute;
-    right: -13.5px;
-    display: inline-block;
-    z-index: 1;
-    width: 20px;
-    height: 20px;
-    top: -3.5px;
-}
-.drag_right_circle .price_circle{
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    border: 1px solid #bababa;
-    position: absolute;
-    background-color: #fff;
-    top: 3.5px;
-}
+
 .drag_center_line{
-    background-color: #c2c2c2;
+    background-color: transparent;
     height: 2px;
     display: inline-block;
     position: absolute;
-    top: 6px;
     width: 100%;
+    appearance: none;
+    z-index: 1;
+    left: 0;
+}
+.drag_width{
+    background: blue;
+    position: absolute;
+    width: 100%;
+    height: 6px;
 }
 .drag_center{
-    background-color: #2874f0;
+    background-color: transparent;
     position: absolute;
     display: inline-block;
     width: 100%;
-    top: 4px;
+    top: 7px;
+    z-index: 2;
     height: 6px;
+    appearance: none;
+    pointer-events: none;
     transform-origin:left center;
+    right: 0;
 }
 .price_dot{
     margin-top: -12px;
@@ -164,4 +141,70 @@
 }
 .max_range_option{
     padding: 0 7px;
+}
+.drag_center::-webkit-slider-thumb{
+    pointer-events: all;
+    width: 13px;
+    height:13px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    appearance: none;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.slider_container {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  
+}
+
+.slider_track {
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.slider_range {
+  position: absolute;
+  height: 6px;
+  background: #2874f0;
+  border-radius: 3px;
+}                                                  
+
+.thumb {
+  appearance: none;
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  top: 3px; 
+}
+
+.thumb::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
+}
+.thumb_left {
+  z-index: 3;
+}
+
+.thumb_right {
+  z-index: 4;
 }

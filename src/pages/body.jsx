@@ -17,8 +17,6 @@ function Body() {
   return (
     <div className='body-container'>
       <div className='body-width'>
-
-      
         <MenulistLap data={menulistLap} datatwo={menulistLarge} />
         <Carousel data={slides} datatwo={slidesTab} datathree={slidesLap} datafour={slideLarge} />
         <Menulist dataOne={menulist} dataTwo={menulistTwo}/>

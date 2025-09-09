@@ -10,8 +10,8 @@ function Health_product({onSort,sortType}) {
   const [product,setProduct]=useState(card)
   const {activeFilters} =useFilter()
   const filterOptions = {
-      brand: ["Happilo","WONDERLAND","Farmley","Tata Sampann","OPEN SECRET","True Elements"],
-      pack_of: ["1","2","3","4","10 & Above","5-10"],
+      brand: ["Happilo","LIVYOR","MRHERB","Tata Sampann","OPEN SECRET","Nature Aahar"],
+      pack_of: ["2-1","2-2","2-3","2-4","2-5","2-6"],
       cust_rate:['4★ & above','3★ & above','2★ & above','1★ & above']
     }
 
@@ -32,11 +32,15 @@ function Health_product({onSort,sortType}) {
       if(packOfFilters.length>0){
           sortedProducts = sortedProducts.filter((item)=>
           packOfFilters.includes(item.pack_of)
-        )      
-      }
+        )             
+      }                             
       if(rateFilters.length>0){
           sortedProducts = sortedProducts.filter((item)=>
-          rateFilters.includes(item.cust_rate)
+           rateFilters.some((filter)=>{
+            const filterValue = parseInt(filter[0])
+            const productValue=parseInt(item.cust_rate[0])
+            return productValue >= filterValue
+          })
         )      
       }
       if(activeState==='popularity'){
