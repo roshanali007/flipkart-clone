@@ -1,30 +1,26 @@
 
-
 import React, { useState } from 'react'
 import './price.css'
  
 function Price() {
-    const pricesteps = [200,500,2000,5000,10000]
-    const [minPrice,setMinPrice]=useState('min')
-    const [maxPrice,setMaxPrice]=useState(10000)    
-    const snapToStep = (value) =>{
-        let closest =pricesteps[0]
-        for(let step of pricesteps){
-            if(Math.abs(step-value) < Math.abs(closest - value)){
-                closest=step
-            }
-        }      
-        return closest 
+    const pricesteps = ['Min',200,500,2000,5000,10000,'10000+']
+    const [minIndex,setMinIndex]=useState(0)
+    const [maxIndex,setMaxIndex]=useState(pricesteps.length - 1)        
+         
+    const handleMinChange=(e)=>{
+        let value =Math.min(Number(e.target.value),maxIndex-1)
+        setMinIndex(value)
+        if(value >= maxIndex){
+            setMaxIndex(value+1)
+        }
     }
-    const handleMinChange =(e)=>{
-        let value=Math.min(Number(e.target.value),maxPrice-200)
-        value = snapToStep(value)
-        setMinPrice(value)
-    }
-    const handleMaxChange=(e)=>{
-        let value =Math.max(Number(e.target.value),minPrice+200)
-        value =snapToStep(value)
-        setMaxPrice(value)
+
+    const handleMaxChange =(e)=>{
+        let value =Math.max(Number(e.target.value),minIndex+1)
+        setMaxIndex(value)
+        if(value<= minIndex){
+            setMinIndex(value-1)
+        }
     }
     
   return (
@@ -40,47 +36,49 @@ function Price() {
                 <div className='price_bg_high' ></div>
                 <div className='price_bg_high' ></div>
                 <div className='price_bg_low' ></div>
-            </div>                               
+            </div>                      
         </div>
         <div className="price_drag_range">
             <div className='slider_container'>
-                <input type='range' min={0} max={10000} step={100} value={minPrice} onChange={handleMinChange} className='thumb thumb_left'/>
-                <input type='range'  min={0} max={10000} step={100} value={maxPrice} onChange={handleMaxChange}  className='thumb thumb_right'/>
+                <input type='range' min={0} max={pricesteps.length-1} step={1} value={minIndex} onChange={handleMinChange} className='thumb thumb_left'/>
+                <input type='range'  min={0} max={pricesteps.length-1} step={1} value={maxIndex} onChange={handleMaxChange}  className='thumb thumb_right'/>
                 <div className='slider'>
                     <div className='slider_track'/>
-                    <div className='slider_range' style={{left:`${(minPrice/10000)*100}%`,width:`${((maxPrice-minPrice)/10000)*100}%`}}></div>
+                    <div className='slider_range' style={{left:`${(minIndex/(pricesteps.length-1))*100}%`,width:`${((maxIndex-minIndex)/(pricesteps.length-1))*100}%`}}></div>
                 </div>
             </div>
-            <div className='price_dot'>
-                <div className='price_each_dot'>.</div>
-                <div className='price_each_dot'>.</div>
-                <div className='price_each_dot'>.</div>
-                <div className='price_each_dot'>.</div>
-                <div className='price_each_dot'>.</div>
-                <div className='price_each_dot'>.</div>
-                <div className='price_dot_end'>.</div>
+            <div className="price_dot">
+                {
+                    pricesteps.map((p,idx)=>(
+                        <div key={p} className="price_each_dot" style={{left:`${(idx/(pricesteps.length-1))*100}%`}}>
+                            <span className='dot' >.</span>
+                        </div>
+                    ))
+                }
             </div>
         </div>
         <div className='price_range'>
             <div className='price_min_range'>
-                <select name="" id="" onChange={(e)=>setMinPrice(Number(e.target.value))} value={minPrice} className='min_range_select'>
-                    <option value={0} className='min_range_option'>Min</option>
+                <select name="" id="" onChange={handleMinChange} value={minIndex} className='min_range_select'>
                     {
-                        pricesteps.map((p)=>{
-                          return  <option value={p} className='min_range_option' key={p} >₹{p}</option>
-                        })
+                        pricesteps.map((p,idx)=>({value:p,idx})).filter((item)=>(item.idx<maxIndex)).map((item)=>(
+                            <option value={item.idx} key={item.idx} className='max_range_option'>
+                                {typeof item.value === 'number' ? `₹${item.value}`: item.value}
+                            </option>
+                        ))
                     }
                 </select>
             </div>
-            <div className='price_to'>to</div>
+            <div className='price_to'>to</div>         
             <div className='price_max_range'>
-                <select name="" id="" className='max_range_select' value={maxPrice} onChange={(e)=>setMaxPrice(Number(e.target.value))}>
+                <select name="" id="" className='max_range_select' value={maxIndex} onChange={handleMaxChange}>
                     {
-                        pricesteps.map((p)=>(
-                            <option value={p} key={p} className='max_range_option' >₹{p}</option>
+                        pricesteps.map((p,idx)=>({value:p,idx})).filter((item)=>item.idx >minIndex).map((item)=>(
+                            <option value={item.idx} key={item.idx} className='max_range_option'>
+                                {typeof item.value === 'number' ? `₹${item.value}`: item.value}
+                            </option>
                         ))
                     }
-                    <option value={10000} className='max_range_option' >₹10000+</option>
                 </select>
             </div>
         </div>

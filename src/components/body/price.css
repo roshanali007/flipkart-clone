@@ -34,58 +34,29 @@
     background: #e0e0e0;
     display: inline-block;
 }
-.price_drag{
-    position: relative;
-    height: 13px;
-    padding-top: 6px;
-}
-
-.drag_center_line{
-    background-color: transparent;
-    height: 2px;
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    appearance: none;
-    z-index: 1;
-    left: 0;
-}
-.drag_width{
-    background: blue;
-    position: absolute;
-    width: 100%;
-    height: 6px;
-}
-.drag_center{
-    background-color: transparent;
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    top: 7px;
-    z-index: 2;
-    height: 6px;
-    appearance: none;
-    pointer-events: none;
-    transform-origin:left center;
-    right: 0;
-}
 .price_dot{
-    margin-top: -12px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: -5px;
 }
 .price_each_dot{
-    width: 39.4683px;
-    display: inline-block;
-    text-align: left;
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
     color: #c2c2c2;
-    font-size: 20px;
 }
-.price_dot_end{
-    width: 0px;
-    display: inline-block;
-    text-align: left;
-    color: #c2c2c2;
+
+ .dot{
     font-size: 20px;
-}
+    line-height: 10px;
+ }
+ .dot_label{
+    font-size: 11px;
+    color: #878787;
+    display: block;
+    margin-top: 2px;
+ }
 .price_range{
     margin: 5px -4px 0;
     display: flex;
@@ -142,16 +113,7 @@
 .max_range_option{
     padding: 0 7px;
 }
-.drag_center::-webkit-slider-thumb{
-    pointer-events: all;
-    width: 13px;
-    height:13px;
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    appearance: none;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-}
+
 .slider_container {
   position: relative;
   width: 100%;
