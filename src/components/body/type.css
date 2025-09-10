@@ -30,6 +30,30 @@
 .type_content{
     margin: 7px 0;
 }
+.clear_all{
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+}
+.clear_x{
+    height: 14px;
+    width: 14px;
+    background-color: #f0f0f0;
+    padding: 1px 0;
+    font-size: 10px;
+    text-align: center;
+    color: #878787;
+    vertical-align: middle;
+}
+.clear_text{
+    font-size: 14px;
+    color: #878787;
+    margin-left: 11px;
+    font-family: var(--int-regu);
+}
+.clear_brand{
+    display: none;
+}
 .type_search{
     margin-bottom: 7px;
 }

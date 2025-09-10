@@ -1,32 +1,47 @@
 
 import React, { useState } from 'react'
 import './price.css'
+import { useFilter } from '../../header/FilterContext'
  
 function Price() {
     const pricesteps = ['Min',200,500,2000,5000,10000,'10000+']
     const [minIndex,setMinIndex]=useState(0)
-    const [maxIndex,setMaxIndex]=useState(pricesteps.length - 1)        
-         
+    const [maxIndex,setMaxIndex]=useState(pricesteps.length - 1)  
+    const {selectedFilters,setSelectFilters} = useFilter()     
+    const { setPriceRange } =useFilter()
+
     const handleMinChange=(e)=>{
         let value =Math.min(Number(e.target.value),maxIndex-1)
         setMinIndex(value)
         if(value >= maxIndex){
             setMaxIndex(value+1)
-        }
+        } 
+        const newPrice={type:'price',min:pricesteps[value],max:pricesteps[maxIndex]}
+        setPriceRange(newPrice)
+        setSelectFilters([...selectedFilters.filter(f=>f.type !== 'price'),newPrice])
     }
-
+  
     const handleMaxChange =(e)=>{
         let value =Math.max(Number(e.target.value),minIndex+1)
         setMaxIndex(value)
         if(value<= minIndex){
             setMinIndex(value-1)
         }
+        const newPrice={type:'price',min:pricesteps[minIndex],max:pricesteps[value]}
+        setPriceRange(newPrice)
+        setSelectFilters([...selectedFilters.filter(f=>f.type !== 'price'),newPrice])         
     }
-    
+    const handleClear=()=>{
+        setPriceRange({type:'price',min:pricesteps[0],max:pricesteps[pricesteps.length-1]}) 
+        setSelectFilters(prev=> prev.filter(f=>f.type !== 'price')) 
+    }
   return (
     <section className='price_main'>
         <div className='price_head' >
             <span className='price_head_text'>PRICE</span>
+            <span 
+            className={`price_head_clear ${minIndex===0 && maxIndex===pricesteps.length-1?'price_clear':'' }`} 
+            onClick={()=>{setMinIndex(0);setMaxIndex(pricesteps.length-1);setPriceRange({min:pricesteps[0],max:pricesteps[pricesteps.length-1]});handleClear()}} >CLEAR</span>
         </div>       
         <div className='price_background' >
             <div className="price_bg_div">

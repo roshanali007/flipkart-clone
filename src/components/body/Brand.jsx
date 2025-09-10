@@ -7,15 +7,19 @@ import search from '/images/filter_search.svg'
 function Brand() {
     const [active,setActive]=useState(false)
     const {activeFilters,setActiveFilters}=useFilter()
+    const {setSelectFilters}=useFilter()
     const handleClick = (brand)=>{
         let newFilters
         if(activeFilters.includes(brand)){
-           newFilters = activeFilters.filter((i)=>i !== brand)
+           newFilters = activeFilters.filter((i)=>i !== brand) 
+           setActiveFilters(newFilters)
+           setSelectFilters(prev=>prev.filter(f=>!(f.type === 'brand' && f.value === brand)))
         } 
-        else{
+        else{     
            newFilters = [...activeFilters,brand]
+           setActiveFilters(newFilters)
+           setSelectFilters(prev=>[...prev,{type:'brand',value:brand}])   
         }
-        setActiveFilters(newFilters)
     }
     const handleActiveClick=()=>{
         if(active===true){
@@ -25,6 +29,10 @@ function Brand() {
             return setActive(true)
         }
     }
+    const handleClear=()=>{
+            setActiveFilters(prev=>prev.filter(i=>!data.some(d=>d.name === i)))
+            setSelectFilters(prev => prev.filter(f => f.type !== 'brand'));
+        }
     const data=[
         {
             id:1,
@@ -51,15 +59,20 @@ function Brand() {
             name:'Nature Aahar'
         }
     ]
+    
   return (
         <section className='type_main' >
-            <div className='type_head_text' onClick={()=>handleActiveClick()} ><span className='type_head_span'>BRAND</span><img src={arrow_down} alt="" className={`type_head_img ${active===true?'':'rotate'}`} /></div>
+            <div className='type_head_text' onClick={()=>handleActiveClick()}  ><span className='type_head_span'>BRAND</span><img src={arrow_down} alt="" className={`type_head_img ${active===true?'':'rotate'}`} /></div>
             <div className={`${active===true?'type_content':'type_content_none'}`} >
+                <div className={`clear_all ${activeFilters.length===0?'clear_brand':''}`} onClick={handleClear} >
+                    <div className='clear_x'>✕</div>
+                    <div className='clear_text'>Clear All</div>  
+                </div> 
                 <div className='type_search' >
                     <img src={search} alt="" className='type_search_img' />
                     <input type="text" placeholder='Search Type' className='type_search_input' />
                 </div> 
-                    {
+                    {          
                         data.map((item)=>(
                             <div className='type_content_list' onClick={()=>handleClick(item.name)} key={item.id}>
                                 <label htmlFor="" className='type_label' >

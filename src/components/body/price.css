@@ -6,6 +6,16 @@
 .price_head{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.price_head_clear{
+    font-size:12px;
+    font-family: var(--int-semi);
+    letter-spacing: 0.3px;
+    color: #2874f0;
+}
+.price_clear{
+    display: none;
 }
 .price_head_text{
     font-size: 13px;

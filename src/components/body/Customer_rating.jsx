@@ -7,12 +7,15 @@ import { useFilter } from '../../header/FilterContext'
 function Customer_rating() {
     const [active,setActive]=useState(false)
     const {activeFilters,setActiveFilters}=useFilter()
+    const {setSelectFilters}=useFilter()
     const handleClick = (item)=>{
         if(activeFilters.includes(item)){
              setActiveFilters(activeFilters.filter((i)=>i !== item))
+             setSelectFilters(activeFilters.filter((i)=>i !== item))
         }
         else{
              setActiveFilters([...activeFilters,item])
+             setSelectFilters([...activeFilters,item])
         }
     }
     const handleActiveClick=()=>{
@@ -22,6 +25,10 @@ function Customer_rating() {
         else{
             return setActive(true)
         }
+    }
+    const handleClear =()=>{
+        setActiveFilters([])
+        setSelectFilters([])
     }
     const data=[
         {
@@ -45,6 +52,10 @@ function Customer_rating() {
         <section className='type_main' >
             <div className='type_head_text' onClick={()=>handleActiveClick()} ><span className='type_head_span'>CUSTOMER RATING</span><img src={arrow_down} alt="" className={`type_head_img ${active===true?'':'rotate'}`} /></div>
             <div className={`${active===true?'type_content':'type_content_none'}`} >
+                <div className={`clear_all ${activeFilters.length===0?'clear_brand':''}`} onClick={handleClear} >
+                    <div className='clear_x'>✕</div>
+                    <div className='clear_text'>Clear All</div>  
+                </div> 
                 {
                     data.map((item)=>(
                         <div className='type_content_list' onClick={()=>handleClick(item.name)} key={item.id}>

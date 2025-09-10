@@ -7,16 +7,23 @@ import { useFilter } from '../../header/FilterContext'
 function Pack_of() {
     const [active,setActive]=useState(false)
     const {activeFilters,setActiveFilters}=useFilter()
-    const handleClick = (item)=>{
+    const {selectedFilters,setSelectFilters}=useFilter()
+    const handleClick = (item,name)=>{
         let filterValue = `2-${item}`
         let newFilters
+        let selectFilters
         if(activeFilters.includes(filterValue)){
             newFilters= activeFilters.filter((i)=>i !== filterValue)
+            // selectFilters=selectedFilters.filter((i)=> i !== name)
+            setSelectFilters(prev=>prev.filter(f=>!(f.type === 'pack_of' && f.value === name)))//for health_filter component to appear on the top of the filter
         }
         else{
             newFilters=[...activeFilters,filterValue]
+            // selectFilters=[...selectedFilters,name]
+            setSelectFilters(prev=>[...prev,{type:'pack_of',value:name}])
         }
         setActiveFilters(newFilters)
+        // setSelectFilters(selectFilters)
     }
     const handleActiveClick=()=>{
         if(active===true){
@@ -25,6 +32,10 @@ function Pack_of() {
         else{
             return setActive(true)
         }
+    }
+    const handleClear =()=>{
+        setActiveFilters(prev => prev.filter(i => !i.startsWith('2-')))
+        setSelectFilters(prev => prev.filter(f => f.type !== 'pack_of'))
     }
     const data=[
         {
@@ -56,9 +67,13 @@ function Pack_of() {
         <section className='type_main' >
             <div className='type_head_text' onClick={()=>handleActiveClick()} ><span className='type_head_span'>PACK OF</span><img src={arrow_down} alt="" className={`type_head_img ${active===true?'':'rotate'}`} /></div>
             <div className={`${active===true?'type_content':'type_content_none'}`} >
+                <div className={`clear_all ${activeFilters.length===0?'clear_brand':''}`} onClick={handleClear} >
+                    <div className='clear_x'>✕</div>
+                    <div className='clear_text'>Clear All</div>  
+                </div> 
                 {
                     data.map((item)=>(
-                        <div className='type_content_list' onClick={()=>handleClick(item.id)} key={item.id}>   
+                        <div className='type_content_list' onClick={()=>handleClick(item.id,item.name)} key={item.id}>   
                             <label htmlFor="" className='type_label' >
                                 <input type="checkbox" className='checkbox_field' />
                                 <div className={` checkbox ${activeFilters.includes(`2-${item.id}`) ? 'checkbox_active':''}`}></div>

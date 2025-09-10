@@ -8,13 +8,13 @@ import { useFilter } from '../../header/FilterContext'
 function Health_product({onSort,sortType}) {
   const [activeState,setActiveState]=useState(sortType || 'popularity')
   const [product,setProduct]=useState(card)
-  const {activeFilters} =useFilter()
+  const {activeFilters,priceRange} =useFilter()
+
   const filterOptions = {
       brand: ["Happilo","LIVYOR","MRHERB","Tata Sampann","OPEN SECRET","Nature Aahar"],
       pack_of: ["2-1","2-2","2-3","2-4","2-5","2-6"],
       cust_rate:['4★ & above','3★ & above','2★ & above','1★ & above']
     }
-
   const handleClick=(key)=>{
     setActiveState(key)
     onSort(key)
@@ -43,6 +43,13 @@ function Health_product({onSort,sortType}) {
           })
         )      
       }
+      sortedProducts=sortedProducts.filter((item)=>{
+        const price =parseInt(item.price.replace(/₹|,/g, ''))
+        let minVal =priceRange.min === 'Min'?0 : (priceRange.min === '10000+' ? 10000 :priceRange.min)
+        console.log('min',minVal)
+        let maxVal = priceRange.max === '10000+'? Infinity : priceRange.max
+        return price >= minVal && price <= maxVal
+      })
       if(activeState==='popularity'){
           sortedProducts.sort((a,b)=>a.id-b.id)
       }
@@ -56,7 +63,7 @@ function Health_product({onSort,sortType}) {
           sortedProducts.sort((a,b)=>b.id-a.id)
       }           
       setProduct(sortedProducts)
-  },[activeState,activeFilters])
+  },[activeState,activeFilters,priceRange])
   const sort=[
     {key:'popularity',name:'Popularity'},
     {key:'lowtohigh',name:'Price -- Low to High'},
