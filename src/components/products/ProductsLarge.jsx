@@ -13,13 +13,16 @@ function ProductsLarge({data}) {
                 Src={item.src}
                 Sponsor={item.sponsor} 
                 Name={item.name} 
-                quantity={item.quan} 
+                quan={item.quan} 
                 rate={item.rating} 
                 Count={item.count} 
                 assure={item.assure}
                 price={item.price}
                 prevprice={item.overline}
                 discount={item.discount}
+                more={item.more}
+                more_src={item.more_src}
+                quantity={item.quantity}
                 />
             ))
         }

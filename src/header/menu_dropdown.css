@@ -5,16 +5,16 @@
     background-color: #fff;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    z-index: 2;
+    z-index: 5;
     box-shadow: 0 1px 2px 1px rgba(0,0,0,.16);
     display: flex;
     width: 100%;
-}
+}      
 .elec_each_div{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 25px;
+    padding: 0 25px;          
 }
 .elec_head_text{
     margin-top: 5px;

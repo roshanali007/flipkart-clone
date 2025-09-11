@@ -10,6 +10,9 @@
     padding: 16px;
     position: relative;  
 }
+.card_div:hover{
+    box-shadow: 0 3px 16px 0 rgba(0,0,0,.11);
+}
 .card_top{
     position: relative;
     margin-bottom: 5px;
@@ -118,4 +121,32 @@
     letter-spacing: -0.2px;
     display: inline-block;
     margin-left: 8px;
+}
+.more_hover{
+    position: absolute;
+    box-shadow: 0 9px 16px 0 rgba(0,0,0,.11);
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 16px;
+}
+.more_text{
+    color: #2874f0;
+    font-size: 12px;
+    font-family: var(--int-semi);
+}
+.clear_hover{
+    display: none;
+}
+.more_hover_img{
+    width: 12px;
+    height: 7px;
+    transform: rotate(180deg);
+}
+.more_quantity{
+    font-size: 14px;
+    font-family: var(--int-regu);
+    color: #212121;
+    line-height: 1.4;
 }

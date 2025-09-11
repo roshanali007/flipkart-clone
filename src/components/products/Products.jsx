@@ -71,6 +71,7 @@ function Products({data}) {
    return result 
 
   }, [activeFilters,data]);
+  
   return (
      <div className='product_main'>
       <div className='product_div'>

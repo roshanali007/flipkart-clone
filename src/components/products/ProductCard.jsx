@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './productCard.css';
 import white_star from '/images/white_star.svg'
 import like from '/images/like_button.svg'
 
-function ProductCard({Src,Sponsor,Name,quantity,rate,Count,assure,price,prevprice,discount}) {
+function ProductCard({Src,Sponsor,Name,quan,rate,Count,assure,price,prevprice,discount,more,more_src,quantity}) {
+    const  [hover,setHover]=useState(false)
+    const handleHoverIn=()=>{
+        setHover(true)
+    }
+    const handleHoverOut=()=>{
+        setHover(false)
+    }
   return (
-    <div className='card_main' >
+    <div className='card_main' onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut}>
         <div className='card_div' >
             <div className='card_top' >
                 <div className='card_top_img' >
@@ -24,7 +31,7 @@ function ProductCard({Src,Sponsor,Name,quantity,rate,Count,assure,price,prevpric
                 <span className='card_name_text'>{Name}</span>
             </div>
             <div className='card_quantity' >
-                <span className='quantity_text' >{quantity}</span>
+                <span className='quantity_text' >{quan}</span>
             </div>
             <div className='card_rating' >
                 <span className='rating_text'>
@@ -42,6 +49,15 @@ function ProductCard({Src,Sponsor,Name,quantity,rate,Count,assure,price,prevpric
                 <div className='card_price' >{price}</div>
                 <div className='card_price_overline' >{prevprice}</div>
                 <div className='card_discount' >{discount}</div>
+            </div>
+            <div className={`more_hover ${hover===true? '':'clear_hover'}`}>
+                <div className='more_quantity' >
+                    {quantity}
+                </div>
+                <div className='more_text'>{more}
+                    <img src={more_src}  alt="" className={`more_hover_img ${more===null?'clear_hover':''}`} />
+                </div>
+                
             </div>
         </div>
     </div>

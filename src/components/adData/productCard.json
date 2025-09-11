@@ -14,7 +14,9 @@
             "assure":"images/assurance.png",
             "price":"₹161",
             "overline":"₹314",
-            "discount":"48% off"
+            "discount":"48% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         },
         {
             "id":2,
@@ -28,9 +30,11 @@
             "cust_rate":"4★ & above",
             "count":"2,078",
             "assure":"images/assurance.png",
-            "price":"₹272",
-            "overline":"₹500",
-            "discount":"45% off"
+            "price":"₹544",
+            "overline":"₹1,000",
+            "discount":"45% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         },
         {
             "id":3,
@@ -46,7 +50,9 @@
             "assure":"images/assurance.png",
             "price":"₹234",
             "overline":"₹275",
-            "discount":"14% off"
+            "discount":"14% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         },
         {
             "id":4,
@@ -62,7 +68,9 @@
             "assure":"images/assurance.png",
             "price":"₹300",
             "overline":"₹1,199",
-            "discount":"74% off"
+            "discount":"74% off",
+            "more":null,
+            "quantity":"Quantity: 1x500 g"
         },
          {                      
             "id":5,
@@ -76,9 +84,11 @@
             "cust_rate":"4★ & above",
             "count":"1,16,135",
             "assure":"images/assurance.png",
-            "price":"₹298",
-            "overline":"₹640",
-            "discount":"53% off"
+            "price":"₹596",
+            "overline":"₹1,280",
+            "discount":"53% off",
+            "more":null,
+            "quantity":"Quantity: 2x400 g"
         },
         {
             "id":6,  
@@ -94,7 +104,9 @@
             "assure":null,
             "price":"₹418",
             "overline":"₹1,299",
-            "discount":"67% off"
+            "discount":"67% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         },
         {
             "id":7,
@@ -108,9 +120,11 @@
             "cust_rate":"1★ & above",
             "count":"26,433",
             "assure":"images/assurance.png",  
-            "price":"₹196",
-            "overline":"₹395",
-            "discount":"50% off"
+            "price":"₹2,352",
+            "overline":"₹4,740",
+            "discount":"50% off",
+            "more":null,
+            "quantity":"Quantity: 12x200 g"
         },
         {
             "id":8,
@@ -124,9 +138,11 @@
             "cust_rate":"1★ & above",
             "count":"2,397",
             "assure":"images/assurance.png",
-            "price":"₹255",
-            "overline":"₹999",
-            "discount":"74% off"
+            "price":"₹2,550",
+            "overline":"₹9,990",
+            "discount":"74% off",
+            "more":null,
+            "quantity":"Quantity: 10x500 g"
         }, {
             "id":9,
             "src":"images/black_dry.webp",
@@ -141,7 +157,9 @@
             "assure":null,
             "price":"₹198",
             "overline":"₹599",
-            "discount":"66% off"
+            "discount":"66% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         },
         {
             "id":10,
@@ -155,9 +173,11 @@
             "cust_rate":"3★ & above",
             "count":"22,788",
             "assure":"images/assurance.png",
-            "price":"₹403",
-            "overline":"₹597",
-            "discount":"32% off"
+            "price":"₹2,821",
+            "overline":"₹4,179",
+            "discount":"32% off",
+            "more":null,
+            "quantity":"Quantity: 7x500 g"
         },
         {
             "id":11,
@@ -172,8 +192,10 @@
             "count":"16,696",
             "assure":"images/assurance.png",
             "price":"₹783",
-            "overline":"₹1450",
-            "discount":"46% off"
+            "overline":"₹1,450",
+            "discount":"46% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         },
         {
             "id":12,
@@ -187,9 +209,11 @@
             "cust_rate":"4★ & above",
             "count":"57,106",
             "assure":"images/assurance.png",
-            "price":"₹539",
-            "overline":"₹899",
-            "discount":"40% off"
+            "price":"₹3,234",
+            "overline":"₹5,394",
+            "discount":"40% off",
+            "more":null,
+            "quantity":"Quantity: 6x501 g"
         }, {
             "id":13,
             "src":"images/Chia_seed.webp",
@@ -204,7 +228,9 @@
             "assure":"images/assurance.png",
             "price":"₹99",
             "overline":"₹150",
-            "discount":"34% off"
+            "discount":"34% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         },
         {
             "id":14,
@@ -218,9 +244,11 @@
             "cust_rate":"2★ & above",
             "count":"1,640",
             "assure":"images/assurance.png",
-            "price":"₹300",
-            "overline":"₹999",
-            "discount":"69% off"
+            "price":"₹1,200",
+            "overline":"₹3,996",
+            "discount":"69% off",
+            "more":null,
+            "quantity":"Quantity: 4x500 g"
         },
         {
             "id":15,
@@ -234,9 +262,11 @@
             "cust_rate":"4★ & above",
             "count":"385",
             "assure":"images/assurance.png",
-            "price":"₹133",
-            "overline":"₹499",
-            "discount":"73% off"
+            "price":"₹399",
+            "overline":"₹1,497",
+            "discount":"73% off",
+            "more":null,
+            "quantity":"Quantity: 3x250 g"
         },
         {
             "id":16,
@@ -252,7 +282,9 @@
             "assure":null,
             "price":"₹229",
             "overline":"₹999",
-            "discount":"77% off"
+            "discount":"77% off",
+            "more":"More Choices",
+            "more_src":"images/more_src.svg"
         }
     ]
 }

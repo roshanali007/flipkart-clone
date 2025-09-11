@@ -13,7 +13,7 @@ function Food_health() {
   return (
     <div>
         <div className='food_health_main'>
-          <Header_food setSortType={setSortType} sortType={sortType}/>          
+          <Header_food setSortType={setSortType} sortType={sortType}/>                                                   
           <ProductPage sortType={sortType}/> 
         </div>
         <div className='food_health_large'>

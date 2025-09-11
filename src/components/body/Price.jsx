@@ -1,14 +1,21 @@
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './price.css'
-import { useFilter } from '../../header/FilterContext'
+import { useFilter} from '../../header/FilterContext'
  
 function Price() {
-    const pricesteps = ['Min',200,500,2000,5000,10000,'10000+']
+    const {pricesteps}=useFilter()
     const [minIndex,setMinIndex]=useState(0)
     const [maxIndex,setMaxIndex]=useState(pricesteps.length - 1)  
-    const {selectedFilters,setSelectFilters} = useFilter()     
-    const { setPriceRange } =useFilter()
+    const {selectedFilters,setSelectFilters,activeFilters} = useFilter()     
+    const {priceRange, setPriceRange } =useFilter()
+
+    useEffect(() => {
+    if(priceRange.min === pricesteps[0] && priceRange.max === pricesteps[pricesteps.length - 1]) {
+        setMinIndex(0)
+        setMaxIndex(pricesteps.length - 1)
+    }
+    }, [priceRange]) 
 
     const handleMinChange=(e)=>{
         let value =Math.min(Number(e.target.value),maxIndex-1)
@@ -18,7 +25,7 @@ function Price() {
         } 
         const newPrice={type:'price',min:pricesteps[value],max:pricesteps[maxIndex]}
         setPriceRange(newPrice)
-        setSelectFilters([...selectedFilters.filter(f=>f.type !== 'price'),newPrice])
+        setSelectFilters([...selectedFilters.filter(f=>f.type !== 'price'),newPrice])//for health_filter component,to appear on the top of the filter
     }
   
     const handleMaxChange =(e)=>{
@@ -40,7 +47,7 @@ function Price() {
         <div className='price_head' >
             <span className='price_head_text'>PRICE</span>
             <span 
-            className={`price_head_clear ${minIndex===0 && maxIndex===pricesteps.length-1?'price_clear':'' }`} 
+            className={`price_head_clear ${minIndex===0 && maxIndex===pricesteps.length-1 ?'price_clear':'' }`} 
             onClick={()=>{setMinIndex(0);setMaxIndex(pricesteps.length-1);setPriceRange({min:pricesteps[0],max:pricesteps[pricesteps.length-1]});handleClear()}} >CLEAR</span>
         </div>       
         <div className='price_background' >
