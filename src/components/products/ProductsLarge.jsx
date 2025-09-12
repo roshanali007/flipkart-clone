@@ -14,6 +14,7 @@ function ProductsLarge({data}) {
                 Sponsor={item.sponsor} 
                 Name={item.name} 
                 quan={item.quan} 
+                brand={item.brand}
                 rate={item.rating} 
                 Count={item.count} 
                 assure={item.assure}

@@ -17,7 +17,7 @@
     height: 16px; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;           
 }
 .filter_goback{
     padding-left: 12px;

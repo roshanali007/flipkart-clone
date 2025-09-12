@@ -2,17 +2,26 @@ import React, { useState } from 'react'
 import './productCard.css';
 import white_star from '/images/white_star.svg'
 import like from '/images/like_button.svg'
+import { useNavigate } from 'react-router-dom';
 
-function ProductCard({Src,Sponsor,Name,quan,rate,Count,assure,price,prevprice,discount,more,more_src,quantity}) {
+function ProductCard({Src,Sponsor,Name,quan,brand,rate,Count,assure,price,prevprice,discount,more,more_src,quantity}) {
     const  [hover,setHover]=useState(false)
+    const navigate =useNavigate()
+
     const handleHoverIn=()=>{
-        setHover(true)
+        setHover(true) 
     }
     const handleHoverOut=()=>{
         setHover(false)
     }
+    const handleClick=(item)=>{
+        if(item === 'Happilo'){
+            navigate('/food_health/SingleProduct')
+        }
+    }
+
   return (
-    <div className='card_main' onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut}>
+    <div className='card_main' onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut} onClick={()=>handleClick(brand)}>
         <div className='card_div' >
             <div className='card_top' >
                 <div className='card_top_img' >

@@ -1,0 +1,11 @@
+.product_details_main{
+    margin: 0 auto;
+    max-width: 1366px;
+    min-width: 1128px;
+    width: 100%;
+}
+.product_details_div{
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    display: flex;
+}

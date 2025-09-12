@@ -23,7 +23,7 @@
     color: #212121;
     font-size: 13px;
     font-family: var(--int-semi);
-}
+}                                                                           
 .elec_head_text::after{
     content: "►";
     font-size: 8px;
