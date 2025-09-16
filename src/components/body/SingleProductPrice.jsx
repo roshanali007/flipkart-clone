@@ -40,8 +40,8 @@ function SingleProductPrice() {
             </div>
             <div className='product_quantity_info'>@280/250g</div>
         </div>
-        <div>
-
+        <div className='product_alert_message'>
+            Hurry, Only a few left!
         </div>
     </div>
   )

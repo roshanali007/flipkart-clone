@@ -4,6 +4,7 @@ import './ProductDetails.css'
 import {imageList,imageSelect,path} from '../adData/ProductDetails.json'
 import share_img from '/images/share_img.svg'
 import SingleProductPrice from '../body/SingleProductPrice'
+import SingleProductOffers from '../body/SingleProductOffers'
 
 
 function ProductDetails() {
@@ -85,7 +86,7 @@ function ProductDetails() {
                     <SingleProductPrice/>
                 </div>
                 <div>
-
+                    <SingleProductOffers/>
                 </div>
                 <div>
 
