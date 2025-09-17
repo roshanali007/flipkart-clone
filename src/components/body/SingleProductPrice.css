@@ -310,3 +310,196 @@
     color: #212121;
     font-family: var(--int-regu);
 }
+.product_available_offers .product_seller{
+    font-size: 14px;
+    margin-top: 24px;
+    display: flex;
+}
+.product_available_offers .seller_head{
+    width: 110px;
+    padding-right: 10px;
+    color: #878787;
+    font-size: 14px;
+    font-family: var(--int-semi);
+}
+.product_available_offers .seller_superCom{
+    color: #2874f0;
+    font-size: 14px;
+    font-family: var(--int-semi);
+    display: inline;
+}
+.product_available_offers .superCom_text{
+    font-size: 14px;
+    font-family: var(--int-semi);
+}
+.product_available_offers .superCom_rating{
+    margin-left: 8px;
+    border-radius: 10px;
+    background-color: #2874f0;
+    font-size: 11px;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 4px 2px 6px;
+    font-family: var(--int-semi);
+}
+.product_available_offers .superCom_star{
+    margin: 2px 0 0 2px;
+    height: 10px;
+}
+.product_available_offers .seller_ul{
+    margin: 12px 0 -4px;
+    list-style: none;
+}
+.product_available_offers .seller_li{
+    color: #212121;
+    padding-bottom: 8px;
+    position: relative;
+}
+.product_available_offers .seller_li::after{
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    border-radius: 50%;
+    background-color: #c2c2c2;
+}
+.product_available_offers .seller_li_div{
+    margin-left: 17px;
+    font-size: 14px;
+    font-family: var(--int-regu);
+}
+.product_available_offers .seller_question{
+    border-radius: 50%;
+    background-color: #fff;
+    color: #878787;
+    font-family: var(--int-semi);
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
+    margin: 0 2px 0 8px;
+}
+.product_available_offers .seller_seeOther{
+    margin-top: 8px;
+    color: #2874f0;
+    font-family: var(--int-semi);
+    font-size: 14px;
+}
+.product_available_offers .product_description{
+    font-size: 14px;
+    margin-top: 24px;
+}
+.product_available_offers .description_head{
+    width: 110px;
+    padding-right: 10px;
+    color: #878787;
+    font-family: var(--int-semi);
+    float: left;
+}
+.product_available_offers .description_details{
+    margin-left: 110px;
+    color: #212121;
+    margin-bottom: 8px;
+    line-height: 1.5em;
+    font-family: var(--int-regu);
+}
+.product_available_offers .product_specification{
+    margin-top: 24px;
+    border-radius: 2px;
+    font-size: 12px;
+    border: 1px solid #f0f0f0;
+}
+.product_available_offers .specifications_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 30px 24px 24px;
+    font-size: 24px;
+    font-family: var(--int-semi);
+    line-height: 1.14;
+    color: #212121;
+}
+.product_available_offers .specification_box{
+    max-height: 350px;
+    overflow: hidden;
+    position: relative; 
+}
+.product_available_offers .specification_box::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    height: 80px;
+    background: linear-gradient(hsla(0,0%,100%,0) 5%,#fff);
+    bottom: 0;
+}
+.product_available_offers .product_inthebox{
+    border-top: 1px solid #f0f0f0;
+    padding: 24px 24px 34px;
+    font-size: 14px;
+}
+.product_available_offers .inthebox_head{
+    padding-bottom: 16px;
+    font-size: 18px;
+    white-space: nowrap;
+    line-height: 1.4;
+    font-family: var(--int-regu);
+}
+.product_available_offers .inthebox_pack{
+    color: #878787;
+    padding-right: 8px;
+    width: 25%;
+    font-family: var(--int-regu);
+}
+.product_available_offers .inthebox_quan{
+    line-height: 1.4;
+    color: #212121;
+    width: 75%;
+    font-family: var(--int-regu);
+}
+.product_available_offers .product_general{
+    border-top: 1px solid #f0f0f0;
+    padding: 24px 24px 34px;
+    font-size: 14px;
+}
+.product_available_offers .general_head{
+    padding-bottom: 16px;
+    font-size: 18px;
+    white-space: nowrap;
+    line-height: 1.4;
+    font-family: var(--int-regu);
+}
+.product_available_offers .general_table{
+    width: 100%;
+}
+.product_available_offers .general_table_row{
+    padding-bottom: 16px;
+    display: flex;
+}
+.product_available_offers .general_brand{
+    color: #878787;
+    padding-right: 8px;
+    width: 25%;
+    font-family: var(--int-regu);
+}
+.product_available_offers .general_happilo{
+    color: #212121;
+    line-height: 1.4;
+    width: 75%;
+    font-family: var(--int-regu);
+}
+.product_available_offers .product_readmore{
+    padding: 24px;
+    width: 100%;
+    text-align: left;
+    margin-top: -1px;
+    font-size: 16px;
+    color: #2874f0;
+}

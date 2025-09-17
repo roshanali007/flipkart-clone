@@ -1,6 +1,7 @@
 import React from 'react'
 import './SingleProductPrice.css'
 import offer_list from '/images/offer_list.webp'
+import white_star from '/images/white_star.svg'
 
 function SingleProductOffers() {
     const offerlist=[
@@ -27,6 +28,62 @@ function SingleProductOffers() {
             combo:'Bank Offer',
             buy:'5% cashback on Flipkart SBI Credit Card upto ₹4,000 per calendar quarter',
             seeMore:null
+        }
+    ]
+    const specification=[
+        {
+            id:1,
+            descr:"Brand",
+            value:"Happilo"
+
+        },
+        {
+            id:2,
+            descr:"Quantity",
+            value:"200g"
+
+        },
+        {
+            id:3,
+            descr:"Type",
+            value:"Almonds"
+
+        },
+        {
+            id:4,
+            descr:"Variant",
+            value:"Plain"
+
+        },
+        {
+            id:5,
+            descr:"Container Type",
+            value:"Pouch"
+
+        },
+        {
+            id:6,
+            descr:"Model Name",
+            value:"Premium Naturals Californian Almonds"
+
+        },
+        {
+            id:7,
+            descr:"Combo",
+            value:"No"
+
+        },
+        {
+            id:8,
+            descr:"Maximum Sheif Life",
+            value:"366 Days"
+
+        },
+        {
+            id:9,
+            descr:"Ingredients",
+            value:"NA"
+
         }
     ]
   return (
@@ -92,6 +149,78 @@ function SingleProductOffers() {
         <div className='product_important'>
             <div className='important_head'>Important Note</div>
             <span className='important_text'>Image/color/design may vary</span>
+        </div>
+        <div className='product_seller'>
+            <div className='seller_head'>Seller</div>
+            <div className='seller_content'>
+                <div className='seller_superCom'>
+                    <span className='superCom_text'>SuperComNet</span>
+                    <div className='superCom_rating'>
+                        4.3
+                        <img src={white_star} alt="" className='superCom_star'/>
+                    </div>
+                </div>
+                <div className='seller_options'>
+                    <ul className='seller_ul'>
+                        <li className='seller_li'>
+                            <div className='seller_li_div'>
+                                No Returns Applicable
+                                <span className='seller_question'>?</span>
+                            </div>
+                        </li>
+                        <li className='seller_li'>
+                            <div className='seller_li_div'>
+                                GST invoice available
+                                <span className='seller_question'>?</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div className='seller_seeOther'>See other sellers</div>
+            </div>
+        </div>
+        <div className='product_description'>
+            <div className='description_head'>Description</div>
+            <div className='description_details'>
+                Nut and dry fruits are nutrient-rich snacks packed with essential vitamins, minerals, and antioxidants. 
+                They offer a natural source of protein, healthy fats, and fiber, promoting overall health and well-being.
+                Perfect for snacking, cooking, or adding to desserts, these premium-quality nuts and dried fruits provide 
+                a delicious and energy-boosting treat for all ages
+            </div>
+        </div>
+        <div className='product_specification'>
+            <div className='specifications_head'>Specifications</div>
+            <div>
+                <div className='specification_box' >
+                    <div className='product_inthebox'>
+                        <div className='inthebox_head'>In The Box</div>
+                        <table className='general_table'>
+                            <tbody>
+                                <tr>
+                                <td className='inthebox_pack'>Pack of</td>   
+                                <td className='inthebox_quan'>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className='product_general'>
+                        <div className='general_head'>General</div>
+                        <table className='general_table'>
+                            <tbody>
+                                {
+                                    specification.map((item)=>{
+                                        return <tr className='general_table_row' key={item.id}>
+                                                    <td className='general_brand'>{item.descr}</td>
+                                                    <td className='general_happilo'>{item.value}</td>
+                                                </tr>
+                                    })
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button className='product_readmore'>Read More</button>
+            </div>
         </div>
     </div>
   )
