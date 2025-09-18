@@ -6,6 +6,7 @@ import Search from "./header/Search";
 import Food_health from "./pages/Food_health";
 import Filter from "./header/Filter";
 import SingleProduct from "./pages/SingleProduct";
+import BuyProduct from "./pages/BuyProduct";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/food_health" element={<Food_health/>}/>
           <Route path="/food_health/filter" element={<Filter/>}/>
           <Route path="/food_health/SingleProduct" element={<SingleProduct/>}/>
+          <Route path="/food_health/BuyProduct" element={<BuyProduct/>}/>
         </Routes>      
   )   
 }

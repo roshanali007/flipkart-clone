@@ -425,6 +425,10 @@
     line-height: 1.14;
     color: #212121;
 }
+.product_available_offers .spedification_active{
+    overflow: auto;
+    max-height: none;
+}
 .product_available_offers .specification_box{
     max-height: 350px;
     overflow: hidden;
@@ -502,4 +506,7 @@
     margin-top: -1px;
     font-size: 16px;
     color: #2874f0;
+}
+.product_available_offers .display_none{
+    display: none;
 }

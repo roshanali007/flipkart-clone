@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './SingleProductPrice.css'
 import offer_list from '/images/offer_list.webp'
 import white_star from '/images/white_star.svg'
 
 function SingleProductOffers() {
+    const [readMore,setReadMore]=useState(false)
     const offerlist=[
         {
             id:1,
@@ -191,7 +192,7 @@ function SingleProductOffers() {
         <div className='product_specification'>
             <div className='specifications_head'>Specifications</div>
             <div>
-                <div className='specification_box' >
+                <div className={`${readMore===true?'spedification_active':'specification_box'}`} >
                     <div className='product_inthebox'>
                         <div className='inthebox_head'>In The Box</div>
                         <table className='general_table'>
@@ -219,7 +220,7 @@ function SingleProductOffers() {
                         </table>
                     </div>
                 </div>
-                <button className='product_readmore'>Read More</button>
+                <button className={`${readMore===true?'display_none':'product_readmore'}`} onClick={()=>setReadMore(true)}>Read More</button>
             </div>
         </div>
     </div>

@@ -60,6 +60,10 @@ h1 , span{
     color: #000000;
 }
 .sort_filter{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +71,6 @@ h1 , span{
     border-bottom:1px solid rgba(220,223,230,1.00);
     height: 48px;
     width: 100%;
-    
 }
 .sort{
     flex: 1 1 0%;

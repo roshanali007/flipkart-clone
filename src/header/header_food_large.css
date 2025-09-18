@@ -1,4 +1,7 @@
 .health_large_main{
+    position: sticky;
+    top: 0;
+    z-index: 7;
     width: 100%;
     min-width: 978px;
     display: flex;

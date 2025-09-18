@@ -75,13 +75,13 @@
     .smartphone-maindiv .smartphone-overflow{
         padding: 0 4px 16px;
         margin: 8px;
-        
+        position: relative;
     }
     .smartphone-maindiv .smartphone-collection{
         display: flex;
         align-items: center;
         /* flex-wrap: nowrap; */
-        overflow-x: auto;
+        overflow-x: hidden;
         overflow-y: hidden;
         scroll-behavior: smooth;
         scrollbar-width: none;
@@ -124,6 +124,66 @@
         text-decoration: none;
         outline: none;
         color: #1f1f1f
+    }
+    .smartphone-collection .smartphone_button_left{
+        border-radius: 4px 0 0 4px;
+        display: flex;
+        position: absolute;
+        width: 40px;
+        height: 88px;
+        background-color: #fff;
+        top: 0;
+        bottom: 0;
+        left: -8px;
+        margin: auto 0;
+        box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    }
+    .smartphone-collection .smartphone_arrow_left{
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: scale(1) translateY(-50%);
+    }
+    .smartphone-collection .smartphone_arrow_left::before{
+        content: "";
+        position: relative;
+        border-width: 0px 0px 2px 2px;
+        border-style: solid;
+        border-color: #878787;
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        transform: rotate(45deg);
+    }
+    .smartphone-collection .smartphone_button_right{
+        border-radius: 4px 0 0 4px;
+        display: flex;
+        position: absolute;
+        width: 40px;
+        height: 88px;
+        background-color: #fff;
+        top: 0;
+        bottom: 0;
+        right: -8px;
+        margin: auto 0;
+        box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    }
+    .smartphone-collection .smartphone_arrow_right{
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: scale(1) translateY(-50%);
+    }
+    .smartphone-collection .smartphone_arrow_right::before{
+        content: "";
+        position: relative;
+        border-width: 2px 2px 0 0;
+        border-style: solid;
+        border-color: #878787;
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        transform: rotate(45deg);
     }
     .homeEquipment-maindiv{
         display: flex;

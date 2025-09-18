@@ -5,6 +5,8 @@ import {imageList,imageSelect,path} from '../adData/ProductDetails.json'
 import share_img from '/images/share_img.svg'
 import SingleProductPrice from '../body/SingleProductPrice'
 import SingleProductOffers from '../body/SingleProductOffers'
+import Footer from '../../footer/Footer'
+import like from '/images/like_button.svg'
 
 
 function ProductDetails() {
@@ -17,50 +19,55 @@ function ProductDetails() {
   return (
     <div className='product_details_main'>
         <div className='product_details_div'>
-            <div className='product_details_left'>
-                <div className='product_images'>
-                    <div className='product_imgList'>
-                        <ul className='product_img_ul'>
-                            {
-                                imageList.map((item)=>{
-                                    return <li className={`${item.id===6?'product_img_li_last':'product_img_li'}`} onClick={()=>handleClick(item.id)} key={item.id}>
-                                                <div className='product_img_main'>
-                                                    <div className='product_img_div_list'>
-                                                        <img src={item.src} alt="" className='product_img_list' />
+            <div className='product_details_left_div'>
+                <div className='product_details_left'>
+                    <div className='product_images'>
+                        <div className='product_imgList'>
+                            <ul className='product_img_ul'>                 
+                                {
+                                    imageList.map((item)=>{
+                                        return <li className={`${item.id===6?'product_img_li_last':'product_img_li'} ${item.id===selectedId?'product_img_li_active':''}`} onMouseEnter={()=>handleClick(item.id)} key={item.id}>
+                                                    <div className='product_img_main'>
+                                                        <div className='product_img_div_list'>
+                                                            <img src={item.src} alt="" className='product_img_list' />
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                })
-                            }
-                        </ul>
-                    </div>
-                    <div className='product_selected_img'>
-                        <div className='img_render_div'>
-                            {
-                                (
-                                    <img src={selectedImage.src} alt="" className='selected_img'/>
-                                )
-                            }  
+                                                </li>
+                                    })
+                                }
+                            </ul>
+                        </div>
+                        <div className='product_selected_img'>
+                            <div className='img_render_div'>
+                                {
+                                    (
+                                        <img src={selectedImage.src} alt="" className='selected_img'/>
+                                    )
+                                }  
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='product_cart_buy'>
-                    <div className='product_cart_buy_div'>
-                        <ul className='product_cart_buy_ul'>
-                            <li className='product_cart'>
-                                <button className='product_cart_btn'>
-                                    <img src={cart_img} alt="" className='product_cart_img' />
-                                    ADD TO CART
-                                </button>
-                            </li>
-                            <li className='product_buy'>
-                                <button className='product_buy_btn'>
-                                    <span className='buy_img'></span>
-                                    BUY NOW
-                                </button>
-                            </li>
-                        </ul>
-                    </div>   
+                    <div className='product_like'>
+                        <img src={like} alt=""/>
+                    </div>
+                    <div className='product_cart_buy'>
+                        <div className='product_cart_buy_div'>
+                            <ul className='product_cart_buy_ul'>
+                                <li className='product_cart'>
+                                    <button className='product_cart_btn'>
+                                        <img src={cart_img} alt="" className='product_cart_img' />
+                                        ADD TO CART
+                                    </button>
+                                </li>
+                                <li className='product_buy'>
+                                    <button className='product_buy_btn'>
+                                        <span className='buy_img'></span>
+                                        BUY NOW
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
                 </div>
             </div>
             <div className='product_details_right'>  
@@ -89,19 +96,11 @@ function ProductDetails() {
                     <SingleProductOffers/>
                 </div>
                 <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
+                    
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
   )
 }

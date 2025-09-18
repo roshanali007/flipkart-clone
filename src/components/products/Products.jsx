@@ -4,21 +4,27 @@ import Stars from './Stars'
 import './products.css'
 import like_logo from '/images/love.svg'
 import { useFilter } from '../../header/FilterContext'
+import { useNavigate } from 'react-router-dom'
 
                                    
 function Products({data}) {
+    const navigate=useNavigate()
     console.log(data) 
     const {activeFilters}=useFilter()
+    const handleClick=(item)=>{
+      if(item===1){
+        navigate('/food_health/BuyProduct')
+      }
+    }
     const filteredProducts = useMemo(() => {
     let result = [...data];
-    
           
     const grouped= activeFilters.reduce((acc,filters)=>{
         const [pid,sid] = filters.split('-')
         if (!acc[pid]) acc[pid]=[]
         acc[pid].push(Number(sid))
         return acc
-    },{}) //doubt               
+    },{})              
     if (grouped[1]){
         result = result.filter((p) =>{
             const price =parseInt(p.price.replace(/₹|,/g, ""))
@@ -76,7 +82,7 @@ function Products({data}) {
      <div className='product_main'>
       <div className='product_div'>
         {filteredProducts.map((item) => (
-          <div className='left_product border_left' key={item.id}>
+          <div className='left_product border_left' key={item.id} onClick={()=>handleClick(item.id)}>
             <div className='product_img_div'>
               <img src={item.src} alt="" className='product_img' />
             </div>

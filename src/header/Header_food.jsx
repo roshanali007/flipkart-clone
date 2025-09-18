@@ -21,11 +21,11 @@ function Header_food({setSortType,sortType}) {
     console.log(sortOpen)
   return (
     <>
-            {
-                sortOpen && <Sort onclose={()=>setSortOpen(false)} onSort={setSortType} sortType={sortType} />
-            }
+        {
+            sortOpen && <Sort onclose={()=>setSortOpen(false)} onSort={setSortType} sortType={sortType} />
+        }
         <div className='food_main'>
-            
+                
             <Link to={'/'} className='food_go_back same_style_food'>
                 <img src={go_back_arrow} alt="" className='arrow_back' />
             </Link>
@@ -69,7 +69,7 @@ function Header_food({setSortType,sortType}) {
                         </div>
                     </div>
                     <div className='arrange_main'>
-                         <div className='arrange_div'>
+                        <div className='arrange_div'>
                             <div className='arrange_logo'>
                                 <div className='arrange_logo_div'>
                                     <img src={new_arrval} alt="" className='arrange_img' />
