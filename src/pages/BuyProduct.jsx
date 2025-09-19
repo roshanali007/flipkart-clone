@@ -5,6 +5,10 @@ import flipfoodlogo from '/images/flipfoodlogo.png'
 import searchIcon from '/images/search-icon.svg'
 import cart from '/images/Cart.svg'
 import { useNavigate } from 'react-router-dom'
+import like from '/images/buyproduct_like.svg'
+import share from '/images/buyproduct_share.svg'
+import star from '/images/green_star.svg'
+import Buyproduct_Body from '../components/body/Buyproduct_Body'
 
 function BuyProduct() {
     const navigate=useNavigate()
@@ -72,15 +76,33 @@ useEffect(()=>{
                         </div>
                     ))
                 }
+                <div className='buyproduct_festive'>
+                    <div className='festive_text'>FESTIVE SPECIALS</div>
+                </div>
+                <div className='buyproduct_likeshare'>
+                    <div className='buyproduct_like'><img src={like} alt="" className='' /></div>
+                    <div className='buyproduct_share'><img src={share} alt="" className='' /></div>
+                </div>
+                <div className='buyproduct_expiry'>
+                    <div className='expiry_text'><span>Expiry</span> 21 jan 2026</div>
+                </div>
+                <div className='buyproduct_rating'>
+                    <div className='rating_number'>4.4</div>
+                    <img src={star} alt="" />
+                    <div className='rating_count'>| 1.9L+</div>
+                </div>
             </div>
-            <div className='slider_indicators'>
-                {
-                    imageSelect.map((_,index)=>(
-                        <span  key={index} className={`dot ${index === currentIndex ? 'active':''}`}></span>
-                    ))
-                }
+            <div className='slider_indicators_main'>
+                <div className='slider_indicators'>
+                    {
+                        imageSelect.map((_,index)=>(
+                            <span  key={index} className={`dot ${index === currentIndex ? 'active':''}`}></span>      
+                        ))
+                    }
+                </div>
             </div>
         </div>
+        <Buyproduct_Body/>
     </div>
   )
 }
