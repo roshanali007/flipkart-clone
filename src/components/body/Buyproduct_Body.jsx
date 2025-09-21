@@ -6,29 +6,27 @@ import dropdown from '/images/dropdown_white.svg'
 import location from '/images/buybody_location.svg'
 import arrow_right from '/images/arrowRight-logo.svg'
 import not_delivery from '/images/not_deliverable.svg'
+import superCom from '/images/superCom.svg'
+import greystar from '/images/greyStar.svg'
+import arrow_down from '/images/Chevron.svg'
 
 function Buyproduct_Body() {
+    const description=[
+        {id:1,head:'Product highlights',detail:'Key features, expiry, usage, and more'},
+        {id:2,head:'All details',detail:'Features, description and more'},
+        {id:3,head:'Ratings and reviews',detail:'based on 1,95,412 ratings and 17,164 reviews'},
+        {id:4,head:'Questions and Answers',detail:'Find answers to commonly asked questions'}
+    ]
+    const conditions=[
+        {id:1,src:'/images/no_return.svg',name:'No returns'},
+        {id:2,src:'/images/no_cash_on_delivery.svg',name:'No cash on delivery'},
+        {id:3,src:'/images/buyproduct_f-assure.svg',name:'Flipkart Assured'}
+    ]
     const quantity=[
-        {
-            id:1,
-            quantity:'200 g',
-            PricePerQuan:'(₹280/250g)'
-        },
-        {
-            id:2,
-            quantity:'450 g',
-            PricePerQuan:'(₹280/250g)'
-        },
-        {
-            id:3,
-            quantity:'500 g',
-            PricePerQuan:'(₹280/250g)'
-        },
-        {
-            id:4,
-            quantity:'1 kg',
-            PricePerQuan:'(₹280/250g)'
-        }
+        {id:1,quantity:'200 g',PricePerQuan:'(₹280/250g)'},
+        {id:2,quantity:'450 g',PricePerQuan:'(₹280/250g)'},
+        {id:3,quantity:'500 g',PricePerQuan:'(₹280/250g)'},
+        {id:4,quantity:'1 kg',PricePerQuan:'(₹280/250g)'}
     ]
   return (
     <div className='buybody_main'>
@@ -102,16 +100,47 @@ function Buyproduct_Body() {
                 </div>
                 <div className='supercomnet_main'>
                     <div className='supercomnet_div'>
-                        <img src="" alt="" />
-                        <div className='supercomnet_img'></div>
+                        <img src={superCom} alt="" />
+                        <div className='supercomnet_head'>Fulfilled by SuperComNet</div>
                     </div>
                     <div className='supercomnet_details'>
-                        <div className='supercomnet_rate'></div>
-                        <img src="" alt="" />
-                        <div className='supercomnet_dot'></div>
-                        <div className='supercomnet_text'></div>                     
+                        <div className='supercomnet_rate'>4.3</div>
+                        <img src={greystar} alt="" className='grey_star' />
+                        <div className='supercomnet_dot'>•</div>
+                        <div className='supercomnet_text'>9 years with Flipkart</div>                     
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className='buybody_conditions'>
+            <div className='conditions_div'>
+                {
+                    conditions.map((item)=>(
+                        <div className='condition_main'>
+                            <div className='condition_div' key={item.id}>
+                                <img src={item.src} alt="" className='condition_img'/>
+                                <div className={`condition_text ${item.id===1 ? 'condition_return':'condition_cash'}`}>{item.name}</div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+        {
+            description.map((item)=>(
+                <div className='product_highlights' key={item.id}>
+                    <div className='highlights_text'>{item.head}</div>
+                    <div className='highlights_content'>{item.detail}</div>
+                    <div className='highlights_drop'><img src={arrow_down} alt="" className='arrow_down'/></div>
+                </div>
+            ))
+        }
+        <div className='buybody_cart'>
+            <div className='add_cart'>
+                <div className='add_cart_text'>Add to cart</div>
+            </div>
+            <div className='change_address'>
+                <div className='change_address_text'>Change Address</div>
             </div>
         </div>
     </div>

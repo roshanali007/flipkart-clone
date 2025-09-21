@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 function Products({data}) {
     const navigate=useNavigate()
     console.log(data) 
-    const {activeFilters}=useFilter()
+    const {filters}=useFilter()
     const handleClick=(item)=>{
       if(item===1){
         navigate('/food_health/BuyProduct')
@@ -19,7 +19,7 @@ function Products({data}) {
     const filteredProducts = useMemo(() => {
     let result = [...data];
           
-    const grouped= activeFilters.reduce((acc,filters)=>{
+    const grouped= filters.reduce((acc,filters)=>{
         const [pid,sid] = filters.split('-')
         if (!acc[pid]) acc[pid]=[]
         acc[pid].push(Number(sid))
@@ -59,7 +59,7 @@ function Products({data}) {
         }
         result=result.filter((p)=>{
            return grouped[3].some((subId)=>{
-               return p.name.toLowerCase().includes(brands[subId].toLowerCase())
+               return p.brand.toLowerCase().includes(brands[subId].toLowerCase())
             })
         })
    }
@@ -67,16 +67,16 @@ function Products({data}) {
     result =result.filter((p)=>
     grouped[4].some((subId)=>{
         if (subId === 1) return p.rate >= 4
-        if (subId === 1) return p.rate >= 3
-        if (subId === 1) return p.rate >= 2
-        if (subId === 1) return p.rate >= 1
+        if (subId === 2) return p.rate >= 3
+        if (subId === 3) return p.rate >= 2
+        if (subId === 4) return p.rate >= 1
         return true
     })
     )
    }
    return result 
 
-  }, [activeFilters,data]);
+  }, [filters,data]);
   
   return (
      <div className='product_main'>

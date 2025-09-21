@@ -4,10 +4,12 @@
     position: relative;
 }
 .filter_header{
+    position: fixed;
     height: 52px;
     right: 0;
     left: 0;
     top: 0;
+    z-index: 1;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -34,9 +36,10 @@
 }
 .filter_content{
     display: flex;
-    height: 750px;
+    height: 100vh;
     width: auto;
     position: relative;
+    padding-top: 52px;
 }
 
 .filter_each{

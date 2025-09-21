@@ -10,7 +10,7 @@ import './filter.css'
                                                                                              
 function Filter() {
   const navigate = useNavigate();
-  const { activeFilters, setActiveFilters } = useFilter();
+  const { filters, setFilters } = useFilter();
   const [active, setActive] = useState(null);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function Filter() {
 
   const toggleCheckbox = (pid, sid) => {
     const uid = `${pid}-${sid}`;
-    setActiveFilters((prev) =>
+    setFilters((prev) =>
       prev.includes(uid) ? prev.filter((item) => item !== uid) : [...prev, uid] 
     );
   };
@@ -63,7 +63,7 @@ function Filter() {
                         <div className='filter_each_section'>
                           <div className='filter_img' onClick={() => toggleCheckbox(item.id, sub.id)}>
                             <img
-                              src={activeFilters.includes(uid) ? checkbox_active : checkbox_notActive}
+                              src={filters.includes(uid) ? checkbox_active : checkbox_notActive}
                               alt=""
                               className='type_checkbox'
                             />
