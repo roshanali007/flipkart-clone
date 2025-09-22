@@ -1,14 +1,14 @@
 import React from 'react'
 import '../advertisement/advertisement.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function HomeEquipment({data,datatwo}) {
-    const navigate=useNavigate()
-    const handleRoute=(item)=>{
-        if(item==='Dry Fruits'){
-            navigate('/food_health')
-        }
-    }
+    // const navigate=useNavigate()
+    // const handleRoute=(item)=>{
+    //     if(item==='Dry Fruits'){
+    //         navigate('/food_health')
+    //     }
+    // }
   return (
     <div className='homeEquipment-maindiv'>
         <div className='homeEquipment-hddiv'>
@@ -33,7 +33,7 @@ function HomeEquipment({data,datatwo}) {
                     }
                     {
                         datatwo.map((item)=>{
-                            return <a href="" className='homeLarge'key={item.id}>
+                            return <Link to={item.name === "Dry Fruits" ? "/food_health" : "#"} className='homeLarge'key={item.id}>
                                         <div className='homeEquipment' onClick={()=>handleRoute(item.name)}>
                                             <div className='homeEquipment-img'>
                                                 <img src={item.src} alt={item.alt} /> 
@@ -41,7 +41,7 @@ function HomeEquipment({data,datatwo}) {
                                             <div className='homeEquipment-brand'>{item.name}</div>
                                             <div className='price-tag'>{item.price}</div>
                                         </div>
-                                    </a>
+                                    </Link>
                         })
                     }
                 </div>
