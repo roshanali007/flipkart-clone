@@ -10,14 +10,11 @@
     align-items: stretch;
     overflow: hidden;
     background-color: #ffffff;
-    
 }
 .ad-div{
     display: flex;
     justify-content: center;
     align-items: center;
-
-   
 }
 .ad-maindiv a{
     margin: 12px 16px;
@@ -31,6 +28,7 @@
 .poco-tablet{
     display: none;
 }
+
 @media screen and (min-width:768px){
     .poco-tablet{
         display: block;
@@ -39,6 +37,7 @@
         display: none;
     }
 }
+
 @media screen and (min-width:1024px){
     .ad-maindiv{
         display: none;
@@ -48,17 +47,14 @@
         align-items: center;
         width: 100%;
         /* margin-top: 25px; */
-        margin-bottom: 16px;    
+        margin-bottom: 16px;
     }
     .smartphoneLarge{
         display: none;
     }
     .smartphone-maindiv .smartphone-hddiv{
-        
         width: 100%;
         background-color: #ffffff;
-        
-        
     }
     .smartphone-maindiv .smartphone-heading{
         font-size: 22px;
@@ -195,12 +191,9 @@
         /* padding: 0 13px; */
     }
     .homeEquipment-maindiv .homeEquipment-hddiv{
-        
         /* width: 98%; */
         width: 100%;
         background-color: #ffffff;
-        
-        
     }
     .homeEquipment-maindiv .homeEquipment-heading{
         font-size: 22px;
@@ -214,7 +207,6 @@
     .homeEquipment-maindiv .homeEquipment-overflow{
         padding: 0 4px 16px;
         margin: 8px;
-        
     }
     .homeEquipment-maindiv .homeEquipment-collection{
         display: flex;
@@ -271,8 +263,8 @@
    .homeLarge{
     display: none;
    }
-
 }
+
 @media screen and (min-width:1440px){
     .smartphone-collection .smarphoneLap{
         display: none;
@@ -283,7 +275,6 @@
         text-decoration: none;
         outline: none;
         color: #1f1f1f
-
     }
     .homeequipment_hd_lg{
         display: block;
@@ -304,7 +295,6 @@
         text-decoration: none;
         outline: none;
         color: #1f1f1f;
-
     }
     .homeequipment_hd_lg{
         display: block;
@@ -313,5 +303,4 @@
     .homeEquipment-heading .homeEquipment_hd_pad{
         display: none;
     }
-    
-}                  
+}

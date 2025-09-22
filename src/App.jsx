@@ -10,8 +10,6 @@ import BuyProduct from "./pages/BuyProduct";
 
 
 function App() {
- 
-
   return (
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -20,9 +18,8 @@ function App() {
           <Route path="/food_health/filter" element={<Filter/>}/>
           <Route path="/food_health/SingleProduct" element={<SingleProduct/>}/>
           <Route path="/food_health/BuyProduct" element={<BuyProduct/>}/>
-        </Routes>      
-  )   
+        </Routes>
+  )
 }
 
 export default App
-   

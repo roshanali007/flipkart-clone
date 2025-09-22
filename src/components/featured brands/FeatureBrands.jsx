@@ -1,9 +1,6 @@
 import React from 'react'
 import '../featured brands/FeatureBrands.css'
 
-
-
-
 function FeatureBrands({data,datatwo}) {
   return (
     <div className='feature-main'>

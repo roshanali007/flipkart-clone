@@ -3,14 +3,15 @@ import flipkart_minute from '/images/flipkart_minute.jpg'
 import '../menulist/Menulist.css'
 import { useNavigate } from 'react-router-dom'
 
-
 function Menulist({dataOne,dataTwo}) {
     const navigate= useNavigate()
+
     const handleClick=(item)=>{
         if(item.name==="Food, Health "){
             navigate("/food_health")
         }
     }
+
   return (
     <div className='menulist_maindiv'>
         <div className='menulist_hddiv'>

@@ -36,7 +36,7 @@ function Filter() {
       <div className='filter_content'>
         <div className='filter_content_left'>
           {filter.map((item) => (
-            <div className='filtering' key={item.id} onClick={() => setActive(item.id)}>
+            <div className='filtering' key={item.id} onClick={() => setActive(item.id)}>   
               <div className={`filter_each ${active === item.id ? 'active_element' : ''}`}>
                 <span className='filter_each_item'>{item.name}</span>
               </div>
@@ -87,7 +87,7 @@ function Filter() {
         </div>
         <div className='filter_end_right'>
           <div className='filter_apply' onClick={() => navigate(-1)}>
-            Apply
+            Apply&nbsp;
           </div>
         </div>
       </div>

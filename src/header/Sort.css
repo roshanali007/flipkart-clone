@@ -10,9 +10,9 @@
     height: 100dvh;
     background-color: rgb(0, 0, 0,0.5);
     position: fixed;
-    z-index: 1;
+    z-index: 2; 
     overflow-y: hidden;
-    transition: opacity 0.3s  ease;   
+    transition: opacity 0.3s  ease;
     opacity: 0;
 }
 .sort_main.open{
@@ -55,7 +55,7 @@
     align-items: center;
     margin-right: 8px;
     margin-bottom: 8px; 
-    padding: 6px 12px;   
+    padding: 6px 12px;
 }
 .sort_content{
     color: rgba(0,0,0,1.00);

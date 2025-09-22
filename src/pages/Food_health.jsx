@@ -7,13 +7,13 @@ import Header_food_large from '../header/Header_food_large'
 import Food_menubar from '../header/Food_menubar'
 import Health_body from '../components/body/health_body'
 import ProductPage from '../components/products/ProductPage'
-  
+
 function Food_health() {
   const [sortType,setSortType]=useState('')
   return (
     <div>
         <div className='food_health_main'>
-          <Header_food setSortType={setSortType} sortType={sortType}/>                                                   
+          <Header_food setSortType={setSortType} sortType={sortType}/>
           <ProductPage sortType={sortType}/> 
         </div>
         <div className='food_health_large'>

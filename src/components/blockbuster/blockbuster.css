@@ -1,6 +1,6 @@
+
  .blockbuster-main{
     display: flex;
-    align-items: stretch;
     position: relative;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
@@ -8,14 +8,12 @@
  .blockbuster-main .blockbuster-sbdiv{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     position: relative;
     margin: 12px 16px;
  }
  .blockbuster-main .blockbuster-upsec{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     overflow: hidden;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -24,17 +22,15 @@
  .blockbuster-main .blockbuster-updiv{
     display:flex;
     flex-direction: column;
-    align-items: stretch;
     overflow: hidden;
  }
- .blockbuster-main .blockbusterbg-div{
+ .blockbuster-main .todealbg-div{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     position: relative;
     border-radius: 6px;
  }
- .blockbuster-main .blockbusterbg-div img{
+ .blockbuster-main .todealbg-div img{
     width: 100%;
     margin: auto;
     display: block;
@@ -45,7 +41,6 @@
     display: flex;
     flex-basis: auto;
     flex-direction: column;
-    align-items: stretch;
     position: absolute;
     top: 0;
     right: 0;
@@ -53,11 +48,8 @@
  }
  .blockbuster-main .heading-margin{
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
     position: relative;
     margin: 16px 16px 0px 16px;
-    text-overflow: ellipsis;
     font-family: var(--int-bold);
     font-size: 17px;
     line-height: 24px;
@@ -66,7 +58,6 @@
  .blockbuster-main .blockbuster-downsec{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     position: relative;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -74,7 +65,6 @@
  .blockbuster-main .blockbuster-downdiv{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     position: relative;
     overflow: hidden;
     margin-top: -56px;
@@ -83,25 +73,23 @@
  .blockbuster-main .blockbuster-div{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    flex-basis: auto;
  }
  .blockbuster-main .blockbuster-content{
     display: grid;
     grid-auto-flow: column;
-    padding: 0 48px 0 0;
     scrollbar-width: none;
     grid-auto-columns: 118px;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     overflow-y: hidden;
+    position: relative;
+    z-index: 2;
  }
  .blockbuster-main .headphones{
     display: flex;
     flex-direction: column;
     position: relative;
-    align-items: stretch;
  }
  .blockbuster-main .headphones a{
     display: flex;
@@ -121,16 +109,19 @@
  .blockbuster-main .blockbuster-sibdiv{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    /* position: absolute; */
-    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     overflow: hidden;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
  }
  .blockbuster-main .blockbuster-borderbtm{
+   width: 100%;
+    height: 100%;
     border-radius: 0 0 16px 16px;
-    background: linear-gradient(rgb(230, 255, 230), rgb(230, 255, 230));
+    background: linear-gradient(rgb(164, 213, 248), rgb(244, 248, 252));
  }
 
 @media screen and (min-width:1024px){

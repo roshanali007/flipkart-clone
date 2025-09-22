@@ -2,8 +2,6 @@ import React from 'react'
 import '../jackpotdeals/JackpotDeal.css'
 import jackpotbg from '/images/jackpot.jpg'
 
-
-
 function JackpotDeal({data}) {
   return (
     <div className='jackpot-main'>

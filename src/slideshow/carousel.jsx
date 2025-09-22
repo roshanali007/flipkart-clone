@@ -1,6 +1,6 @@
- 
 import React, { useEffect, useRef, useState } from 'react';
 import './carousel.css';
+
 const SingleCarousel = ({ data, type , typetwo}) => {
   const [slide, setSlide] = useState(0);
   const [isProgrammaticScroll, setIsProgrammaticScroll] = useState(false);
@@ -50,13 +50,13 @@ const SingleCarousel = ({ data, type , typetwo}) => {
 
   return (
     <div className={`carousel-head ${typetwo}`}>
-      <div className='carousel-sbhead'>
-        <button className='left_btn' onClick={prev}>
+      <button className='left_btn' onClick={prev}>
           <span className='left_arrow'></span>
         </button>
         <button className='right_btn' onClick={next}>
           <span className='right_arrow'></span>
         </button>
+      <div className='carousel-sbhead'>
         <div className='carousel'>
           <div className={`carousel-track ${type}`} ref={ref} onScroll={manualScroll}>
             {data.map((item, idx) => (
@@ -70,22 +70,22 @@ const SingleCarousel = ({ data, type , typetwo}) => {
           <button
             key={idx}
             onClick={() => setSlide(idx)}
-            className={`indicator ${slide === idx ? 'active' : 'indicator_notactive'}`}
+            className={`indicator  ${slide === idx ? 'active' : 'indicator_notactive'}`}
           />
         ))}
       </span>
     </div>
   );
 };
+
 export const Carousel = ({ data, datatwo, datathree, datafour }) => {
   return (
     <div className='carousel-container carouselTab-container'>
       <div className='carousel-subcontainer carouselTab-subcontainer'>
-        
-              <SingleCarousel data={data} type='carousel-img' typetwo='carousel-headimg'/>
-              <SingleCarousel data={datatwo} type='carouselTab-img' typetwo='carouselTabhead-img'/>
-              <SingleCarousel data={datathree} type='carouselLab-img' typetwo='carouselLabhead-img'/>
-              <SingleCarousel data={datafour} type='carouselLarge-img' typetwo='carouselLargehead-img'/>
+          <SingleCarousel data={data} type='carousel-img' typetwo='carousel-headimg'/>
+          <SingleCarousel data={datatwo} type='carouselTab-img' typetwo='carouselTabhead-img'/>
+          <SingleCarousel data={datathree} type='carouselLab-img' typetwo='carouselLabhead-img'/>
+          <SingleCarousel data={datafour} type='carouselLarge-img' typetwo='carouselLargehead-img'/>
       </div>
     </div>
   );

@@ -89,7 +89,7 @@ h1 , span{
     justify-content: center;
     align-items: center;
 }
-.sort_text,.filter_text{
+.sort_text,.header_filter_text{
     margin-left: 8px;
     color: rgb(17, 17, 18);
     font-size: 14px;

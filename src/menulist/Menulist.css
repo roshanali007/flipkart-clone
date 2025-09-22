@@ -11,7 +11,6 @@
     align-items: stretch;
     background-color: rgba(0, 0, 0, 0);
     border: 0px solid black;
-
 }
 .menulist_maindiv .menulist_hddiv{
     display: flex;
@@ -62,21 +61,23 @@
     width: 57px;
     height: 57px;
 }
+
 @media screen and (min-width:768px){
     .menulist_maindiv .moblie img{
         width: 58px;
         height: 58px;
     }
 }
+
 @media screen and (min-width:1024px){
     .menulist_maindiv{
         display: none;
     }
     .menulistLap_maindiv{
         display: flex;
-        /* margin: 0px 13px ; */                 
+        /* margin: 0px 13px ; */
         /* padding: 0 13px; */
-        align-items: stretch;                                                                                                                                                                                         
+        align-items: stretch;
         position: relative; 
         margin-bottom: 16px;
     }
@@ -101,7 +102,6 @@
         padding: 16px;
         padding-left: 24px;
         text-decoration: none;
-        min-width: 124px;
         /* position: relative; */
         box-sizing: border-box;
     }
@@ -130,7 +130,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 10px;
+        min-width: 90px;
     }
     .flipkart_minute span{
         font-size: 14px;
@@ -140,9 +140,11 @@
         justify-content: center;
         text-align: center;
         color: #111112;
+        white-space: nowrap;
+        line-height: 17px;
     }
-    
 }
+
 @media screen and (min-width:1440px){
     .menulistLap_sbdiv .menulistLap{
         display: none;
@@ -150,16 +152,21 @@
     .menulistLarge{
         display: block;
         padding: 16px;
-        padding-left: 24px;
         text-decoration: none;
         min-width: 124px;
         /* position: relative; */
         box-sizing: border-box;
     }
+    .menulist_padding{
+        padding-left: 24px;
+    }
     .menulist_sbdiv .droplogo{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .drop_logo.display_none{
+        display: none;
     }
     .flipkart_minute{
         margin: 0;
@@ -173,7 +180,7 @@
 
     }
     .menulistLap_maindiv .img-container{
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
     .menulistLarge:hover .item_name{
         color: rgb(79, 102, 229);
@@ -182,10 +189,25 @@
         transform: rotate(0);
         transition: transform .3s ease-in-out;
     }
-    .menulistLarge:hover .drop_down{
-        transform: rotate(-180deg);
+    .drop_logo{
+        margin-left: 8px;
+        padding-top: 2px;
     }
-    .menulistLarge:hover .drop_logo{
-        filter: invert(46%) sepia(91%) saturate(7483%) hue-rotate(227deg) brightness(95%) contrast(98%); 
+    .drop_logo::before{
+        content: "";
+        display: inline-block;
+        position: relative;
+        height: 6px;
+        width: 6px;
+        border-color: #111112;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        transform: scale(1) translateY(-50%) rotate(45deg);
+        transform-origin: 50% 50%;
+        transition: transform .3s;
+    }
+    .menulistLarge:hover .drop_logo::before{
+        border-color:  rgb(79, 102, 229);
+        transform: scale(1) translateY(0%) rotate(225deg);
     }
 }

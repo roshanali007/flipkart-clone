@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 16px 5px;
+    padding: 2px 16px 2px;
 }
 .header-div-desk{
     display: none;
@@ -27,13 +27,16 @@ header{
 
 }
 .flipkart-logo-div{
-    padding-top: 1px;
+    padding-top: 2px;
 }
 .flipkart-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    /* gap: 12px; */
+}
+.header .logo{
+    margin-right: 12px;
 }
 .logo a{
     display: flex;
@@ -43,24 +46,22 @@ header{
 .arrow-down{
     display: flex;
     align-items: center;
-    padding-bottom: 1px;
+    padding-bottom: 4px;
+    padding-right: 12px;
 }
 .shopping-cart{
     display: flex;
     align-items: center;
-    padding-bottom: 1px;
+    padding-bottom: 4px;
 }
 .man-logo{
-    padding-bottom: 1px;
+    padding-bottom: 4px;
+    padding-right: 4px;
 }
 .login{
     font-family: var(--int-regu);
     font-size: 16px;
-    padding-bottom: 1px;
-}
-img.man-logo {
-    
-    padding-right: 4.5px;
+    padding-bottom: 4px;
 }
 .location-logo{
     display: flex;
@@ -92,7 +93,7 @@ img.man-logo {
 
 }
 .search_engine_head{
-    padding: 16px 16px;
+    padding: 19px 16px 16px 15px;
 }
 .search_engine{
     display: flex;
@@ -165,6 +166,7 @@ img.man-logo {
         align-items: center;
     }
     .header-class .flipkart-div{
+        height: 43px;
         margin-right: 36px;
         
     }
@@ -254,6 +256,7 @@ img.man-logo {
         width: 12px;
         height: 12px;
         margin-left: 8px;
+        padding: 0;
     }
     .cart-hddiv .cart-div{
         padding: 0 6px;
@@ -330,6 +333,9 @@ img.man-logo {
         background: #2a55e5;
         border-color: #2a55e5;
         border-radius: 8px;
+    }
+    .header-class .login-div .login_txt{
+        font-size: 17px;
     }
     .header-class .login-div:hover .login_txt{
         color: #fff;
@@ -432,7 +438,7 @@ img.man-logo {
         padding: 0 20px;
     }
     .header-class .flipkart-div img{
-        width: 120px;
+        width: 160px;
         height: 40px;
     }
     

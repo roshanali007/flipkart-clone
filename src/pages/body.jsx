@@ -13,7 +13,8 @@ import Offers from '../components/offers/Offers'
 import {menulist,menulistTwo,menulistLap,menulistLarge} from '../data/menulistData.json'
 import {blockbuster,jackpot,topdeal} from '../data/deals.json'
 import {featurebrands,featurelap} from '../data/featurebrands.json'
-function Body() { 
+
+function  Body() {
   return (
     <div className='body-container'>
       <div className='body-width'>
@@ -27,7 +28,6 @@ function Body() {
         <FeatureBrands data={featurebrands} datatwo={featurelap} />
         <JackpotDeal data={jackpot}/>
       </div>
-        
     </div>
   )
 }

@@ -23,6 +23,7 @@
 }
 .filter_goback{
     padding-left: 12px;
+    padding-right: 8px;
 }
 .filter_text{
     display: flex;
@@ -33,6 +34,7 @@
     font-weight: 400;
     font-family: var(--int-roboto);
     letter-spacing: 0;
+    padding-top: 3px;
 }
 .filter_content{
     display: flex;
@@ -45,8 +47,8 @@
 .filter_each{
     display: flex;
     align-items: center;
-    height: 56px;
-    padding: 12px;
+    height: 44px;
+    padding: 12px 8px 12px 16px;
     width: 100%;
     background-color: rgb(241, 243, 246);
     position: relative; 
@@ -66,6 +68,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     width: 141.667px;
+    height: 56px;
 }
 .active_element {
     background-color: rgba(255,255,255);
@@ -106,6 +109,7 @@
     font-family:var(--int-roboto);
     font-size: 14px;
     letter-spacing: 0;
+    line-height: 19px;
 }
 .filter_end{
     height: 56px;
@@ -135,6 +139,7 @@
     font-family: "Roboto Medium", Roboto-Medium, "Droid Sans", HelveticaNeue-Medium, "Helvetica Neue Medium", sans-serif-medium;
     color: rgb(135, 135, 135);
     letter-spacing: 0;
+    line-height: 15px;
 }
 .filter_end_right{
     min-height: 40px;

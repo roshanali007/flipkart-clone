@@ -6,7 +6,6 @@ import like_logo from '/images/love.svg'
 import { useFilter } from '../../header/FilterContext'
 import { useNavigate } from 'react-router-dom'
 
-                                   
 function Products({data}) {
     const navigate=useNavigate()
     console.log(data) 
@@ -24,7 +23,7 @@ function Products({data}) {
         if (!acc[pid]) acc[pid]=[]
         acc[pid].push(Number(sid))
         return acc
-    },{})              
+    },{})
     if (grouped[1]){
         result = result.filter((p) =>{
             const price =parseInt(p.price.replace(/₹|,/g, ""))

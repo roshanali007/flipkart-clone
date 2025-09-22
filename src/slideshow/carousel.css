@@ -8,7 +8,7 @@
     display: flex;
 }
 .carouselLarge-img{
-        display: none;
+    display: none;
 }
 .carousel-headimg{
     display: block;
@@ -26,8 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 12px;
-    
+    /* padding-bottom: 12px; */
 }
 .carousel-subcontainer{
     display: flex;
@@ -36,25 +35,19 @@
 .carousel-head{
     background-color: #ffffff;
 }
-
 .carousel-sbhead{
     width: 100%;
-    height: 100%; 
+    height: auto; 
     display: flex;
     /* justify-content: center; */
      position: relative;
      align-items: center;
-        
 }
 .carousel{
-    
     width: 100%;
     height: auto;
     margin: 0 15px;
     overflow-x: hidden; 
-   
-    
-    
 }
 .carousel-track {
   padding-top: 0px;
@@ -76,7 +69,7 @@
 .indicators{
     /* display: flex; */
    /* position: absolute; */
-   /* padding-top: 8px;  */
+   padding-top: 8px; 
    padding-bottom: 12px;
    justify-content: center;
    background-color: #ffffff;
@@ -90,7 +83,7 @@
     border: none;
     margin: 0 4px;
     cursor: pointer;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 .indicator::before{
@@ -107,13 +100,11 @@
     width: 100%;
     transition:3s linear;
 }
-
-
-
 .indicator_notactive{
     background-color: #e1dcdc;
     width: 12px;
 }
+
 @media screen and (min-width:768px){
     .carousel-img{
         display: none;
@@ -130,7 +121,6 @@
     .carouselTabhead-img{
         display: block;
     }
-    
 }
 
 @media screen and (min-width:1024px) {
@@ -155,9 +145,16 @@
     }
     .carousel-container{
         margin-bottom: 16px;
-        padding-bottom: 16px;
+        padding-bottom: 0px;
+    }
+    .carousel-sbhead{
+        height: auto;
+    }
+    .indicators{
+        padding-top: 8px;
     }
 }
+
 @media screen and (min-width:1440px){
     .carouselLab-img{
         display: none;
@@ -236,5 +233,8 @@
         left: 16px;
         transform: scale(1) translateY(-50%);
     }
+    .indicators{
+        padding-top: 8px;
+    }
 
-}    
+}

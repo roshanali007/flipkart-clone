@@ -12,9 +12,9 @@ function Home() {
         <HeaderDesk></HeaderDesk>
         <div className='body'>
             <Body></Body>
-        </div>                                       
+        </div>
         <Footer/>
-    </div>  
+    </div>
   ) 
 } 
 

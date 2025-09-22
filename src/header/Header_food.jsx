@@ -10,7 +10,7 @@ import filter from '/images/filter.svg'
 import new_arrval from '/images/new_arrival.webp'
 import popular from '/images/propular_brands.webp'
 import Sort from './Sort'
-     
+
 function Header_food({setSortType,sortType}) {
     const [readMore,setReadMore]=useState(false)
     const [sortOpen,setSortOpen] =useState(false)
@@ -50,7 +50,7 @@ function Header_food({setSortType,sortType}) {
             <div className='border_sort_filter'></div>
             <div className='filter'  onClick={()=>navigate('/food_health/filter')}>
                 <img src={filter} alt="" />
-                <div className='filter_text'>Filter</div>
+                <div className='header_filter_text'>Filter</div>
             </div>
         </div>
         <div className='shortcut_arrange'>
@@ -86,7 +86,15 @@ function Header_food({setSortType,sortType}) {
         <div className='readmore_main'>
             <div className='readmore_div'>
                 <div className={`${readMore===true?'':'paragraph_readmore'}`}>
-                    <p>Dry fruits are healthy and nutritional snacks. They are beneficial for health in several ways. They help in improving digestion, memory and other metabolic functions of the body. They help in maintaining glucose levels and blood pressure. You can keep these handy when you are travelling. A box of dry fruits also makes for a great gift and is often given to family and friends on auspicious occasions. A usual pack will contain almonds, cashews, pistachios, figs, and more. They make for a perfect gift. Nuts and seeds are also used to garnish both sweet and savoury dishes. Dry fruit and nuts online price depend on the brand and the quantities available. You can also choose from organic nuts and seeds, according to your requirements. You can also opt for a mix if you do not want to buy individual packs of nuts and fruits. Buy top quality nuts from trusted brands such as </p>
+                    <p>Dry fruits are healthy and nutritional snacks. They are beneficial for health in several ways. 
+                        They help in improving digestion, memory and other metabolic functions of the body. 
+                        They help in maintaining glucose levels and blood pressure. You can keep these handy when you are travelling. 
+                        A box of dry fruits also makes for a great gift and is often given to family and friends on auspicious occasions. 
+                        A usual pack will contain almonds, cashews, pistachios, figs, and more. They make for a perfect gift. 
+                        Nuts and seeds are also used to garnish both sweet and savoury dishes. Dry fruit and nuts online price 
+                        depend on the brand and the quantities available. You can also choose from organic nuts and seeds, 
+                        according to your requirements. You can also opt for a mix if you do not want to buy individual packs of nuts 
+                        and fruits. Buy top quality nuts from trusted brands such as </p>
                     <p><br /></p>
                 </div>
                     <span className='readmore_text'>
