@@ -3,12 +3,6 @@ import '../advertisement/advertisement.css'
 import { Link, useNavigate } from 'react-router-dom'
 
 function HomeEquipment({data,datatwo}) {
-    // const navigate=useNavigate()
-    // const handleRoute=(item)=>{
-    //     if(item==='Dry Fruits'){
-    //         navigate('/food_health')
-    //     }
-    // }
   return (
     <div className='homeEquipment-maindiv'>
         <div className='homeEquipment-hddiv'>

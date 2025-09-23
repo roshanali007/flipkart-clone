@@ -5,7 +5,7 @@ import '../blockbuster/blockbuster.css'
 
 function Blockbuster({data}) {
   return (
-    <div className='blockbuster-main'>
+    <div className='blockbuster-main'>                                                                        
         <div className='blockbuster-sbdiv'>
             <div className='blockbuster-upsec'>
                 <div className='blockbuster-updiv'>
